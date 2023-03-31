@@ -25,10 +25,6 @@ public:
                 k--;
             }
         }
-        for(int z=0;z<nums1.size();z++){
-            cout<<nums1[z];
-        }
-        cout<<endl<<i<<","<<j<<","<<k;
         while(i>=0){
             nums1[k]=nums1[i];
             i--;
