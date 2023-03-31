@@ -14,6 +14,6 @@ public:
                 return nums[i];
             }
         }
-        return 1;
+        return nums[0];
     }
 };
