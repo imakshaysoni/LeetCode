@@ -15,9 +15,6 @@ public:
             arr2.push_back(r_sum);
         }
         for(int i=0;i<n;i++){
-            cout<<arr1[i]<<"/"<<arr2[i]<<endl;
-        }
-        for(int i=0;i<n;i++){
             if(arr1[i]==arr2[n-i-1]){
                 ans=i;
                 break;
