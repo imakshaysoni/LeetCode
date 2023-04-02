@@ -4,26 +4,11 @@ public:
     
         int n=nums.size();
        vector<int> v(n);
-        if(n==1){
-            v[0]=nums[0]*nums[0];
-            return v;
-        }
-        int i=0;
-        int j=n-1;
-        int x,y;
-        int k =n-1;
-        while(i<=j){
-            x=nums[i]*nums[i];
-            y=nums[j]*nums[j];
-            if(x>y){
-                v[k]=x;
-                i++;
-            }
-            else{
-                v[k]=y;
-                j--;
-            }
-            k--;
+        int l=0;
+        int r=n-1;
+        for(int k=r;k>=0;k--){
+            if(abs(nums[l]) > abs(nums[r])) v[k]=nums[l]*nums[l++];
+            else v[k]=nums[r]*nums[r--];
         }
         return v;
         
