@@ -11,7 +11,7 @@ public:
             mul*=nums[i];
             r.push_back(mul);
         }
-        for(auto a: r)cout<<a<<" ";
+        // for(auto a: r)cout<<a<<" ";
         for(int i=0;i<=n;i++){
             int temp=nums[i];
             nums[i]=r[n-i]*l_sum;
