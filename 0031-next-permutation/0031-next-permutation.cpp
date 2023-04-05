@@ -9,12 +9,10 @@ public:
         i--;
     }
     int k=n-1;
-        --i;
+    --i;
     while(k>i and i>=0){
      if(nums[k] > nums[i]){
-         int temp=nums[k];
-         nums[k]=nums[i];
-         nums[i]=temp;
+         swap(nums[k],nums[i]);
          break;
      }
         k--;
@@ -22,9 +20,7 @@ public:
     int j=i+1;
     k=n-1;
     while(j<k){
-        int x = nums[j];
-        nums[j]=nums[k];
-        nums[k]=x;
+        swap(nums[j],nums[k]);
         j++;k--;
     }
         
