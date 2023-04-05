@@ -21,18 +21,14 @@ public:
                 v.push_back(matrix[i][right]);
             }
             right--;
-            if(top <= bottom ){
-            for(int i=right;i>=left;i--){
-                v.push_back(matrix[bottom][i]);
+            for(int i=right;i>=left && top <= bottom;i--){
+                v.push_back(matrix[bottom][i]);            
             }
             bottom--;
-            }
-            if(left <= right ){
-            for(int i=bottom;i>=top;i--){
+            for(int i=bottom;i>=top && left<=right;i--){
                 v.push_back(matrix[i][left]);
             }
             left++;
-            }
             
         }
      return v;   
