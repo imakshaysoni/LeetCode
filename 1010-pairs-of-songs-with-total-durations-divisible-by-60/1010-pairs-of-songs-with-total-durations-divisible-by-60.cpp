@@ -17,10 +17,7 @@ public:
             else m[x]=1;
             
         }        
-        return ans;      
-        
-        
-        
+        return ans;
     }
 };
 
