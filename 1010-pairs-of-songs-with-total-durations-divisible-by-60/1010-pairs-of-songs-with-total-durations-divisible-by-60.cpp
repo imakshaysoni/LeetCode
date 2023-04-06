@@ -1,8 +1,7 @@
 class Solution {
 public:
     int numPairsDivisibleBy60(vector<int>& time) {
-        
-      unordered_map<int, int>mp;
+              unordered_map<int, int>mp;
     int c = 0;
     
     for (int i = 0; i < time.size(); i++) {
@@ -13,7 +12,7 @@ public:
     
     return c;
                 
-//         int ans=0;
+// //         int ans=0;
 //         int n = time.size();
 //         if(time.size()<=1)return 0;
 //         unordered_map<int,int> m;
