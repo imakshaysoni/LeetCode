@@ -8,6 +8,18 @@ public:
         
         // #Pruning
         
+        int R = b.size(), C = b[0].size(), N = word.size();
+        
+        // Prune #1: If there aren't even enough letters in the board to fit word, then return false
+        if((int) word.size() > R * C) {return false;}
+        
+        // Prune #2: For each letter, the board must contain at least as many of that letter as word contains
+        int occ[128] = {};
+        for(const auto &v : b) {for(char c : v) {++occ[c];}}
+        for(char c : word) {
+            if(--occ[c] < 0) {return false;}
+        }
+        
         
         for(int i=0;i<m;i++){
             for(int j=0;j<n;j++){
