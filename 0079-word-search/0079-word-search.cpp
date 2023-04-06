@@ -36,7 +36,7 @@ public:
     bool helper(vector<vector<char>> &b, int i, int j, int m, int n, int k, string word){
         if(k >= word.size() ) return true;
         if( i<0 || j<0 || i>=m || j>=n || b[i][j]=='.' || b[i][j]!=word[k]) return false;
-        if(word.size()==1 && word[k]==b[i][j]) return true;
+        // if(word.size()==1 && word[k]==b[i][j]) return true;
         
         b[i][j]='.';
         int temp=false;
