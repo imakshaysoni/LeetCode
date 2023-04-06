@@ -27,16 +27,16 @@ public:
         b[i][j]='.';
         int temp=false;
         
-        int x[4] = {0,0,-1,1};
-        int y[4] = {-1,1,0,0};
-        for(int index=0;index<4;index++){
-            temp = temp || helper(b,i+x[index],j+y[index],m,n,k+1,word);
-        }
+        // int x[4] = {0,0,-1,1};
+        // int y[4] = {-1,1,0,0};
+        // for(int index=0;index<4;index++){
+        //     temp = temp || helper(b,i+x[index],j+y[index],m,n,k+1,word);
+        // }
         
-        // temp = temp || helper(b, i-1, j, m, n , k+1, word);
-        // temp = temp || helper(b, i+1, j, m, n , k+1, word);
-        // temp = temp || helper(b, i, j-1, m, n , k+1, word);
-        // temp = temp || helper(b, i, j+1, m, n , k+1, word);
+        temp = temp || helper(b, i-1, j, m, n , k+1, word);
+        temp = temp || helper(b, i+1, j, m, n , k+1, word);
+        temp = temp || helper(b, i, j-1, m, n , k+1, word);
+        temp = temp || helper(b, i, j+1, m, n , k+1, word);
         
         b[i][j]=word[k];
         return temp;
