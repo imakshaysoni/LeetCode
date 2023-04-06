@@ -10,21 +10,14 @@ public:
             int x = time[i]%60;
             int find=60-x;
             if(m.find(find)!=m.end()){
-                cout<<find<<"*"<<ans<<m[find]<<endl;
                 ans+=m[find];
             }
             if(x==0)x=find;
             if(m.find(x)!=m.end())m[x]+=1;
             else m[x]=1;
             
-        }
-        cout<<endl;
-        for(auto x: m){
-            cout<<x.first<<" "<<x.second<<endl;
-        }
-        
-        return ans;
-        
+        }        
+        return ans;      
         
         
         
