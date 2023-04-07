@@ -1,23 +1,45 @@
+const int MOD = 1e9 + 7;
 class Solution {
 public:
-    int maxArea(int h, int w, vector<int>& hC, vector<int>& vC) {
+    
+    
+    int maxArea(int h, int w, vector<int>& horizontalCuts, vector<int>& verticalCuts) {
+        long int maxHeight = getMaxGap(horizontalCuts, h),
+            maxWidth = getMaxGap(verticalCuts, w);
         
+        return (maxWidth * maxHeight) % MOD;
+    }
+    
+    int getMaxGap(const vector<int>& cuts, const int size) {
+        int minCut = *min_element(begin(cuts), end(cuts)),
+            maxCut = *max_element(begin(cuts), end(cuts));
+        int bucketSize = max(1, (maxCut - minCut) / (int) cuts.size()),
+            prevBucketMax = minCut,
+            ans = max(minCut, size - maxCut);
+        vector<tuple<bool, int, int>> buckets((maxCut - minCut) / bucketSize + 1, {false, INT_MAX, INT_MIN});
         
-         hC.push_back(h);
-        sort(hC.begin(), hC.end());
-		int maxh = hC[0];
-        for(int i=1; i<hC.size(); i++){
-            maxh = max(maxh, hC[i] - hC[i-1]);
+        for (const int& cut: cuts) {
+            int bucketIdx = (cut - minCut) / bucketSize;
+            
+            get<0>(buckets[bucketIdx]) = true;
+            get<1>(buckets[bucketIdx]) = min(get<1>(buckets[bucketIdx]), cut);
+            get<2>(buckets[bucketIdx]) = max(get<2>(buckets[bucketIdx]), cut);
         }
         
-        vC.push_back(w);
-        sort(vC.begin(), vC.end());
-		int maxv = vC[0];
-        for(int i=1; i<vC.size(); i++){
-            maxv = max(maxv, vC[i] - vC[i-1]);
+        for (auto &[used, bucketMin, bucketMax]: buckets) {
+            if (not used) {
+                continue;
+            }
+            
+            ans = max(ans, bucketMin - prevBucketMax);
+            prevBucketMax = bucketMax;
         }
-		
-        return (1LL*maxh*maxv) % 1000000007; //1LL used to make the product long long or integer sign overflow will occur.
+
+        return ans;
+    
+    // int maxArea(int h, int w, vector<int>& hC, vector<int>& vC) {
+        
+        
         
 //         HCuts.push_back(h);
 //         HCuts.push_back(0);
