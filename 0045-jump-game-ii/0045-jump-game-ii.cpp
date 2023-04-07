@@ -5,11 +5,12 @@ public:
         int currReach = 0;
         int maxReach = 0;
         int jumps=0;
+        int n = nums.size();
         
-        if(nums.size()<=1) return 0;
-        if(nums[0]>=nums.size()-1) return 1;
+        if(n<=1) return 0;
+        if(nums[0]>=n-1) return 1;
         
-        for(int i=0;i<nums.size()-1;i++){
+        for(int i=0;i<n-1;i++){
             
             if(i+nums[i] > maxReach){
                 maxReach = i+nums[i];
@@ -19,8 +20,6 @@ public:
                 currReach = maxReach;
                 jumps++;
             }
-            
-            
         
         }
         
