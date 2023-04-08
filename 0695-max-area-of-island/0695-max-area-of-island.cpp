@@ -20,8 +20,8 @@ public:
     
     void getCnt(vector<vector<int>> &grid, int m, int n, int i, int j,int &count){
          
-        if( i<0 || i==m || j<0 || j==n || grid[i][j] == 0 || grid[i][j] == '*') return;
-        grid[i][j] = '*';
+        if( i<0 || i==m || j<0 || j==n || grid[i][j] == 0) return;
+        grid[i][j] = 0;
         count++;
         vector<int> x = {0,0,1,-1};
         vector<int> y = {-1,1,0,0};        
