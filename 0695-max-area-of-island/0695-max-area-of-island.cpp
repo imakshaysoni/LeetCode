@@ -8,7 +8,9 @@ public:
         int maxCount = 0;
         for(int i=0;i<m;i++){
             for(int j=0;j<n;j++){
-                getCnt(grid, m,n,i,j,count);
+                if(grid[i][j]){
+                    getCnt(grid, m,n,i,j,count);
+                }
                 maxCount = max(maxCount,count);
                 count=0;
             }
