@@ -8,11 +8,10 @@ public:
         int m = grid.size();
         int n = grid[0].size();
         int count = 0;
-        int maxCount = INT_MIN;
+        int maxCount = 0;
         for(int i=0;i<m;i++){
             for(int j=0;j<n;j++){
                 getCnt(grid, m,n,i,j,count);
-                cout<<count<<" ";
                 maxCount = max(maxCount,count);
                 count=0;
             }
@@ -26,8 +25,6 @@ public:
     void getCnt(vector<vector<int>> &grid, int m, int n, int i, int j,int &count){
          
         if( i<0 || i==m || j<0 || j==n || grid[i][j] == 0 || grid[i][j] == '*') return;
-        
-        int temp = grid[i][j];
         grid[i][j] = '*';
         count++;
         vector<int> x = {0,0,1,-1};
@@ -36,7 +33,6 @@ public:
         for(int index=0;index<4;index++){
             getCnt(grid, m, n, i+x[index], j+y[index], count);    
         }
-        // grid[i][j] = temp;
         return;     
         
     }
