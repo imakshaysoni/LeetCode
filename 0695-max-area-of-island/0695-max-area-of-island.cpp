@@ -1,8 +1,5 @@
 class Solution {
-public:
-      
-    
-    
+public:    
     int maxAreaOfIsland(vector<vector<int>>& grid) {
 //         FLood FIll Algorithm
         int m = grid.size();
@@ -15,12 +12,9 @@ public:
                 maxCount = max(maxCount,count);
                 count=0;
             }
-        }
-        
-        return maxCount;        
-        
+        }        
+        return maxCount;                
     }
-    
     
     void getCnt(vector<vector<int>> &grid, int m, int n, int i, int j,int &count){
          
@@ -33,8 +27,7 @@ public:
         for(int index=0;index<4;index++){
             getCnt(grid, m, n, i+x[index], j+y[index], count);    
         }
-        return;     
-        
+        return;   
     }
     
 };
