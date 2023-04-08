@@ -1,32 +1,35 @@
 class Solution {
-public:
-    
-    int utility(vector<vector<int>>& grid, int i, int j)
-    {
-        if(i<0 || i>=grid.size() || j<0 || j>=grid[0].size())
-            return 0;
-        if(grid[i][j]==0)
-            return 0;
-       
-        grid[i][j]=0;
-         
-            
-        return (1+ utility(grid, i+1, j) + utility(grid, i, j+1) + utility(grid, i-1, j) + utility(grid, i, j-1));
-    }
-    
-    
+public:    
     int maxAreaOfIsland(vector<vector<int>>& grid) {
-        int n = grid.size();
-        int m = grid[0].size();
-        int ans = 0, x =0;
-        for(int i=0;i<n;i++)
-            for(int j=0;j<m;j++)
-            {
-                if(grid[i][j])
-                    x = utility(grid, i, j);
-                
-                ans = max(ans, x);
+//         FLood FIll Algorithm
+        int m = grid.size();
+        int n = grid[0].size();
+        int count = 0;
+        int maxCount = 0;
+        for(int i=0;i<m;i++){
+            for(int j=0;j<n;j++){
+                if(grid[i][j]){
+                    getCnt(grid, m,n,i,j,count);
+                }
+                maxCount = max(maxCount,count);
+                count=0;
             }
-        return ans;
+        }        
+        return maxCount;                
     }
+    
+    void getCnt(vector<vector<int>> &grid, int m, int n, int i, int j,int &count){
+         
+        if( i<0 || i==m || j<0 || j==n || grid[i][j] == 0) return;
+        grid[i][j] = 0;
+        count++;
+        vector<int> x = {0,0,1,-1};
+        vector<int> y = {-1,1,0,0};        
+    
+        for(int index=0;index<4;index++){
+            getCnt(grid, m, n, i+x[index], j+y[index], count);    
+        }
+        return;   
+    }
+    
 };
