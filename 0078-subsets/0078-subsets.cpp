@@ -4,16 +4,16 @@ public:
        
         vector<vector<int>> ans;
         vector<int> subset;
-        return subarray(nums,0,subset,ans);
-        // return ans;
+        subarray(nums,0,subset,ans);
+        return ans;
         
     }
     
-    vector<vector<int>> subarray(vector<int> &v, int i, vector<int> &subset, vector<vector<int>> &ans){
+   void subarray(vector<int> &v, int i, vector<int> &subset, vector<vector<int>> &ans){
         
         if(i==v.size()) {
             ans.push_back(subset);
-            return ans;
+            return;
         }
         
 //         Include first Term
@@ -24,7 +24,7 @@ public:
         subset.pop_back();
         subarray(v,i+1,subset,ans);
         
-        return ans;
+        return;
         
         
     }
