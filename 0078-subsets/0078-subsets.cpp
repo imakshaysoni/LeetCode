@@ -15,7 +15,7 @@ public:
             ans.push_back(subset);
             return;
         }
-        
+       
 //         Include first Term
         subset.push_back(v[i]);
         subarray(v,i+1,subset,ans);
@@ -23,6 +23,8 @@ public:
 //         Ignore first term
         subset.pop_back();
         subarray(v,i+1,subset,ans);
+       
+       
         
         return;
         
