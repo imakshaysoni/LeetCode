@@ -17,7 +17,7 @@ public:
             return;
         }
         unordered_set<int> s;
-        for(int i=pos;i<v.size();i++){       
+        for(int i=pos;i<v.size();i++){     
             if(s.find(v[i])!=s.end()) continue;
             s.insert(v[i]);
             swap(v[pos],v[i]);
