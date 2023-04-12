@@ -3,6 +3,7 @@ public:
     vector<vector<int>> permuteUnique(vector<int>& nums) {
         
         vector<vector<int>> ans;
+        sort(nums.begin(), nums.end());
         if(nums.size()<2) return {nums};
         helper(nums,0,ans);
         return ans;
@@ -18,7 +19,6 @@ public:
         unordered_set<int> s;
         for(int i=pos;i<v.size();i++){       
             if(s.find(v[i])!=s.end()) continue;
-            // if(i>0 && v[i]==v[i-1]){continue;}
             s.insert(v[i]);
             swap(v[pos],v[i]);
             helper(v,pos+1,ans);
