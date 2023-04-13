@@ -1,20 +1,34 @@
 class Solution {
 public:
-    std::vector<std::vector<int> > subsetsWithDup(std::vector<int> &nums) {
-		std::sort(nums.begin(), nums.end());
-        std::vector<std::vector<int> > res;
-		std::vector<int> vec;
-		subsetsWithDup(res, nums, vec, 0);
-		return res;
+    vector<vector<int>> subsetsWithDup(vector<int>& nums) {
+        sort(nums.begin(),nums.end());
+        vector<vector<int>> ans;
+        vector<int> subset;
+        uniqueSubSets(nums,0, ans, subset);
+        return ans;    
+        
     }
-private:
-	void subsetsWithDup(std::vector<std::vector<int> > &res, std::vector<int> &nums, std::vector<int> &vec, int begin) {
-		res.push_back(vec);
-		for (int i = begin; i != nums.size(); ++i)
-			if (i == begin || nums[i] != nums[i - 1]) { 
-				vec.push_back(nums[i]);
-				subsetsWithDup(res, nums, vec, i + 1);
-				vec.pop_back();
-			}
-	}
+    
+    
+    void uniqueSubSets(vector<int> &v, int i, vector<vector<int>> &ans, vector<int> &subset){
+        
+        
+        // if(i>=v.size()){
+        //     ans.push_back(subset);
+        //     return;
+        // }
+        
+        ans.push_back(subset);
+        
+        for(int k=i;k<v.size();k++){
+            if(i == k || v[k]!=v[k-1])
+            {subset.push_back(v[k]);
+            uniqueSubSets(v,k+1,ans,subset);
+            subset.pop_back();}
+        }
+        
+        
+    }
+        
+    
 };
