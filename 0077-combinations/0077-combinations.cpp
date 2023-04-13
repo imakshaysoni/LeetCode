@@ -10,7 +10,7 @@ public:
         return ans;
     }
     
-    void helper(int i ,int n, int k, vector<vector<int>> &ans, vector<int> subset){
+    void helper(int i ,int n, int k, vector<vector<int>> &ans, vector<int> &subset){
         
         
         if(subset.size()==k){ ans.push_back(subset); return;}
