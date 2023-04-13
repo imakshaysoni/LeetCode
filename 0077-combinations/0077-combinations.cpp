@@ -18,6 +18,7 @@ public:
             ans.push_back(subSets);
             return;
         }
+        if(k > n - i +1) return;
         if(i>n) return;
                 
 //         Taking the first term
