@@ -16,15 +16,12 @@ public:
                 
         
         if(target==0){
-            // if(find(ans.begin(),ans.end(), subset) != ans.end()){ return; }
             ans.push_back(subset); return;
         }
         
         if(target<0) return;
         
         if(i>=c.size()) return;
-        
-        
         
         subset.push_back(c[i]);       
         helper(c,target-c[i],i+1,subset,ans);
