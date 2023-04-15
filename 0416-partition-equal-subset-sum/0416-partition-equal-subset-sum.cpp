@@ -7,7 +7,7 @@ public:
         for(auto x: nums){
             sum+=x;
         }
-        if(sum%2!= 0) return false;
+        if(sum%2 & 1) return false;
         int target = sum/2;
         
         vector<vector<int>> dp(nums.size(),vector<int>(target+1,-1));
