@@ -1,45 +1,52 @@
 class Solution {
 public:
-    bool exist(vector<vector<char>>& b, string word) {
-     
+    bool exist(vector<vector<char>>& board, string word) {
         
-        int m=b.size();
-        if(m==0) return false;
-        int n = b[0].size();
         
-        for(int i=0;i<m;i++){
-            for(int j=0;j<n;j++){
-                
-                if(b[i][j]==word[0]){
-                    if(helper(b, i, j, m, n, 0, word)) return true;
+        int r = board.size();
+        int c = board[0].size();
+        if(word.size() > r*c) return false;
+        
+        int arr[128] = {0}; 
+        for(auto &v: board){
+            for(auto c: v){
+                arr[ c ]++; 
+            }
+        }
+        for(auto c: word){
+            if(--arr[c] < 0 ) return false;
+        }
+        
+        
+        for(int i=0;i<board.size();i++){
+            for(int j=0;j<board[0].size();j++){
+                if(board[i][j] == word[0]){
+                    if(helper(board, word, i, j, 0)) return true;
                 }
             }
         }
-     return false;
+        return false;
     }
     
-    
-    bool helper(vector<vector<char>> &b, int i, int j, int m, int n, int k, string word){
-        if(k >= word.size() ) return true;
-        if( i<0 || j<0 || i>=m || j>=n || b[i][j]=='.' || b[i][j]!=word[k]) return false;
-        if(word.size()==1 && word[k]==b[i][j]) return true;
+    bool helper(vector<vector<char>> &board, string &word, int i, int j, int k){
         
-        b[i][j]='.';
-        int temp=false;
+        if(k >= word.size()) return true;
+       
+        if(i < 0 || j < 0 || i>=board.size() || j>=board[0].size() || board[i][j] != word[k]) return false;
         
-        int x[4] = {0,0,-1,1};
-        int y[4] = {-1,1,0,0};
+        if(board[i][j] == '.') return false;
+        
+        board[i][j] = '.';
+        vector<int> dx = {0,0,1,-1};
+        vector<int> dy = {1, -1, 0, 0};
+        
+        bool temp = false;
         for(int index=0;index<4;index++){
-            temp = temp || helper(b,i+x[index],j+y[index],m,n,k+1,word);
+            temp = temp || helper(board, word, i+dx[index], j+dy[index], k+1);
         }
         
-        // temp = temp || helper(b, i-1, j, m, n , k+1, word);
-        // temp = temp || helper(b, i+1, j, m, n , k+1, word);
-        // temp = temp || helper(b, i, j-1, m, n , k+1, word);
-        // temp = temp || helper(b, i, j+1, m, n , k+1, word);
-        
-        b[i][j]=word[k];
-        return temp;
+        board[i][j] = word[k];
+        return temp;       
         
     }
 };
