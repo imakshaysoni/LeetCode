@@ -17,6 +17,12 @@ public:
             if(--arr[c] < 0 ) return false;
         }
         
+        int left_pref = word.find_first_not_of(word[0]);
+        int right_pref = word.size() - word.find_last_not_of(word.back());
+        if(left_pref > right_pref) {
+            reverse(word.begin(), word.end());
+        }
+        
         
         for(int i=0;i<board.size();i++){
             for(int j=0;j<board[0].size();j++){
