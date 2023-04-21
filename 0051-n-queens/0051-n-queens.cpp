@@ -27,15 +27,23 @@ public:
             
         }
                 
-    int isValid(vector<string> &board, int row, int col){
-         for(int i=row;i>=0;--i)
-            if(board[i][col] == 'Q') return false;
-        // check left diagonal
-        for(int i=row,j=col;i>=0&&j>=0;--i,--j)
-            if(board[i][j] == 'Q') return false;
-        //check right diagonal
-        for(int i=row,j=col;i>=0&&j<board.size();--i,++j)
-            if(board[i][j] == 'Q') return false;
-        return true;      
+    int isValid(vector<string> &Q, int row, int col){
+        
+        
+//         Check Columns
+        for(int i=row;i>=0;--i)
+            if(Q[i][col] == 'Q') return false;
+        
+//         Check left diagone
+        for(int i=row,j=col; i>=0 && j>=0 ; i--, j--){
+            if(Q[i][j]=='Q') return false;
+        }
+//         Check right diagonal
+        for(int i=row,j=col; i>=0 && j<Q.size() ;i--,j++){
+            if(Q[i][j]=='Q') return false;
+        }
+        
+        return true;
+        
         }    
 };
