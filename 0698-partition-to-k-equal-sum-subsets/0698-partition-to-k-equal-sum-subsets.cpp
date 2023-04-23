@@ -8,7 +8,7 @@ public:
         
         if(sum%k!=0 || k > sum)  return false;
         int target = sum/k;
-        
+        sort(nums.begin(), nums.end(), greater<int>());
         vector<int> buckets(k,0);
         return helper(nums, buckets, target, 0, k);
         
