@@ -24,8 +24,7 @@ public:
             return true;
         }
         
-        for(int i=0; i< k ; i++){
-            
+        for(int i=0; i< k ; i++){           
         
             if(buckets[i]+nums[index] > target) continue;
             
