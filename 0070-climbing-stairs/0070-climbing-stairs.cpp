@@ -3,7 +3,7 @@ public:
     int climbStairs(int n) {
         
         int ways=0;
-        vector<int> dp(n*n, -1);
+        vector<int> dp(n+1, -1);
         ways = helper(n, dp, 0);
         return ways;
         
