@@ -12,7 +12,8 @@ public:
     
     
     int helper(string &s, int i, vector<int> &dp){        
-        if(i>=s.size()) return 1;
+        if(i==s.size()) return 1;
+        if(i>s.size()) return 0;
         int ans =0;
         int op1 = s[i]-'0';
         int op2;
@@ -24,7 +25,6 @@ public:
         if(op1>0 && op2>0 && op2 <=26) ans+=helper(s,i+2,dp);
         
         return dp[i]=ans;       
-        
         
     }
     
