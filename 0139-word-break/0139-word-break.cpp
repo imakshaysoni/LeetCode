@@ -1,30 +1,31 @@
 class Solution{
 public:
     bool wordBreak(string s, vector<string> &wordDict) {
-        if(wordDict.size()==0) return false;
+    vector<int> dp(301,-1);
+    return helper(s,wordDict, 0, dp);
+    
+    }
+    
+    bool helper(string &s, vector<string> &wordDict, int i, vector<int> &dp){
         
-        vector<bool> dp(s.size()+1,false);
-        dp[0]=true;
+        if(i==s.size()) dp[i]=1;
         
-        for(int i=1;i<=s.size();i++)
-        {
-            for(int j=i-1;j>=0;j--)
-            {
-                if(dp[j])
-                {
-                    string word = s.substr(j,i-j);
-                    if(find(wordDict.begin(),wordDict.end(),s.substr(j,i-j))
-                                                    != wordDict.end())
-                    {
-                        dp[i]=true;
-                        break; //next i
-                    }
-                }
+        if(dp[i]!=-1) return dp[i];
+        string temp;
+        for(int k=i;k<s.size();k++){
+            temp+=s[k];
+            if (find(begin(wordDict), end(wordDict), temp) != end(wordDict)){
+                if(helper(s,wordDict,k+1, dp)) {
+                    dp[i]=1;
+                    return dp[i];
+            }            
             }
         }
-        
-        return dp[s.size()];
+        dp[i]=0;
+        return dp[i];
     }
+    
+    
 
 };
 //  NOT WOKRING
