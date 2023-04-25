@@ -1,12 +1,37 @@
 class Solution{
 public:
     bool wordBreak(string s, vector<string> &wordDict) {
+    unordered_set<string> st;
+    for(auto x: wordDict){
+        st.insert(x);
+    }
     vector<int> dp(301,-1);
-    return helper(s,wordDict, 0, dp);
+    return helper(s,st, 0, dp);
+        // string temp="";
+        // return helper(s,wordDict,0,temp);
     
     }
     
-    bool helper(string &s, vector<string> &wordDict, int i, vector<int> &dp){
+    
+//     bool helper(string &s, vector<string> &wordDict, int i, string &temp){
+        
+//        if(i==s.size()) return true;
+        
+//         temp+=s[i];      
+//         if (find(begin(wordDict), end(wordDict), temp) != end(wordDict)){
+//              temp="";
+//             if(helper(s,wordDict,i+1,temp)) return true;
+//             return false;
+//          }
+        
+//         return helper(s,wordDict,i+1, temp);
+        
+//     }
+    
+    
+    
+    
+    bool helper(string &s, unordered_set<string> &wordDict, int i, vector<int> &dp){
         
         if(i==s.size()) dp[i]=1;
         
@@ -14,7 +39,8 @@ public:
         string temp;
         for(int k=i;k<s.size();k++){
             temp+=s[k];
-            if (find(begin(wordDict), end(wordDict), temp) != end(wordDict)){
+            // if (find(begin(wordDict), end(wordDict), temp) != end(wordDict)){
+            if(wordDict.find(temp)!=wordDict.end()){
                 if(helper(s,wordDict,k+1, dp)) {
                     dp[i]=1;
                     return dp[i];
