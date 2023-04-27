@@ -1,40 +1,58 @@
 class Solution {
 public:
-    // int count  = 0;
+    // int minAns=INT_MAX;
     int coinChange(vector<int>& coins, int amount) {
-        sort(coins.begin(), coins.end());
-        int s=0;
-        // vector<vector<int>> dp(coins.size()+1,vector<int> (amount+1,-1));
-         vector<vector<int>>dp(coins.size()+1,vector<int>(amount+1,-1));
-        int ans = helper(coins, amount, 0, dp);
-        return (ans < INT_MAX-1)?ans:-1;
+//         Method 1 Executor
+        // vector<vector<int>> dp(coins.size()+1, vector<int> (amount+1, -1));
+        // int ans = helper(coins, amount, 0, 0, dp);
+        // if(ans==INT_MAX) return -1;
+        // return ans;
         
+//         Method 2
+        vector<int> dp(amount+1,-1);
+        int ans = helper(coins, amount, dp);
         
+        if(ans==INT_MAX-1) return -1;
+        return ans;
         
     }
     
     
-    int helper(vector<int> &coins, int amount, int i, vector<vector<int>> &dp){
-        // if(amount == 0) return 0;
+//     Method 1 (GIving TLE, After Adding DP not working)
+//     int helper(vector<int> &coins, int amount, int i, int ans, vector<vector<int>> &dp){
         
-        // if(n < 0 || amount < 0) return INT_MAX-1;      
         
-        if(amount==0) return 0;       
-        if(i>=coins.size() || amount < 0) return INT_MAX-1;
+//         if(amount==0){
+//             return ans;
+//         }
+//         if(amount<0 || i>=coins.size()) return INT_MAX;
         
-        if(dp[i][amount]!=-1) return dp[i][amount];
+//         if(dp[i][amount] != -1) return dp[i][amount];
         
-        int op1 = 1+helper(coins, amount-coins[i], i, dp);
-        int op2 = helper(coins, amount, i+1, dp);
-        dp[i][amount] = min(op1,op2);
-        return dp[i][amount];
-        
-        // return min(op1,op2);
-//         if(op1&&op2) {
-//             cout<<op1<<" "<<op2<<endl;
-//             return min(op1,op2);}
-//         if(op1) return op1;
-//         else return op2;
-        
-    }
+//         int op1 = helper(coins, amount-coins[i], i, ans+1, dp);
+//         int op2 = helper(coins, amount, i+1, ans, dp);
+//         dp[i][amount] = min(op1,op2);
+//         return dp[i][amount];
+//         // return min(op1,op2);
+//     }
+    
+    
+//     Method 2
+    
+        int helper(vector<int> &coins, int amount, vector<int> &dp){
+            if(amount==0) return 0;
+            if(amount<0) return INT_MAX-1;
+            
+            if(dp[amount]!=-1) return dp[amount];
+            
+            int minAns=INT_MAX-1;
+            for(int i=0;i<coins.size();i++){
+                int ans = 1 + helper(coins, amount-coins[i], dp);
+                minAns = min(ans, minAns);
+            }
+            dp[amount] = minAns;
+            
+            return dp[amount];
+            
+        }
 };
