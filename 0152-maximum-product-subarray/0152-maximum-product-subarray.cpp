@@ -21,6 +21,21 @@ public:
         return ans;
         
         
+//         for(int n: nums){
+//             if(n>0){
+//                 maxProd*=n;
+//                 minProd=min(minProd*n,1);
+//             }
+//             if(n<0){
+                
+//                 int temp = maxProd;
+//                 maxProd = max(1,minProd * n);
+//                 minProd = temp*n;
+//             }
+//             if(n==0){ minProd=minProd=1;}
+//             else ans = max(maxProd,ans);
+//         }
+//         return ans;
         
     }
 };
