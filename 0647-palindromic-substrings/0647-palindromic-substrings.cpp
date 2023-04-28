@@ -2,18 +2,23 @@ class Solution {
 public:
     int countSubstrings(string s) {
         
+        vector<vector<int>> dp(s.size()+1,vector<int> (s.size()+1,-1));
         int count=0;
         for(int i=0;i<s.size();i++){
             for(int j=i;j<s.size();j++){
-                count += helper(s,i,j);
+                if(dp[i][j]!=-1) {
+                    count += dp[i][j];
+                    continue;
+                }
+                count += helper(s,i,j, dp);
             }
         }
         return count;
     }
     
-    int helper(string &s, int i, int j){
-        if(i>=j) return 1;
-        return s[i] == s[j] ? helper(s,i+1,j-1) : 0;
+    int helper(string &s, int i, int j, vector<vector<int>> &dp){
+        if(i>=j) return dp[i][j]=1;
+        return dp[i][j] = s[i] == s[j] ? helper(s,i+1,j-1, dp) : 0;
     }
         
         
