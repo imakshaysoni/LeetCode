@@ -15,7 +15,7 @@ public:
             map[sum]++;
         }
         
-        for(auto x: map) cout<<x.first<<"->"<<x.second<<endl;
+        // for(auto x: map) cout<<x.first<<"->"<<x.second<<endl;
         return count;
         
     }
