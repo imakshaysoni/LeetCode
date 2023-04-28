@@ -2,20 +2,16 @@ class Solution {
 public:
     int subarraysDivByK(vector<int>& A, int K) {
      
-        unordered_map<int, int> remainders;
-        remainders[0] = 1;
-        int count = 0, running_sum = 0;
-        for (int i = 0; i < A.size(); i++) {
-            running_sum = (running_sum + A[i]) % K;
-            if (running_sum < 0) running_sum += K; // fix negative modulo
-            if (remainders.count(running_sum)) {
-                count += remainders[running_sum];
-                remainders[running_sum]++;
-            } else {
-                remainders[running_sum] = 1;
-            }
-        }
-        return count;
+       vector<int> counts(K, 0);
+    counts[0] = 1;
+    int count = 0, running_sum = 0;
+    for (int i = 0; i < A.size(); i++) {
+        running_sum = (running_sum + A[i]) % K;
+        if (running_sum < 0) running_sum += K; // fix negative modulo
+        count += counts[running_sum];
+        counts[running_sum]++;
+    }
+    return count;
 //         unordered_map<int,int> map;
         
 //         int sum=0;
