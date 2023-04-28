@@ -1,27 +1,25 @@
-// class Solution {
-// public:
-//     int countSubstrings(string s) {
+class Solution {
+public:
+    int countSubstrings(string s) {       
         
-        
-        
-// //         vector<vector<int>> dp(s.size()+1,vector<int> (s.size()+1,-1));
-// //         int count=0;
-// //         for(int i=0;i<s.size();i++){
-// //             for(int j=i;j<s.size();j++){
-// //                 if(dp[i][j]!=-1) {
-// //                     count += dp[i][j];
-// //                     continue;
-// //                 }
-// //                 count += helper(s,i,j, dp);
-// //             }
-// //         }
-// //         return count;
-// //     }
+        vector<vector<int>> dp(s.size()+1,vector<int> (s.size()+1,-1));
+        int count=0;
+        for(int i=0;i<s.size();i++){
+            for(int j=i;j<s.size();j++){
+                if(dp[i][j]!=-1) {
+                    count += dp[i][j];
+                    continue;
+                }
+                count += helper(s,i,j, dp);
+            }
+        }
+        return count;
+    }
     
-// //     int helper(string &s, int i, int j, vector<vector<int>> &dp){
-// //         if(i>=j) return dp[i][j]=1;
-// //         return dp[i][j] = s[i] == s[j] ? helper(s,i+1,j-1, dp) : 0;
-// //     }
+    int helper(string &s, int i, int j, vector<vector<int>> &dp){
+        if(i>=j) return dp[i][j]=1;
+        return dp[i][j] = s[i] == s[j] ? helper(s,i+1,j-1, dp) : 0;
+    }
         
         
         
@@ -52,26 +50,28 @@
 // //         }
 // //         return 1;
 // //     }
-// };
-
-class Solution {
-public:
-    int countSubstrings(string s) {
-        int n = s.size();
-        int cnt = 0;
-        for(int i = 0; i < n; i++) {
-            palindromic(s, i, i, cnt);  //judge odd substring
-            palindromic(s, i, i+1, cnt);//judge even substring
-        }
-        return cnt;
-    }
-    
-private:
-    void palindromic(string s, int left, int right, int& cnt) { //judge if a substring is palindromic
-        while(left >=0 && right < s.size() && s[left] == s[right]) {
-            cnt++;
-            left--;
-            right++;
-        }
-    }
 };
+
+
+//  TRICKY LOGIC
+// class Solution {
+// public:
+//     int countSubstrings(string s) {
+//         int n = s.size();
+//         int cnt = 0;
+//         for(int i = 0; i < n; i++) {
+//             palindromic(s, i, i, cnt);  //judge odd substring
+//             palindromic(s, i, i+1, cnt);//judge even substring
+//         }
+//         return cnt;
+//     }
+    
+// private:
+//     void palindromic(string s, int left, int right, int& cnt) { //judge if a substring is palindromic
+//         while(left >=0 && right < s.size() && s[left] == s[right]) {
+//             cnt++;
+//             left--;
+//             right++;
+//         }
+//     }
+// };
