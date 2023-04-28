@@ -2,24 +2,50 @@ class Solution {
 public:
     int countSubstrings(string s) {       
         
-        vector<vector<int>> dp(s.size()+1,vector<int> (s.size()+1,-1));
-        int count=0;
-        for(int i=0;i<s.size();i++){
-            for(int j=i;j<s.size();j++){
-                if(dp[i][j]!=-1) {
-                    count += dp[i][j];
-                    continue;
-                }
-                count += helper(s,i,j, dp);
+         int n = s.size();
+        if(n==0 || n==1){
+            return n;
+        }
+        int cnt = 0;
+        for(int i=0;i<n; i++){
+            int j = i;
+            int k = i;
+            //odd
+            while(j>=0 && k<n && s[j]== s[k]){
+                j--;
+                k++;
+                cnt++;
+            }
+            //evenn 
+            j = i;
+            k = i+1;
+            while(j>=0 && k<n && s[j]==s[k]){
+                j--;
+                k++;
+                cnt++;
             }
         }
-        return count;
+        return cnt;
     }
+        
+//         vector<vector<int>> dp(s.size()+1,vector<int> (s.size()+1,-1));
+//         int count=0;
+//         for(int i=0;i<s.size();i++){
+//             for(int j=i;j<s.size();j++){
+//                 if(dp[i][j]!=-1) {
+//                     count += dp[i][j];
+//                     continue;
+//                 }
+//                 count += helper(s,i,j, dp);
+//             }
+//         }
+//         return count;
+//     }
     
-    int helper(string &s, int i, int j, vector<vector<int>> &dp){
-        if(i>=j) return dp[i][j]=1;
-        return dp[i][j] = s[i] == s[j] ? helper(s,i+1,j-1, dp) : 0;
-    }
+//     int helper(string &s, int i, int j, vector<vector<int>> &dp){
+//         if(i>=j) return dp[i][j]=1;
+//         return dp[i][j] = s[i] == s[j] ? helper(s,i+1,j-1, dp) : 0;
+//     }
         
         
         
