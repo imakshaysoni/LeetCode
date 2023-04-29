@@ -4,32 +4,32 @@ public:
     vector<vector<int>> ms = { {4, 6}, {6, 8}, {7, 9}, {4, 8}, {3, 9, 0}, {}, {1, 7, 0}, {2, 6}, {1, 3}, {4, 2}};
     int final_ans=0;
     int knightDialer(int n) {
-        vector<vector<int>> dp(10,vector<int>(n+1,-1));
+        vector<vector<long>> dp(10,vector<long>(n+1,-1));
         if(n==1) return 10;
-        int ans=0;
+        long ans=0L;
         for(int digit=0;digit<10;digit++){
             ans =  (ans%mod + helper(n, digit, dp)%mod)%mod;
         }
         
-        return ans%mod;
+        return static_cast<int>( ans % mod );
     }
     
     
-    int helper(int n, int digit, vector<vector<int>>&dp){
+    int helper(int n, int digit, vector<vector<long>>&dp){
         
         if(n-1==0) return 1;
         
         // if(m[digit][0]==-1) return 0;
         
         if(dp[digit][n]!=-1) return dp[digit][n];
-        int sum=0;
+        long sum=0L;
         // int op1 = helper(n-1, m,m[digit][0])%mod;
         // int op2 = helper(n-1, m,m[digit][1])%mod;
         // int op3=0;
         // if(digit==4 || digit==6) int op3 = helper(n-1, m,m[digit][2])%mod;
         // sum+=op1+op2+op3;
         
-        for(int x: ms[digit]){
+        for(auto x: ms[digit]){
             sum= (sum%mod + helper(n-1,x,dp) % mod)%mod;
         }
         
