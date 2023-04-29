@@ -1,36 +1,52 @@
 class Solution {
 public:
     #define mod 1000000007
-    int ans=0;
-    int knightDialer(int n) {
-     
-        vector<vector<int>> mat(4,vector<int>(3,0));
-        vector<vector<vector<int>>> dp(4, vector<vector<int>>(3, vector<int>(n+1,-1)));
-          for(int i = 0; i < 4; i++) {
-            for(int j = 0; j < 3; j++) {
-                ans = (ans + helper(n,mat, i, j, dp)%mod) % mod;
-                }
-        }
-        return ans%mod;
+    vector<vector<int>> ms = { {4, 6}, {6, 8}, {7, 9}, {4, 8}, {3, 9, 0}, {}, {1, 7, 0}, {2, 6}, {1, 3}, {4, 2}};
+    int final_ans=0;
+    int knightDialer(int N) {
+        unordered_map<int, vector<int>> m;
+        
+         vector<int> d1(10, 1), d2(10);
+  for (; --N > 0; swap(d1, d2))
+    for (auto i = 0; i < 10; ++i) 
+        d2[i] = accumulate(begin(ms[i]), end(ms[i]), 0, [&](int s, int i) {return (s + d1[i]) % 1000000007;});
+  return accumulate(begin(d1), end(d1), 0, [](int s, int n) {return (s + n) % 1000000007;});
+        
+        
+//         m[1] = {6, 8};
+//         m[2] = {7, 9};
+//         m[3] = {4, 8};
+//         m[4] = {0, 3, 9};
+//         m[5] = {-1,-1};
+//         m[6] = {0, 1, 7};
+//         m[7] = {2, 6};
+//         m[8] = {1, 3};
+//         m[9] = {2, 4};
+//         m[0] = {4, 6};
+//         if(n==1) return 10;
+//         int ans=0;
+//         for(int i=0;i<n;i++){
+//             ans += helper(n, m, 0)%mod;
+//         }
+        
+//         return ans;
     }
     
-    int helper(int n, vector<vector<int>> &m, int i, int j, vector<vector<vector<int>>> &dp){
+    
+    int helper(int n, unordered_map<int,vector<int>> &m, int index){
         
+        if(n==0) return 1;
+        if(index==-1) return 0;
+        int sum=0;
+        for(int i=0;i<n;i++){
+            int op1 = helper(n-1, m,m[index][0])%mod;
+            int op2 = helper(n-1, m,m[index][1])%mod;
+            int op3=0;
+            if(index==4 || index==6) int op3 = helper(n-1, m,m[index][2])%mod;
+            sum+=op1+op2+op3;
+        }       
         
-        if(i<0 || i>=4 || j<0 || j>=3 || (i==3 && j!=1) ) return 0;
-        
-        if(n==1) return 1;
-        
-        if(dp[i][j][n]!=-1) return dp[i][j][n]%mod;
-        
-        vector<int> dx = {-2,-2,-1,-1, 1, 1, 2, 2};
-        vector<int> dy = {-1, 1, 2,-2, 2,-2,-1, 1};
-        dp[i][j][n] = 0;
-        for(int index=0;index<8;index++){
-            dp[i][j][n]  = dp[i][j][n]%mod  + helper(n-1,m, i+dx[index], j+dy[index], dp)%mod;
-        }
-        return dp[i][j][n]%mod;
+        return sum;
         
     }
-    
 };
