@@ -8,7 +8,7 @@ public:
         if(n==1) return 10;
         long ans=0L;
         for(int digit=0;digit<10;digit++){
-            ans =  (ans%mod + helper(n, digit, dp)%mod)%mod;
+            ans += helper(n, digit, dp) % mod;
         }
         
         return static_cast<int>( ans % mod );
