@@ -30,7 +30,7 @@ public:
         // sum+=op1+op2+op3;
         
         for(auto x: ms[digit]){
-            sum= (sum%mod + helper(n-1,x,dp) % mod)%mod;
+            sum+=helper(n-1,x,dp) % mod;
         }
         
         return dp[digit][n] = sum%mod;
