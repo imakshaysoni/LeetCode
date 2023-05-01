@@ -2,7 +2,22 @@ class Solution {
 public:
     int result=0;
     int countSquares(vector<vector<int>>& matrix) {
-        vector<vector<int>> dp(matrix.size()+1, vector<int> (matrix[0].size(),-1));
+        vector<vector<int>> dp(matrix.size()+1, vector<int> (matrix[0].size()+1,0));
+        for(int i=matrix.size()-1;i>=0;i--){
+            for(int j=matrix[0].size()-1;j>=0;j--){
+                if(matrix[i][j]==1){
+                    int right = dp[i][j+1];
+                    int down = dp[i+1][j];
+                    int rightDig = dp[i+1][j+1];
+                    dp[i][j] = 1 + min(right, min(down, rightDig));
+                    result += dp[i][j];
+                }
+                else { dp[i][j]=0; }
+            }
+        }
+        
+        return result;
+        
         for(int i=0;i<matrix.size();i++){
             for(int j=0;j<matrix[0].size();j++){
                 
