@@ -39,24 +39,65 @@
 //     }
 // };
 
-class Solution {
+// class Solution {
+// public:
+//     int longestValidParentheses(string s) {
+//         stack<int> stk;
+//         stk.push(-1);
+//         int ans = 0;
+//         for (int i = 0; i < s.size(); i++) {
+//             if (s[i] == '(') {
+//                 stk.push(i);
+//             } else {
+//                 stk.pop();
+//                 if (stk.empty()) {
+//                     stk.push(i);
+//                 } else {
+//                     ans = max(ans, i - stk.top());
+//                 }
+//             }
+//         }
+//         return ans;
+//     }
+// };
+
+// Double stack
+class Solution{
 public:
-    int longestValidParentheses(string s) {
-        stack<int> stk;
-        stk.push(-1);
-        int ans = 0;
-        for (int i = 0; i < s.size(); i++) {
-            if (s[i] == '(') {
-                stk.push(i);
-            } else {
-                stk.pop();
-                if (stk.empty()) {
-                    stk.push(i);
-                } else {
-                    ans = max(ans, i - stk.top());
-                }
+    int longestValidParentheses(string s){
+        stack<char> ct;
+        stack<int> index;
+        index.push(-1);
+        int maxLen=0;
+        for(int i=0;i<s.size();i++){
+            if(s[i]=='('){
+                ct.push('(');
+                index.push(i);
+                
             }
+            else{
+                if(!ct.empty()){
+                    ct.pop();
+                    index.pop();
+                    maxLen = max(maxLen, i-index.top());
+                }
+                else{
+                    index.push(i);
+                }
+                
+            }
+            
+            
+            
+            
         }
-        return ans;
+        
+        return maxLen;
+        
+        
+        
     }
+    
+    
+    
 };
