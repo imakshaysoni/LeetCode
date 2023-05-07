@@ -2,7 +2,9 @@ class Solution {
 public:
     unordered_map<int,bool> mp;
     bool canCross(vector<int>& stones) {
-         
+        for(int x: stones){
+            mp[x]=true;
+        }
         int n = stones.size();
         vector<vector<int>> dp(n+1, vector<int> (n+1,-1));
         return solve(stones, 0, 1, dp);
