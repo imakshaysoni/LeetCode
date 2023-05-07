@@ -42,28 +42,44 @@
 //         return -1;
 //     }
 // };
+
 class Solution {
 public:
-    bool canCross(vector<int>& stones) {
-        int N = stones.size();
-        vector<vector<bool>> dp(N, vector<bool> (N+1, false));
-        dp[0][1] = true;
-        
-        for(int i = 1; i < N; ++i){
-            for(int j = 0; j < i; ++j){
-                int diff = stones[i] - stones[j];
-                if(diff > N || !dp[j][diff]) 
-                    continue;
-                
-                if(i == N - 1) 
-                    return true;
-                
-                dp[i][diff] = true;
-                if(diff - 1 >= 0) dp[i][diff - 1] = true;
-                if(diff + 1 <= N) dp[i][diff + 1] = true;
-            }
-        }
+    unordered_map<int,bool> mp;
+    bool recursion(int pos, int prevStep, vector<int>& arr, int n, map<pair<int,int>,bool>& memo){
 
-        return false;
+        if(mp[pos]== false || pos > arr[n-1]) return false;
+        if(pos == arr[n-1]) return true;  
+        if(memo.find({pos,prevStep}) != memo.end()) return memo[{pos,prevStep}];
+
+        bool isPossible;
+
+        if(pos==0){
+            isPossible = recursion(pos+1,1,arr,n,memo);
+        }
+        else{
+            if(prevStep-1>0) 
+                isPossible = recursion(pos+(prevStep-1),prevStep-1,arr,n,memo);
+            if(isPossible) return true;
+            isPossible = recursion(pos+prevStep,prevStep,arr,n,memo);
+            if(isPossible) return true;
+            isPossible = recursion(pos+(prevStep+1),prevStep+1,arr,n,memo);
+            if(isPossible) return true;
+        }
+        
+        memo[{pos,prevStep}] = isPossible;
+        return isPossible;
+
+    }
+
+    bool canCross(vector<int>& stones) {
+        
+        for(auto itr : stones){ 
+            mp[itr] = true;
+           
+        }
+        map<pair<int,int>,bool> memo;
+        int n = stones.size();
+        return recursion(0,1,stones,n,memo);
     }
 };
