@@ -1,9 +1,9 @@
 class Solution {
 public:
+    unordered_map<int,bool> mp;
     bool canCross(vector<int>& stones) {
-    
+         
         int n = stones.size();
-        
         vector<vector<int>> dp(n+1, vector<int> (n+1,-1));
         return solve(stones, 0, 1, dp);
     }
@@ -25,10 +25,12 @@ public:
         
         
         bool op1 = solve(s, index, jumps, dp);
+        if(op1) return dp[index][jumps]=true;
         bool op2 = solve(s, index, jumps-1, dp);
+        if(op2) return dp[index][jumps]=true;
         bool op3 = solve(s, index, jumps+1, dp);
-        
-        return dp[index][jumps] = op1 || op2 || op3;
+        if(op3) return dp[index][jumps]=true;
+        return dp[index][jumps] = false;
         
         
     }
