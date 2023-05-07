@@ -5,34 +5,22 @@ public:
         int m = word1.size();
         int n = word2.size();
         
+        // Recursive 
         // vector<vector<int>> dp(m, vector<int>(n, -1));
         // return helper(word1, word2, m-1, n-1, dp);
         
 //         Converting into bottom up DP
-        vector<vector<int>> dp(m+1, vector<int> (n+1,0));
+        // int DP2 = bottom_up_2D(word1, word2);
+        // return DP2;
         
-        for(int j=0;j<=n;j++) dp[0][j] = j;
-        for(int i=0;i<=m;i++) dp[i][0] = i;
-        
-        for(int i=1;i<=m;i++){
-            for(int j=1;j<=n;j++){
-                if(word1[i-1]==word2[j-1]){
-                    dp[i][j] = dp[i-1][j-1];
-                }
-                else{
-                    dp[i][j] =  1 + min(dp[i][j-1],
-                                   min(dp[i-1][j],
-                                       dp[i-1][j-1]));
-                }
-            }
-        }
-        
-        return dp[m][n];
+//        1D 2 Array Space Optimized
+        int DP1 = bottom_up_1D(word1, word2);
+        return DP1;
         
         
     }
     
-
+// Recursive Approch
     int helper(string &s1, string &s2, int i, int j, vector<vector<int>> &dp){
         
 //         Base Case
@@ -63,5 +51,60 @@ public:
         }
         
         
+    }
+    
+    
+//     2D Array
+    int bottom_up_2D(string &word1, string &word2){
+        int m = word1.size();
+        int n = word2.size();
+        vector<vector<int>> dp(m+1, vector<int> (n+1,0));
+        
+        for(int j=0;j<=n;j++) dp[0][j] = j;
+        for(int i=0;i<=m;i++) dp[i][0] = i;
+        
+        for(int i=1;i<=m;i++){
+            for(int j=1;j<=n;j++){
+                if(word1[i-1]==word2[j-1]){
+                    dp[i][j] = dp[i-1][j-1];
+                }
+                else{
+                    dp[i][j] =  1 + min(dp[i][j-1],
+                                   min(dp[i-1][j],
+                                       dp[i-1][j-1]));
+                }
+            }
+        }
+        
+        return dp[m][n];
+    }
+    
+        
+//     1D Array More Space Optimized
+    int bottom_up_1D(string &word1, string &word2){
+        int m = word1.size();
+        int n = word2.size();
+        vector<int> prev(n+1,0);
+        vector<int> curr(n+1,0);
+        
+        for(int j=0;j<=n;j++) prev[j] = j;
+        // for(int i=0;i<=m;i++) dp[i][0] = i; Not Required
+        
+        for(int i=1;i<=m;i++){
+            curr[0] = i;
+            for(int j=1;j<=n;j++){
+                if(word1[i-1]==word2[j-1]){
+                    curr[j] = prev[j-1];
+                }
+                else{
+                    curr[j] =  1 + min(curr[j-1],
+                                   min(prev[j],
+                                       prev[j-1]));
+                }
+            }
+            prev = curr;
+        }
+        
+        return prev[n];
     }
 };
