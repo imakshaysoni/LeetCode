@@ -5,23 +5,26 @@ public:
         // int n=prices.size();
         // vector<vector<vector<int>>> dp(n+1, vector<vector<int>>(2, vector<int> (4,-1)));
         // return solve(prices, 0, 1, 0, dp);
+        
+        
+//         Tabulation, beacuse Recurssion giving TLE 
         int n=prices.size();
         vector<vector<vector<int>>> dp(n+1, vector<vector<int>>(2, vector<int> (4,0)));
         
 //         
 //         Preparing base Case
         // 1. If index==n then cap/buy can be anything ==0
-        for(int buy=0;buy<=1;buy++){
-            for(int count=0;count<=1;count++){
-                dp[n][buy][count]=0;
-            }
-        }
-//         if count==2 then index/buy can be anything ==0
-        for(int index=0;index<n;index++){
-            for(int buy=0;buy<=1;buy++){
-                dp[index][buy][2]=0;
-            }
-        }
+//         for(int buy=0;buy<=1;buy++){
+//             for(int count=0;count<=1;count++){
+//                 dp[n][buy][count]=0;
+//             }
+//         }
+// //         if count==2 then index/buy can be anything ==0
+//         for(int index=0;index<n;index++){
+//             for(int buy=0;buy<=1;buy++){
+//                 dp[index][buy][2]=0;
+//             }
+//         }
         
         for(int index=n-1;index>=0;index--){
             for(int buy=0;buy<=1;buy++){
