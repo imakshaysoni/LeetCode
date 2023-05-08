@@ -4,8 +4,29 @@ public:
         
         
 //         Recurssion
-        vector<vector<int>> dp(prices.size()+1, vector<int> (2,-1));
-        return solve(prices, 0, 1, dp);
+        // vector<vector<int>> dpRecur(prices.size()+1, vector<int> (2,-1));
+        // return solve(prices, 0, 1, dpRecur);
+        
+//         Tablutation Bottom UP DP
+        int n=prices.size();
+        vector<vector<int>> dp(prices.size()+1, vector<int> (2,0));
+        dp[n][0] = 0;
+        dp[n][1] = 0;
+        for(int index=n-1;index>=0;index--){
+            for(int buy=0;buy<=1;buy++){    
+                int profit;
+                if(buy){
+                    profit = max(dp[index+1][0]-prices[index], dp[index+1][1]);
+                    
+                }
+                else{
+                    profit=max(dp[index+1][1] + prices[index],dp[index+1][0]);
+                }
+                dp[index][buy]=profit;                
+                
+            }            
+        }
+        return dp[0][1];
         
     }
     
