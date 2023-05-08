@@ -9,7 +9,7 @@ public:
         
 //         Tabulation, beacuse Recurssion giving TLE 
         int n=prices.size();
-        vector<vector<vector<int>>> dp(n+1, vector<vector<int>>(2, vector<int> (4,0)));
+        vector<vector<vector<int>>> dp(n+1, vector<vector<int>>(2, vector<int> (3,0)));
         
 //         
 //         Preparing base Case
