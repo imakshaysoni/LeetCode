@@ -9,9 +9,11 @@
 class Solution {
 public:
     void deleteNode(ListNode* node) {
-        ListNode * next = node->next;
-        *node = *next;
-        delete next;
+//         We are not given access to node, so we swap value to next node & delete next node
+        swap(node->val, node->next->val);
+        ListNode *temp = node->next;
+        node->next= temp->next;
+        delete temp;
         
     }
 };
