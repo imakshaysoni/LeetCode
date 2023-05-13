@@ -18,8 +18,9 @@ public:
             slow = slow->next;
             fast = fast->next->next;
         }
-        cout<<slow->val;
+        ListNode * temp =slow->next;
         slow->next = slow->next->next;
+        delete temp;
         return head;
         
     }
