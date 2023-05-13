@@ -34,9 +34,9 @@ public:
         fast = fast->next->next;
         if (slow == fast) {                      // there is a cycle
             while(slow != entry) {               // found the entry location
-                cout<<slow->val<<" "<<entry->val<<endl;
+                // cout<<slow->val<<" "<<entry->val<<endl;
                 slow  = slow->next;
-                cout<<slow->val<<endl;
+                // cout<<slow->val<<endl;
                 entry = entry->next;
             }
             return entry;
