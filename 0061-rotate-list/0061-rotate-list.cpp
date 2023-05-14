@@ -18,7 +18,6 @@ public:
             count++;
             temp = temp->next;
         }
-        cout<<count;
         if(k>count){
             k=k%count;
             if(k==0) return head;
