@@ -11,66 +11,61 @@
 class Solution {
 public:
     ListNode* reverseKGroup(ListNode* head, int k) {
-        if(head==NULL || head->next==NULL || k==1) return head;
+//         Iterative Approch
+        if(head==NULL || head->next==NULL ||k==1) return head;
+        ListNode * dummy = new ListNode(-1);
+        ListNode * beforeStart = dummy;
+        beforeStart->next = head;
         ListNode * start = head;
         ListNode * end = head;
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        for(int i=0;i<k-1;i++) {
-            end = end->next;
-            if(end==NULL) return head;
+        int i=0;
+        while(end!=NULL){
+            i++;
+            if(i%k==0){
+                ListNode * start = beforeStart->next;
+                ListNode * temp = end->next;
+                reverseList(start, end);
+                beforeStart->next = end;
+                start->next = temp;
+                beforeStart= start;
+                end = temp;
+            }
+            else{
+                end = end->next;
+            }
+            
             
         }
-        // cout<<start->val<<" "<<end->val<<endl;
         
-        ListNode * nextHead = reverseKGroup(end->next,k);
-        // cout<<end->val;
-        reverseL(start, end);
-        start->next = nextHead;
-        return end;
+        return dummy->next;
+        
+        
+        
+//         Recursive Approch, TC O(N) && SC =O(n/k) 
+//         if(head==NULL || head->next==NULL || k==1) return head;
+//         ListNode * start = head;
+//         ListNode * end = head;
+        
+//         for(int i=1;i<k;i++) {
+//             end = end->next;
+//             if(end==NULL) return head;
+            
+//         }        
+//         ListNode * nextHead = reverseKGroup(end->next,k);
+//         reverseList(start, end);
+//         start->next = nextHead;
+//         return end;
         
     }
     
-    void reverseL(ListNode * s, ListNode * e){
-	ListNode *p=NULL, *c = s, *n = s->next;
-	while(p!=e){
-		c->next = p;
-		p=c;
-		c=n;
-		if(n!=NULL) n = n->next;
-	}
+    void reverseList(ListNode * start, ListNode * end){
+        ListNode * prev = NULL;
+        ListNode * curr = start;
+        while(prev!=end){
+            ListNode * temp = curr->next;
+            curr->next = prev;
+            prev = curr;
+            if(temp) curr = temp;            
+        }     
     }
-    
-    // ListNode * reverseList(ListNode * start, ListNode * end){
-    //     ListNode * prev = NULL;
-    //     while(start!=end){
-    //         ListNode * temp = start->next;
-    //         start->next = prev;
-    //         prev = start;
-    //         if(temp) start = temp;            
-    //     }     
-    //     return start;
-    // }
 };
