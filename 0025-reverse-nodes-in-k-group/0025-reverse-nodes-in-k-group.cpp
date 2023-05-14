@@ -10,37 +10,67 @@
  */
 class Solution {
 public:
-    ListNode* reverseKGroup(ListNode *head, int k) {
-        int count = 0;
-		ListNode * curr = head;
-		
-		// to check - if set is having more than k elements , otherwise return head
-		while (count != k) {
-			if (curr == NULL) {
-				return head;
-			}
-			curr = curr->next;
-			count++;
-		}
-
-		// to find reverse if we have k elements in set
-		curr = head;
-		ListNode * prev = NULL;
-		count = 0;
-		ListNode * next = NULL;
-		while (count != k) {
-			next = curr->next;
-			curr->next = prev;
-			prev = curr;
-			curr = next;
-			count++;
-		}
-		
-		//assign head of this set to next set prev
-		if (next != NULL) {
-			head->next = reverseKGroup(next, k);
-		}
-
-		return prev;
+    ListNode* reverseKGroup(ListNode* head, int k) {
+        if(head==NULL || head->next==NULL || k==1) return head;
+        ListNode * start = head;
+        ListNode * end = head;
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        for(int i=0;i<k-1;i++) {
+            end = end->next;
+            if(end==NULL) return head;
+            
+        }
+        // cout<<start->val<<" "<<end->val<<endl;
+        
+        ListNode * nextHead = reverseKGroup(end->next,k);
+        // cout<<end->val;
+        reverseL(start, end);
+        start->next = nextHead;
+        return end;
+        
     }
+    
+    void reverseL(ListNode * s, ListNode * e){
+	ListNode *p=NULL, *c = s, *n = s->next;
+	while(p!=e){
+		c->next = p;
+		p=c;
+		c=n;
+		if(n!=NULL) n = n->next;
+	}
+    }
+    
+    // ListNode * reverseList(ListNode * start, ListNode * end){
+    //     ListNode * prev = NULL;
+    //     while(start!=end){
+    //         ListNode * temp = start->next;
+    //         start->next = prev;
+    //         prev = start;
+    //         if(temp) start = temp;            
+    //     }     
+    //     return start;
+    // }
 };
