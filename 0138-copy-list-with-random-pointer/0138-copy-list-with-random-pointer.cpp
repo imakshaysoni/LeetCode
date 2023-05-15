@@ -28,9 +28,8 @@ public:
         
         temp = head;
         while(temp){
-            Node * rand = temp->random;
             m[temp]->next = m[temp->next];
-            m[temp]->random = m[rand];
+            m[temp]->random = m[temp->random];
             temp = temp->next;
         }
         
