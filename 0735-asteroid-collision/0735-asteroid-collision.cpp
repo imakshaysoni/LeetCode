@@ -7,10 +7,9 @@ public:
         stack<int> s2;
         
         for(int x: asteroids){
-            if(st.empty()) st.push(x);
+            if(st.empty() || x>0) st.push(x);
             else
             {
-                if(st.top() > 0 and x < 0 ){
                     while(!st.empty() and st.top()>0 and st.top() < abs(x)){
                         st.pop();                        
                     }
@@ -22,9 +21,6 @@ public:
                     }
                     else if(st.empty()) st.push(x);
                     
-                    
-                }
-                else { st.push(x); }
             }
         }
         
