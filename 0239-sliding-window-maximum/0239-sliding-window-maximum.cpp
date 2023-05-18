@@ -5,12 +5,10 @@ public:
         deque<int> q;
         vector<int> ans;
         for(int i=0;i<nums.size();i++){
-            if(q.empty()) q.push_back(i);
-            
+            if (!q.empty() and q.front() < i-k+1) q.pop_front();
             while(!q.empty() and nums[q.back()] < nums[i]){
                 q.pop_back();
             }
-            while(!q.empty() and q.front() < i-k+1) q.pop_front();
             q.push_back(i);
             if(i>=k-1){
                 ans.push_back(nums[q.front()]);
