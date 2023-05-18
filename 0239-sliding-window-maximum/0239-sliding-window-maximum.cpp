@@ -6,7 +6,7 @@ public:
         vector<int> ans;
         for(int i=0;i<nums.size();i++){
             if (!q.empty() and q.front() < i-k+1) q.pop_front();
-            while(!q.empty() and nums[q.back()] < nums[i]){
+            while(!q.empty() and nums[q.back()] <= nums[i]){
                 q.pop_back();
             }
             q.push_back(i);
