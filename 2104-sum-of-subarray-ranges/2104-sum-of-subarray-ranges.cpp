@@ -69,15 +69,17 @@ public:
         long long ans = 0;
         for (int i = 0; i < n; i++)
         {
-            int prevRangeCount = i - prevSmaller[i];
-            int nextRangeCount = nextSmaller[i] - i;
-            long long minSubarrayCount = (long long)prevRangeCount * nextRangeCount;
-            ans = ans - (long long)(nums[i] * minSubarrayCount);
             
             int prevRangeCount1 = i - prevGreater[i];
             int nextRangeCount1 = nextGreater[i] - i;
             long long maxSubarrayCount = prevRangeCount1 * nextRangeCount1;
             ans = ans + (long long)(nums[i] * maxSubarrayCount);
+            
+            
+            int prevRangeCount = i - prevSmaller[i];
+            int nextRangeCount = nextSmaller[i] - i;
+            long long minSubarrayCount = (long long)prevRangeCount * nextRangeCount;
+            ans = ans - (long long)(nums[i] * minSubarrayCount);
         }
         return ans;
     }
