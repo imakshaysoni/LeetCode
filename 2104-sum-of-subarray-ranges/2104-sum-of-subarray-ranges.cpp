@@ -66,6 +66,19 @@ public:
         vector<int>nextSmaller = getNext(nums, true);
         vector<int>nextGreater = getNext(nums, false);
         //=======================================================
+        
+        cout<<"NextGreater: ";
+        for(auto x: nextGreater) cout<<x<<" ";
+        cout<<endl;
+        cout<<"NextSmaller: ";
+        for(auto x: nextSmaller) cout<<x<<" ";
+        cout<<endl;
+        cout<<"prevGreater: ";
+        for(auto x: prevGreater) cout<<x<<" ";
+        cout<<endl;
+        cout<<"prevSmaller: ";
+        for(auto x: prevSmaller) cout<<x<<" ";
+        cout<<endl;
         long long ans = 0;
         for (int i = 0; i < n; i++)
         {
@@ -73,13 +86,16 @@ public:
             int prevRangeCount1 = i - prevGreater[i];
             int nextRangeCount1 = nextGreater[i] - i;
             long long maxSubarrayCount = prevRangeCount1 * nextRangeCount1;
-            ans = ans - (long long)(nums[i] * maxSubarrayCount);
+            long long mini = (long long)(nums[i] * maxSubarrayCount);
+            // ans = ans + (long long)(nums[i] * maxSubarrayCount);
             
             
             int prevRangeCount = i - prevSmaller[i];
             int nextRangeCount = nextSmaller[i] - i;
             long long minSubarrayCount = (long long)prevRangeCount * nextRangeCount;
-            ans = ans + (long long)(nums[i] * minSubarrayCount);
+            long long maxi = (long long)(nums[i] * minSubarrayCount);
+            // ans = ans - (long long)(nums[i] * minSubarrayCount);
+            ans +=  maxi-mini;
         }
         return abs(ans);
     }
