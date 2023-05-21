@@ -73,14 +73,14 @@ public:
             int prevRangeCount1 = i - prevGreater[i];
             int nextRangeCount1 = nextGreater[i] - i;
             long long maxSubarrayCount = prevRangeCount1 * nextRangeCount1;
-            ans = ans + (long long)(nums[i] * maxSubarrayCount);
+            ans = ans - (long long)(nums[i] * maxSubarrayCount);
             
             
             int prevRangeCount = i - prevSmaller[i];
             int nextRangeCount = nextSmaller[i] - i;
             long long minSubarrayCount = (long long)prevRangeCount * nextRangeCount;
-            ans = ans - (long long)(nums[i] * minSubarrayCount);
+            ans = ans + (long long)(nums[i] * minSubarrayCount);
         }
-        return ans;
+        return abs(ans);
     }
 };
