@@ -13,9 +13,30 @@ class Solution {
 public:
     int maxDepth(TreeNode* root) {
         
-        int count = BTHeight(root);
-        return count;
+//         Recursive Approch, best as well TC: O(N), SC:O(N) worst Case
+        // int count = BTHeight(root);
+        // return count;
+        
+//         Method 2: Level order Traversing
+        if(root==NULL) return 0;
+        queue<TreeNode*> q;
+        int level=0;
+        q.push(root);
+        while(!q.empty()){
+            level++;
+            int size = q.size();
+            for(int i=0;i<size;i++){
+                TreeNode * temp = q.front();
+                q.pop();
+                if(temp->left!=NULL) q.push(temp->left);
+                if(temp->right!=NULL) q.push(temp->right);    
+            }
+            
+        }        
+        // for(auto x: ans) cout<<x<<" ";
+        return level;
     }
+    
     
     int BTHeight(TreeNode* node){
         
