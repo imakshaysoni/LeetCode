@@ -23,9 +23,9 @@ public:
         if(root==NULL) return 0;
         int op1 = findHeightOfBT(root->left);
         int op2 = findHeightOfBT(root->right);
+        if(op1==-1 || op2==-1) return -1;
         if(abs(op1-op2) > 1) return -1; 
         
-        if(op1==-1 || op2==-1) return -1;
         return 1 + max(op1,op2);
         
     }
