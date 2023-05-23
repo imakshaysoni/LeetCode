@@ -99,18 +99,14 @@ class Solution{
     vector<int> postOrder(Node* root) {
         // code here
         
-        vector<int> ans;
-        if(root==NULL) return ans;
-        
-        
+        // Using 1 Stack
         stack<Node*> s1;
-        stack<Node*> s2;
-        
+        vector<int> ans;
         s1.push(root);
         while(!s1.empty()){
             Node * temp  = s1.top();
             s1.pop();
-            s2.push(temp);
+            ans.push_back(temp->data);
             if(temp->left){
                 s1.push(temp->left);
             }
@@ -118,12 +114,34 @@ class Solution{
                 s1.push(temp->right);
             }
         }
-        while(!s2.empty()){
-            ans.push_back(s2.top()->data);
-            s2.pop();
+        for(int i=0;i<ans.size()/2;i++){
+            swap(ans[i], ans[ans.size()-i-1]);
         }
         
         return ans;
+        
+        // Using 2 Stack
+        // stack<Node*> s1;
+        // stack<Node*> s2;
+        
+        // s1.push(root);
+        // while(!s1.empty()){
+        //     Node * temp  = s1.top();
+        //     s1.pop();
+        //     s2.push(temp);
+        //     if(temp->left){
+        //         s1.push(temp->left);
+        //     }
+        //     if(temp->right){
+        //         s1.push(temp->right);
+        //     }
+        // }
+        // while(!s2.empty()){
+        //     ans.push_back(s2.top()->data);
+        //     s2.pop();
+        // }
+        
+        // return ans;
         
     }
 };
