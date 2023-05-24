@@ -114,7 +114,6 @@ public:
             result.push_back(root->data);
             return result;
         }
-        result.push_back(root->data);
         
         boundaryTraversal(root, result);
         return result;
@@ -126,6 +125,7 @@ public:
     }
     
     void addLeftBoundaryNodes(Node *root, vector<int> &result){
+        result.push_back(root->data);
         Node * curr = root->left;
         while(curr and !isLeafNode(curr)){
             result.push_back(curr->data);
