@@ -1,6 +1,6 @@
-# Coding Question Solutions Repository
+# <span style="color:#2E86C1">Coding Question Solutions Repository</span>
 
-Welcome to my **Coding Question Solutions** repository! This repository showcases my problem-solving skills by providing solutions to coding questions from popular platforms like **LeetCode** and **GeeksforGeeks**. Each solution has been completed solely by myself, demonstrating my proficiency in algorithmic problem-solving.
+Welcome to my **<span style="color:#2E86C1">Coding Question Solutions</span>** repository! This repository showcases my problem-solving skills by providing solutions to coding questions from popular platforms like **LeetCode** and **GeeksforGeeks**. Each solution has been completed solely by myself, demonstrating my proficiency in algorithmic problem-solving.
 
 ## Repository Structure
 
@@ -22,4 +22,4 @@ While I appreciate your interest, contributions in the form of additional soluti
 
 This repository is licensed under the **MIT License**. Please review the license file for more details.
 
-Thank you for visiting my **Coding Question Solutions** repository. I hope you find it informative and insightful in evaluating my problem-solving skills. Happy coding and continuous learning!
+Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solutions</span>** repository. I hope you find it informative and insightful in evaluating my problem-solving skills. Happy coding and continuous learning!
