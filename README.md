@@ -4,7 +4,7 @@ Welcome to my **<span style="color:#2E86C1">Coding Question Solutions</span>** r
 
 ## Repository Structure
 
-The repository is thoughtfully organized, with separate folders for each coding platform. Within each platform folder, you will find individual solutions to specific coding questions. These solutions are presented as well-structured and documented source code files.
+you will find individual solutions to specific coding questions. These solutions are presented as well-structured and documented source code files.
 
 ## Purpose and Benefits
 
