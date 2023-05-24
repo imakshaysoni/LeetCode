@@ -8,7 +8,7 @@ you will find individual solutions to specific coding questions. These solutions
 
 ## Purpose and Benefits
 
-The primary purpose of this repository is to demonstrate my ability to tackle diverse coding challenges and showcase my problem-solving expertise. By exploring my solutions, you can gain insights into my coding style, algorithmic thinking, and approach to problem-solving.
+The primary purpose of this repository is to demonstrate my ability to tackle diverse coding challenges and showcase my problem-solving expertise using C++. By exploring my solutions, you can gain insights into my coding style, algorithmic thinking, and approach to problem-solving.
 
 ## Disclaimer
 
