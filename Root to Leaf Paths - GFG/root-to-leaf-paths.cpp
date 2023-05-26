@@ -133,7 +133,11 @@ struct Node
  void allPaths(Node* root, vector<int> &subsets, vector<vector<int>> &result){
     if(root==NULL) return;
     
-    if(root->left==NULL and root->right==NULL){
+    if(root->left || root->right){
+        subsets.push_back(root->data);
+    }
+    
+    else{
         subsets.push_back(root->data);
         result.push_back(subsets);
         subsets.pop_back();
@@ -141,10 +145,8 @@ struct Node
     } 
     
     // Take left 
-    subsets.push_back(root->data);
-    
     allPaths(root->left, subsets, result);
-
+    
     // subsets.pop_back();
     // take right
     // subsets.push_back(root->data);
