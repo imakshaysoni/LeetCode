@@ -22,7 +22,8 @@ public:
             int min_idx=q.front().second;
             for(int i=0;i<size;i++){
                 TreeNode * node = q.front().first;
-                unsigned int curr_id = q.front().second-min_idx;
+                // unsigned int curr_id = q.front().second-min_idx;
+                unsigned int curr_id = q.front().second;
                 q.pop();
                 if(i==0) first = curr_id;
                 if(i==size-1) last = curr_id;
