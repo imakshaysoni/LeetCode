@@ -23,12 +23,12 @@ public:
             for(int i=0;i<size;i++){
                 TreeNode * node = q.front().first;
                 // unsigned int curr_id = q.front().second-min_idx;
-                unsigned int curr_id = q.front().second;
+                int curr_id = q.front().second-min_idx;
                 q.pop();
                 if(i==0) first = curr_id;
                 if(i==size-1) last = curr_id;
-                if(node->left) q.push({node->left, 2*curr_id+1});
-                if(node->right) q.push({node->right, 2*curr_id+2});                
+                if(node->left) q.push({node->left, 2*1LL*curr_id+1});
+                if(node->right) q.push({node->right, 2*1LL*curr_id+2});                
                 
             }
             ans = max(ans, last-first+1);           
