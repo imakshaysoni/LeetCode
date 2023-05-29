@@ -20,33 +20,23 @@ public:
         q.push(target);
         while(!q.empty()){
             int size = q.size();
-            if(dist==k) break;
             for(int i=0;i<size;i++){
                 TreeNode * node = q.front(); q.pop();
-                if(isVisited(node, visited)) continue;
+                if(visited.find(node)!=visited.end()) continue;
                 visited.insert(node);
-                if(node->left and !isVisited(node->left, visited)){
+                if(node->left){
                     q.push(node->left);
                 }
-                if(node->right and !isVisited(node->right, visited)) q.push(node->right);
-                if(parent_track[node]!=NULL and !isVisited(parent_track[node], visited)){
+                if(node->right) q.push(node->right);
+                if(parent_track[node]!=NULL){
                     q.push(parent_track[node]);
-                }                         
+                }      
+                if(dist==k) req_nodes.push_back(node->val);
             }                     
                 dist++;            
         }
         
-        while(!q.empty()){
-            req_nodes.push_back(q.front()->val);
-            q.pop();
-        }
-        
         return req_nodes;            
-        
-    }
-    
-    bool isVisited(TreeNode * node, unordered_set<TreeNode*> visited){
-        return visited.find(node)!=visited.end();
         
     }
     
