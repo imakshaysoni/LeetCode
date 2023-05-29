@@ -33,7 +33,8 @@ public:
                 }      
                 if(dist==k) req_nodes.push_back(node->val);
             }                     
-                dist++;            
+            if(dist==k) break;
+                dist++;           
         }
         
         return req_nodes;            
