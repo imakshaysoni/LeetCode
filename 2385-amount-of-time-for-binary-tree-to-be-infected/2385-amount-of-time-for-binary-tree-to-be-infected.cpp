@@ -12,15 +12,59 @@
 class Solution {
 public:
     int amountOfTime(TreeNode* root, int start) {
+        
+//         BFS Method by self, just striver did with bfs so i tried without any video&solutoin
         unordered_map<TreeNode*, TreeNode*> parentTrack;
         unordered_set<TreeNode*> visited;
         markParent(root, parentTrack);
-        
         TreeNode* targetNode = getTargetNode(root, start);
+        queue<TreeNode*> q;
+        q.push(targetNode);
+        visited.insert(targetNode);
+        int minTime=0;
+        while(!q.empty()){
+            int size = q.size();
+            int step=0;
+            for(int i=0;i<size;i++)
+            {
+                TreeNode* node = q.front();
+                q.pop();
+                // if(visited.count(node)) continue;
+                // visited.insert(node);
+                
+                if(node->left and !visited.count(node->left)){
+                    step=1;
+                    q.push(node->left);
+                    visited.insert(node->left);
+                }
+                if(node->right and !visited.count(node->right)){
+                    step=1;
+                    q.push(node->right);
+                    visited.insert(node->right);
+                }
+                if(parentTrack[node] and !visited.count(parentTrack[node])){
+                    step=1;
+                    q.push(parentTrack[node]);
+                    visited.insert(parentTrack[node]);
+                }
+            }           
+            minTime += step;
+        }
         
-        int minTimeToBurn = burnTree(targetNode, parentTrack, visited);
+        return minTime;
         
-        return minTimeToBurn-1;
+        
+        
+//         DFS Method Self Solved
+//         unordered_map<TreeNode*, TreeNode*> parentTrack;
+//         unordered_set<TreeNode*> visited;
+//         markParent(root, parentTrack);
+        
+//         TreeNode* targetNode = getTargetNode(root, start);
+        
+//         int minTimeToBurn = burnTree(targetNode, parentTrack, visited);
+        
+//         return minTimeToBurn-1;
     }
     
     int burnTree(TreeNode* root, unordered_map<TreeNode*, TreeNode*> &parentTrack, unordered_set<TreeNode*> &visited){
