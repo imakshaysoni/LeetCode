@@ -29,7 +29,7 @@ public:
 
 TreeNode* buildUniqueBT(vector<int>& in, int inStart, int inEnd, vector<int>& pre, int preStart, int preEnd, unordered_map<int, int>& iMap) {
     if (preStart > preEnd || inStart > inEnd) return nullptr;
-    if (preStart == preEnd) return new TreeNode(pre[preStart]);
+    // if (preStart == preEnd) return new TreeNode(pre[preStart]);
 
     int rootVal = pre[preStart];
     int rootIdx = iMap[rootVal];
