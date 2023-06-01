@@ -28,7 +28,7 @@ public:
             curr->left = nullptr;
             if(!st.empty())
                 curr->right = st.top();
-            else curr->right = nullptr;
+            // else curr->right = nullptr;
             
         }
         
