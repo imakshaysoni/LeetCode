@@ -14,12 +14,13 @@ public:
     TreeNode* prev = nullptr;
     void flatten(TreeNode* root) {
         
-        vector<int> preorder;
         flatBT(root);
         
         // return root;
     }
     
+
+//     TC O(N), SC O(1)
     void flatBT(TreeNode * root){
         
         if(!root) return;
