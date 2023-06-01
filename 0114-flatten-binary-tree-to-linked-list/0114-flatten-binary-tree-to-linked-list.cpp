@@ -18,20 +18,42 @@ public:
 //         Recurssive
         // flatBT(root);
         
-        stack<TreeNode*> st;
-        st.push(root);
-        while(!st.empty()){
-            TreeNode * curr = st.top(); st.pop();
-            if(curr->right) st.push(curr->right);
-            if(curr->left) st.push(curr->left);
+//         Stack Solution TC O(N), SC O(N)
+//         stack<TreeNode*> st;
+//         st.push(root);
+//         while(!st.empty()){
+//             TreeNode * curr = st.top(); st.pop();
+//             if(curr->right) st.push(curr->right);
+//             if(curr->left) st.push(curr->left);
             
-            curr->left = nullptr;
-            if(!st.empty())
-                curr->right = st.top();
+//             curr->left = nullptr;
+//             if(!st.empty())
+//                 // curr->right = st.top();
             // else curr->right = nullptr;
             
-        }
+        // }
+//         
+//         Most Optimized Solution, Morris Traversal
+//         TC O(N), SC O(1)
         
+        TreeNode * node = root;
+        while(node){
+            
+            if(node->left){
+                TreeNode * prev = node->left;
+                while(prev->right){
+                    prev = prev->right;
+                }                
+                prev->right = node->right;
+                node->right = node->left;
+                node->left=nullptr;
+                node = node->right;
+            }
+            else{
+                node=node->right; 
+            }          
+            
+        }        
         
         // return root;
     }
