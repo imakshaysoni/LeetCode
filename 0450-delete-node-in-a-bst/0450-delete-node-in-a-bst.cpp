@@ -11,45 +11,63 @@
  */
 class Solution {
 public:
+//     This is My Solution, Explanation is added by ChatGPT
     TreeNode* deleteNode(TreeNode* root, int key) {
+        // Check if the tree is empty
+        if (!root) {
+            return nullptr;
+        }
         
-        if(!root) return nullptr;
-        
-        if(root->val==key) return helper(root);
+        // Check if the current node is the target node to delete
+        if (root->val == key) {
+            return helper(root); // Call the helper function for deleting the node
+        }
         
         TreeNode* curr = root;
-        while(curr){
-            if(curr->val > key){
-                if(curr->left and curr->left->val==key){
-                    curr->left = helper(curr->left);
+        while (curr) {
+            // Check if the key is less than the current node's value
+            if (curr->val > key) {
+                // Check if the left child is the target node to delete
+                if (curr->left && curr->left->val == key) {
+                    curr->left = helper(curr->left); // Call the helper function for deleting the node
                     break;
-                }
-                else{
-                    curr=curr->left;
+                } else {
+                    curr = curr->left; // Traverse to the left child
                 }
             }
-            else{
-                if(curr->right and curr->right->val==key){
-                    curr->right = helper(curr->right);
+            // Check if the key is greater than the current node's value
+            else {
+                // Check if the right child is the target node to delete
+                if (curr->right && curr->right->val == key) {
+                    curr->right = helper(curr->right); // Call the helper function for deleting the node
                     break;
+                } else {
+                    curr = curr->right; // Traverse to the right child
                 }
-                else curr = curr->right;
             }           
         }        
-        return root;
-        
+        return root; // Return the modified root node
     }
     
-    TreeNode* helper(TreeNode* root){
-        if(root->left==NULL) return root->right;
-        if(root->right==NULL) return root->left;
+    TreeNode* helper(TreeNode* root) {
+        // Check if the left child is NULL
+        if (!root->left) {
+            return root->right; // Replace the node with its right child
+        }
+        // Check if the right child is NULL
+        if (!root->right) {
+            return root->left; // Replace the node with its left child
+        }
         
-        TreeNode * rightMost = findRightMostNode(root->left);
-        rightMost->right = root->right;
-        return root->left;
+        TreeNode* rightMost = findRightMostNode(root->left); // Find the rightmost node in the left subtree
+        rightMost->right = root->right; // Link the right subtree of the deleted node to the rightmost node in the left subtree
+        return root->left; // Replace the node with its left child
     }
-    TreeNode* findRightMostNode(TreeNode * root){
-        while(root->right) root=root->right;
-        return root;
+    
+    TreeNode* findRightMostNode(TreeNode* root) {
+        while (root->right) {
+            root = root->right; // Traverse to the rightmost node
+        }
+        return root; // Return the rightmost node
     }
 };
