@@ -15,8 +15,8 @@ public:
         
         int start = 0;
         int end = preorder.size()-1;
-        // return makeBST(preorder, start, end);
-        return striverApproch(preorder, start, INT_MAX);
+        return makeBST(preorder, start, end);
+        // return striverApproch(preorder, start, INT_MAX);
         
     }
     TreeNode * striverApproch(vector<int> & preorder, int &start, int bound){
