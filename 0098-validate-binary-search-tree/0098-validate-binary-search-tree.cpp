@@ -13,9 +13,23 @@ class Solution {
 public:
     bool isValidBST(TreeNode* root) {
         
-       int result = isValid(root);
-        if(result==0) return false;
-        return true;
+        
+        long mini = LONG_MIN;
+        long maxi = LONG_MAX;
+        
+        return validBST(root, mini, maxi);
+        
+        
+       // int result = isValid(root);
+       //  if(result==0) return false;
+       //  return true;
+    }
+    
+    bool validBST(TreeNode* root, long mini, long maxi){
+        
+        if(!root) return true;
+        if(root->val <= mini || root->val >= maxi) return false;
+        return validBST(root->left, mini, root->val) and validBST(root->right, root->val, maxi);        
     }
     
     int isValid(TreeNode* root){
