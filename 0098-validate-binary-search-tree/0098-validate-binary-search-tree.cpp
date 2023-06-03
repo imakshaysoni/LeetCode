@@ -27,9 +27,13 @@ public:
     
     bool validBST(TreeNode* root, long mini, long maxi){
         
-        if(!root) return true;
-        if(root->val <= mini || root->val >= maxi) return false;
-        return validBST(root->left, mini, root->val) and validBST(root->right, root->val, maxi);        
+         if (!root) {
+            return true;
+            }
+        if (root->val <= mini || root->val >= maxi) {
+            return false;
+        }
+        return validBST(root->left, mini, root->val) && validBST(root->right, root->val, maxi);           
     }
     
     int isValid(TreeNode* root){
