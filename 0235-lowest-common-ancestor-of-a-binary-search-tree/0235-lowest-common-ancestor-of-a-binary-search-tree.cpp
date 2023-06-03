@@ -18,10 +18,7 @@ public:
         
         if(curr < p->val and curr < q->val) return lowestCommonAncestor(root->right, p, q);
         if(curr > p->val and curr > q->val) return lowestCommonAncestor(root->left, p, q);
-        return root;
-        
-        
-        
+        return root;                
     }
     
         
