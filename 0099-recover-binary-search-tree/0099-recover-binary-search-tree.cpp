@@ -37,7 +37,7 @@ public:
             }
             else{
                 last = root;
-                // return;
+                return;
             }
         } 
         prev = root;
