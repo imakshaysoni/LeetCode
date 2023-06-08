@@ -18,10 +18,29 @@ public:
         for(int i=0;i<n;i++){
             if(vis[i]==0){
                 ans++;
-                dfs(i, vis, adj);
+                // dfs(i, vis, adj);
+                bfs(i, vis, adj);
             }
         }
         return ans;
+    }
+    
+    void bfs(int node, vector<int> &vis, vector<vector<int>> &adj){
+        queue<int> q;
+        q.push(node);
+        while(!q.empty()){
+            int n = q.front();
+            vis[n]=1;
+            q.pop();
+            for(auto it: adj[n]){
+                if(!vis[it]){
+                    q.push(it);
+                    vis[it] = 1;
+                }
+            }
+            
+        }
+        
     }
     
     void dfs(int node, vector<int> &vis, vector<vector<int>> &adj){
