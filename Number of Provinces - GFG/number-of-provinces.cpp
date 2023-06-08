@@ -38,11 +38,11 @@ class Solution {
         q.push(node);
         while(!q.empty()){
             int n = q.front();
-            vis[n]=1;
             q.pop();
             for(auto it: adj[n]){
                 if(!vis[it]){
                     q.push(it);
+                    vis[it] = 1;
                 }
             }
             
