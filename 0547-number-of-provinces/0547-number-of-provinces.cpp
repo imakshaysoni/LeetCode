@@ -35,7 +35,7 @@ public:
             for(auto it: adj[n]){
                 if(!vis[it]){
                     q.push(it);
-                    vis[it] = 1;
+                    // vis[it] = 1;
                 }
             }
             
