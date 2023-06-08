@@ -16,7 +16,7 @@ public:
         }
         return ans;
     }
-    void bfs(vector<vector<char>> &grid, int i, int j) {
+    void bfs1(vector<vector<char>> &grid, int i, int j) {
     queue<pair<int, int>> q;
     q.push({i, j});
     grid[i][j] = '#';
@@ -44,9 +44,9 @@ public:
 }
 
     
-    void bfs1(vector<vector<char>> &grid, int i, int j){
+    void bfs(vector<vector<char>> &grid, int i, int j){
         
-        queue<pair<char, char>> q;
+        queue<pair<int, int>> q;
         q.push({i,j});
         grid[i][j]='#';
         while(!q.empty()){
@@ -58,10 +58,7 @@ public:
                 
                 int nrow = it.first+delrow;
                 int mcol = it.second+delcol;
-                
-                if(nrow<0 || mcol <0 || nrow>=grid.size() || mcol >= grid[0].size()
-                  // || grid[nrow][mcol]=='0' || grid[nrow][mcol]=='#'
-                  )
+                if (nrow < 0 || mcol < 0 || nrow >= grid.size() || mcol >= grid[0].size())
                     continue;
                 
                 if(grid[nrow][mcol]=='1'){
