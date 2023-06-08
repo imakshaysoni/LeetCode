@@ -9,11 +9,69 @@ public:
             for(int j=0;j<m;j++){
                 if(grid[i][j]=='1'){
                     ans++;
-                    dfs(grid, i, j);
+                    // dfs(grid, i, j); // DFS Approch
+                    bfs(grid, i, j);
                 }
             }
         }
         return ans;
+    }
+    void bfs(vector<vector<char>> &grid, int i, int j) {
+    queue<pair<int, int>> q;
+    q.push({i, j});
+    grid[i][j] = '#';
+    while (!q.empty()) {
+        auto it = q.front();
+        q.pop();
+        for (int delrow = -1; delrow <= 1; delrow++) {
+            for (int delcol = -1; delcol <= 1; delcol++) {
+                if (abs(delcol) == abs(delrow))
+                    continue; // Ignoring diagonals
+
+                int nrow = it.first + delrow;
+                int mcol = it.second + delcol;
+
+                if (nrow < 0 || mcol < 0 || nrow >= grid.size() || mcol >= grid[0].size())
+                    continue;
+
+                if (grid[nrow][mcol] == '1') {
+                    q.push({nrow, mcol});
+                    grid[nrow][mcol] = '#';
+                }
+            }
+        }
+    }
+}
+
+    
+    void bfs1(vector<vector<char>> &grid, int i, int j){
+        
+        queue<pair<char, char>> q;
+        q.push({i,j});
+        grid[i][j]='#';
+        while(!q.empty()){
+            auto it = q.front();
+            q.pop();
+            for(int delrow=-1;delrow<=1;delrow++){         
+            for(int delcol=-1;delcol<=1;delcol++){
+                if(abs(delcol)==abs(delrow)) continue; // Ingoring diagonals
+                
+                int nrow = it.first+delrow;
+                int mcol = it.second+delcol;
+                
+                if(nrow<0 || mcol <0 || nrow>=grid.size() || mcol >= grid[0].size()
+                  // || grid[nrow][mcol]=='0' || grid[nrow][mcol]=='#'
+                  )
+                    continue;
+                
+                if(grid[nrow][mcol]=='1'){
+                    q.push({nrow,mcol});
+                    grid[nrow][mcol]='#';
+                }
+            }      
+        }
+        }
+        
     }
     
     void dfs(vector<vector<char>> &grid, int i, int j){
