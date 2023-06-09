@@ -9,39 +9,29 @@ class Solution {
     bool isCycle(int V, vector<int> adj[]) {
         // Code here
         vector<int> visi(V,0);
-        
+        int parent = -1;
         for(int i=0;i<V;i++){
             if(!visi[i]){
-                if(detectCycle(i, adj, visi)) return true;
+                if(dfs(i, adj, visi, parent)) return true;
             }
         }
         return false;
-        
     }
     
-    bool detectCycle(int src, vector<int> adj[], vector<int> &visi)
-    {
-        visi[src]=1;
-        queue<pair<int,int>> q;
-        q.push({src,-1});
+    bool dfs(int src, vector<int> adj[], vector<int> &visi, int parent){
         
-        while(!q.empty()){
-            int node = q.front().first;
-            int parent = q.front().second;
-            q.pop();
-            for(int x: adj[node]){
-                
-                if(!visi[x]){
-                    visi[x]=1;
-                    q.push({x, node});
-                }
-                else{
-                    if(x!=parent) return true;
-                }
-                
+        visi[src]=1;
+        for(int node: adj[src]){
+            if(!visi[node]){
+                if(dfs(node, adj, visi, src)) return true;
+            }
+            else{
+                if(node != parent) return true;
             }
         }
+        
         return false;
+        
     }
 };
 
