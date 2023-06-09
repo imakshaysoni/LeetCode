@@ -14,7 +14,6 @@ public:
                     q.push({{i,j}, 0});
                     vis[i][j]=2;
                 }
-                if(grid[i][j]==1) vis[i][j]=1;
             }
         }
         
@@ -33,7 +32,7 @@ public:
                 int delcol = col + dy[index];
                 
                 if( delrow<0 || delrow>=grid.size() || delcol<0 || delcol>=grid[0].size() ) continue;
-                if(grid[delrow][delcol]==0 || vis[delrow][delcol]==2) continue;
+                if(grid[delrow][delcol]!=1 or vis[delrow][delcol]==2) continue;
                 vis[delrow][delcol]=2;
                 q.push({{delrow,delcol}, t+1});
             }
@@ -42,7 +41,7 @@ public:
         
         for(int i=0;i<n;i++){
             for(int j=0;j<m;j++){
-                if(vis[i][j]==1) return -1;
+                if(vis[i][j]!=2 and grid[i][j]==1) return -1;
             }
         }
         
