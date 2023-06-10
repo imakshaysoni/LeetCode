@@ -10,32 +10,32 @@ public:
         // FirstRow Boundary
         for(int j=0;j<m;j++){
             if(mat[0][j]=='O' and visi[0][j]==0){
-                // bfs(mat, 0 , j, visi);
-                dfs(mat, 0 , j, visi);
+                bfs(mat, 0 , j, visi);
+                // dfs(mat, 0 , j, visi);
             }
         }
         
         // FirstColBoundary
         for(int i=0;i<n;i++){
             if(mat[i][0]=='O' and visi[i][0]==0){
-                // bfs(mat, i, 0, visi);
-                dfs(mat, i, 0, visi);
+                bfs(mat, i, 0, visi);
+                // dfs(mat, i, 0, visi);
             }
         }
         
         // lastRowBoundary
         for(int j=0;j<m;j++){
             if(mat[n-1][j]=='O' and visi[n-1][j]==0){
-                // bfs(mat, n-1, j, visi);
-                dfs(mat, n-1, j, visi);
+                bfs(mat, n-1, j, visi);
+                // dfs(mat, n-1, j, visi);
             }
         }
         
         // lastColBoundary
         for(int i=0;i<n;i++){
             if(mat[i][m-1]=='O' and visi[i][m-1]==0){
-                // bfs(mat, i, m-1, visi);
-                dfs(mat, i, m-1, visi);
+                bfs(mat, i, m-1, visi);
+                // dfs(mat, i, m-1, visi);
             }
         }
         
@@ -51,7 +51,27 @@ public:
         return;
     }
     
-    void bfs(vector<vector<char>> &mat, int i, int j, vector<vector<int>> &visi){
+    void bfs(vector<vector<char>> &board, int i, int j, vector<vector<int>> &visi) {
+    int m = board.size();
+    int n = board[0].size();
+    queue<pair<int, int> > q;
+    q.push(make_pair(i, j));
+    while (!q.empty()) {
+        pair<int, int> elem = q.front();
+        q.pop();
+        i = elem.first;
+        j = elem.second;
+        if (i >= 0 && i < m && j >=0 && j < n && board[i][j] == 'O' && visi[i][j]==0) {
+            visi[i][j] = 1;
+            q.push(make_pair(i - 1, j));
+            q.push(make_pair(i + 1, j));
+            q.push(make_pair(i, j - 1));
+            q.push(make_pair(i, j + 1));
+        }
+    }
+}
+    
+    void bfs2(vector<vector<char>> &mat, int i, int j, vector<vector<int>> &visi){
         
         queue<pair<int, int>> q;
         q.push({i,j});
