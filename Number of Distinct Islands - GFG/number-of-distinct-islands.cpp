@@ -32,15 +32,12 @@ class Solution {
                         v.push_back({i,j});
                         dfs(grid, i, j, visi, v);
                         v.erase(v.begin());
-                        if(s.find(v)==s.end()){
-                            count++;
-                            s.insert(v);
-                        }
+                        s.insert(v);
                         
                 }
             }
         }
-        return count;
+        return s.size();
     }
     
     void dfs(vector<vector<int>> &grid, int i, int j, vector<vector<int>> &visi, vector<pair<int,int>> &v){
