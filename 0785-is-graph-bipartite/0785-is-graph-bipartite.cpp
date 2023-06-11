@@ -5,10 +5,25 @@ public:
         vector<int> color(n,-1);
         for(int i=0;i<n;i++){
             if(color[i]==-1){
-                if(check(graph, color, i)==false) return false;
+                // if(check(graph, color, i)==false) return false;
+                color[i]=0;
+                if(checkDfs(graph, color, i)==false) return false;
             }
         }
         return true;
+    }
+    
+    bool checkDfs(vector<vector<int>> & graph, vector<int> &color, int node){
+        
+        for(int n: graph[node]){
+            if(color[n]==color[node]) return false;
+            if(color[n]==-1){
+                color[n]=!color[node];
+                if(checkDfs(graph, color, n)==false) return false;
+            }
+        }        
+        return true;              
+        
     }
     
     bool check(vector<vector<int>> & graph, vector<int> &color, int start){
@@ -33,7 +48,6 @@ public:
             }            
             
         }
-        
         return true;
     }
 };
