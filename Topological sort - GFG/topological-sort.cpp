@@ -11,6 +11,36 @@ class Solution
 	{
 	    // code here
 	    
+	    
+	   // BFS Approch kahan's Algorithm
+	   
+	   vector<int> indegree(V,0);
+	   vector<int> topo;
+	   queue<int> q;
+	   for(int i=0;i<V;i++){
+	       for(int node: adj[i]){
+	           indegree[node]++;
+	       }
+	   }
+	   
+	   for(int i=0;i<V;i++){
+	       if(indegree[i]==0) q.push(i);
+	   }
+	    
+	   while(!q.empty()){
+	       int node = q.front();
+	       topo.push_back(node);
+	       q.pop();
+	       
+	       for(int x: adj[node]){
+	           indegree[x]--;
+	           if(indegree[x]==0) q.push(x);
+	       }
+	   }
+	    
+	    
+        return topo;
+	   // DFS Approch
 	    vector<int> visi(V, 0);
 	    vector<int> path(V, 0);
 	    stack<int> st;
