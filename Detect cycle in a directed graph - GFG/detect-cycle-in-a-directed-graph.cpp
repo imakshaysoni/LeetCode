@@ -7,7 +7,38 @@ class Solution {
   public:
     // Function to detect cycle in a directed graph.
     bool isCyclic(int V, vector<int> adj[]) {
-        // code here
+        
+        // BFS Approch Kahan's Algorithm
+        vector<int> indegree(V, 0);
+        for(int i=0;i<V;i++){
+            for(int node : adj[i]){
+                indegree[node]++;
+            }
+        }
+        
+        queue<int> q;
+        for(int i=0;i<V;i++){
+            if(indegree[i]==0) q.push(i);
+        }
+        int cnt=0;
+        while(!q.empty()){
+            
+            int node = q.front();
+            q.pop();
+            cnt++;
+            
+            for(int n: adj[node]){
+                indegree[n]--;
+                if(indegree[n]==0) q.push(n);
+            }
+            
+            
+        }
+        if(cnt==V) return 0;
+        return 1;
+        
+        
+        // DFS Approch
         vector<int> visi(V, 0);
         vector<int> path(V, 0);
         for(int i=0;i<V;i++){
