@@ -33,7 +33,6 @@ public:
             
         }
         if(topo.size()==V) return topo;
-        vector<int> emp;
-        return emp;    
+        return {};    
     }
 };
