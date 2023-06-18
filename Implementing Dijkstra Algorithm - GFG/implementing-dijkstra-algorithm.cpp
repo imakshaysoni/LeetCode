@@ -39,7 +39,7 @@ class Solution
         
     }
     
-    vector <int> dijkstra(int V, vector<vector<int>> adj[], int S)
+    vector <int> dijkstraUsingPQ(int V, vector<vector<int>> adj[], int S)
     {
         // Using PQ
         vector<int> dist(V,1e9);
@@ -49,6 +49,36 @@ class Solution
         dist[S]=0;
         while(!s.empty()){
             auto it = s.top();
+            s.pop();
+            int node = it.second;
+            int wt = it.first;
+            
+            for(auto it: adj[node])
+            {
+                int n = it[0];
+                int dis = it[1];
+                if(wt + dis < dist[n]){
+                    dist[n] = wt + dis;
+                    s.push({dist[n],n});
+                }
+            }
+        }
+        
+        return dist;
+        
+        
+    }
+    
+     vector <int> dijkstra(int V, vector<vector<int>> adj[], int S)
+    {
+        // Using PQ
+        vector<int> dist(V,1e9);
+        
+        queue<pair<int,int>> s;
+        s.push({0,S});
+        dist[S]=0;
+        while(!s.empty()){
+            auto it = s.front();
             s.pop();
             int node = it.second;
             int wt = it.first;
