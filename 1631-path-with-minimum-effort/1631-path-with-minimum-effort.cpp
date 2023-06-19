@@ -5,14 +5,16 @@ public:
         int m = heights[0].size();
         
         vector<vector<int>> dist(n, vector<int> (m,INT_MAX));
-        queue<pair<int, pair<int,int>>> q;
+        priority_queue<pair<int, pair<int, int>>,
+               vector<pair<int, pair<int, int>>>,
+               greater<pair<int, pair<int, int>>>> q;
         int final_ans=INT_MAX;
         q.push({0, {0,0}});
         dist[0][0]=0;
         while(!q.empty()){
-            int diff = q.front().first;
-            int i = q.front().second.first;
-            int j = q.front().second.second;
+            int diff = q.top().first;
+            int i = q.top().second.first;
+            int j = q.top().second.second;
             q.pop();
             if(i==n-1 && j==m-1) {
                             final_ans = min(final_ans, diff);
