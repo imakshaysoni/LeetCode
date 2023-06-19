@@ -8,7 +8,7 @@ for(auto it: roads){
     adj[it[1]].push_back({it[0],it[2]});
 }
 
-vector<long long> dist(n,1e18);
+vector<long long> dist(n,LONG_MAX);
 vector<long long> ways(n, 0);
 priority_queue<pair<long long,long long>,
     vector<pair<long long,long long>>,
