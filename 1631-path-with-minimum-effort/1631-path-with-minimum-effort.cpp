@@ -8,7 +8,6 @@ public:
         priority_queue<pair<int, pair<int, int>>,
                vector<pair<int, pair<int, int>>>,
                greater<pair<int, pair<int, int>>>> q;
-        int final_ans=INT_MAX;
         q.push({0, {0,0}});
         dist[0][0]=0;
         while(!q.empty()){
@@ -17,7 +16,7 @@ public:
             int j = q.top().second.second;
             q.pop();
             if(i==n-1 && j==m-1) {
-                            final_ans = min(final_ans, diff);
+                            return diff;
                         }
             for(int delrow=-1; delrow<=1;delrow++){
                 for(int delcol=-1;delcol<=1;delcol++){
@@ -34,6 +33,6 @@ public:
                 }
             }            
         }
-        return final_ans;
+        return 0;
     }
 };
