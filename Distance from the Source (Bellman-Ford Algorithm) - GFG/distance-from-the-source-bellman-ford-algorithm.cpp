@@ -29,7 +29,7 @@ class Solution {
                     cnt++;
                 }
             }
-            if(cnt==0) return dist;
+            // if(cnt==0) return dist;
         }
         
         // Nth Iteration to check for Negative Cycle
