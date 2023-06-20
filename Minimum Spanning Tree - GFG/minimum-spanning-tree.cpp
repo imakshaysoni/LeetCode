@@ -14,7 +14,6 @@ class Solution
     priority_queue<pair<int, pair<int,int>>,
         vector<pair<int, pair<int,int>>>,
         greater<pair<int, pair<int,int>>>> pq;
-        
     pq.push({0, {0, -1}});
     int sum = 0;
     
@@ -35,7 +34,6 @@ class Solution
         for(auto edge : adj[node]){
             int v = edge[0];
             int wt = edge[1];
-            
             if(visi[v] == 1)
                 continue;
             pq.push({wt, {v, node}});
