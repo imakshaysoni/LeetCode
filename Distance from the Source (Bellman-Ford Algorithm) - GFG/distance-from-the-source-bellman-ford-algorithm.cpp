@@ -18,7 +18,7 @@ class Solution {
         vector<int> dist(V,1e8);
         dist[S]=0;
         for(int i=0;i<V-1;i++){
-            
+            int cnt=0;
             for(auto it: edges){
                 int u = it[0];
                 int v = it[1];
@@ -26,8 +26,10 @@ class Solution {
                 
                 if(dist[u]!=1e8 && wt + dist[u] < dist[v]){
                     dist[v] = wt + dist[u];
+                    cnt++;
                 }
             }
+            if(cnt==0) return dist;
         }
         
         // Nth Iteration to check for Negative Cycle
