@@ -79,24 +79,25 @@ class Solution
     // return byPrismAlgo(V, adj);
     
     // Code By Kruskal Algorithm Using DisJOintSet PQ
-    return byKrushkalUsingPQ(V, adj);
+    // return byKrushkalUsingPQ(V, adj);
+    
+    // Code: BY Krushkal Algorithm using DisJointSet Vector
+    return byKrushkalUsingVector(V, adj);
 }
 
 int byKrushkalUsingVector(int V, vector<vector<int>> adj[]){
-    // Code: BY Krushkal Algorithm using DisJointSet
+    // Code: BY Krushkal Algorithm using DisJointSet Vector
     int sum = 0;
-    priority_queue<pair<int, pair<int,int>>,
-        vector<pair<int, pair<int,int>>>,
-        greater<pair<int, pair<int,int>>>> pq;
+    vector<pair<int, pair<int,int>>> edges;
     
     for(int i=0;i<V;i++){
         for(auto it: adj[i]){
-            pq.push({it[1], {i, it[0]}});
+            edges.push_back({it[1], {i, it[0]}});
         }
     }
+    sort(edges.begin(), edges.end());
     DisjointSet ds(V);
-    while(!pq.empty()){
-        auto it = pq.top(); pq.pop();
+    for(auto it: edges){
         int wt = it.first;
         int u = it.second.first;
         int v = it.second.second;
