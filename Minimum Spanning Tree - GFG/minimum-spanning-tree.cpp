@@ -103,7 +103,8 @@ int byKrushkalUsingVector(int V, vector<vector<int>> adj[]){
         int v = it.second.second;
         if(ds.findUp(u) != ds.findUp(v)){
             sum += wt;
-            ds.unionByRank(u,v);
+            // ds.unionByRank(u,v); time 2.67
+            ds.unionBySize(u,v);
         }
         
     }
@@ -131,7 +132,7 @@ int byKrushkalUsingPQ(int V, vector<vector<int>> adj[]){
         int v = it.second.second;
         if(ds.findUp(u) != ds.findUp(v)){
             sum += wt;
-            ds.unionByRank(u,v);
+            ds.unionByRank(u,v); 
         }
         
     }
