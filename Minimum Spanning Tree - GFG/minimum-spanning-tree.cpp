@@ -79,10 +79,10 @@ class Solution
     // return byPrismAlgo(V, adj);
     
     // Code By Kruskal Algorithm Using DisJOintSet PQ
-    // return byKrushkalUsingPQ(V, adj);
+    return byKrushkalUsingPQ(V, adj);
     
     // Code: BY Krushkal Algorithm using DisJointSet Vector
-    return byKrushkalUsingVector(V, adj);
+    // return byKrushkalUsingVector(V, adj);
 }
 
 int byKrushkalUsingVector(int V, vector<vector<int>> adj[]){
@@ -104,7 +104,7 @@ int byKrushkalUsingVector(int V, vector<vector<int>> adj[]){
         if(ds.findUp(u) != ds.findUp(v)){
             sum += wt;
             // ds.unionByRank(u,v); time 2.67
-            ds.unionBySize(u,v);
+            ds.unionBySize(u,v); //time 2.66
         }
         
     }
@@ -132,7 +132,8 @@ int byKrushkalUsingPQ(int V, vector<vector<int>> adj[]){
         int v = it.second.second;
         if(ds.findUp(u) != ds.findUp(v)){
             sum += wt;
-            ds.unionByRank(u,v); 
+            // ds.unionByRank(u,v); //time 3.89
+            ds.unionBySize(u,v);
         }
         
     }
