@@ -9,7 +9,16 @@ class Solution
 	//Function to find sum of weights of edges of the Minimum Spanning Tree.
     int spanningTree(int V, vector<vector<int>> adj[])
 {
-    // code here
+    // Code: BY Krushkal Algorithm using DisJointSet
+    
+    
+    
+    // code here: By Prism Algorithm
+    return byPrismAlgo(V, adj);
+}
+
+int byPrismAlgo(int V, vector<vector<int>> adj[])
+{
     vector<int> visi(V, 0);
     priority_queue<pair<int, pair<int,int>>,
         vector<pair<int, pair<int,int>>>,
