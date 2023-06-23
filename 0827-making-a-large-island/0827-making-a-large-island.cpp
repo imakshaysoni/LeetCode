@@ -81,16 +81,8 @@ class Solution
             int n = grid.size();
             int m = grid[0].size();
             DisjointSet ds(n *m);
-            vector<int> dx = { -1,
-                0,
-                1,
-                0
-            };
-            vector<int> dy = { 0,
-                1,
-                0,
-                -1
-            };
+            vector<int> dx = { -1, 0, 1, 0 };
+            vector<int> dy = { 0, 1, 0, -1};
             for (int i = 0; i < n; i++)
             {
                 for (int j = 0; j < m; j++)
