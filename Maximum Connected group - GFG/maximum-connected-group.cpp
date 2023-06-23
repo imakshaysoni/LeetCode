@@ -100,20 +100,20 @@ class Solution {
         }
         
         // Check is all node is already 1
-        int flag = false;
-        for(int i=0;i<n;i++){
-            for(int j=0;j<m;j++){
-                if(grid[i][j]==0) {
-                    flag = true;
-                    break;
-                }
-            }
-        }
+        // int flag = false;
+        // for(int i=0;i<n;i++){
+        //     for(int j=0;j<m;j++){
+        //         if(grid[i][j]==0) {
+        //             flag = true;
+        //             break;
+        //         }
+        //     }
+        // }
         
-        if(flag==false) return n*m;
+        // if(flag==false) return n*m;
         
         //  Make Disjoint Set
-        int maxSize=0;
+        int maxSize=-1;
         set<int> s;
         for(int i=0;i<n;i++){
             for(int j=0;j<m;j++){
@@ -140,7 +140,7 @@ class Solution {
                 }
             }
         }
-        
+        if(maxSize==-1) return n*m;
         return maxSize;
         
     }
