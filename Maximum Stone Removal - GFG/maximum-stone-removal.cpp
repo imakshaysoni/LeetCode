@@ -80,13 +80,11 @@ class Solution {
         }
         
         DisjointSet ds(1LL*maxCol+1LL*maxRow+1);
-        unordered_set<int> s;
         unordered_map<int,int> m;
         for(auto it: stones){
             int nodeRow = it[0];
             int nodeCol = it[1] + maxRow + 1;
-            ds.unionBySize(nodeRow, nodeCol);
-            s.insert(ds.findUp(nodeRow));
+            ds.unionBySize(nodeRow, nodeCol);    
             m[nodeRow]=1;
             m[nodeCol]=1;
         }
@@ -96,7 +94,6 @@ class Solution {
             if(ds.findUp(it.first)==it.first) count++;
         }
         return n - count;
-        // return stones.size() - s.size();   
         
     }
 };
