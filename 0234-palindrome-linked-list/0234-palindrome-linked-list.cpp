@@ -14,11 +14,11 @@ public:
         
         ListNode *slow = head;
         ListNode *fast =  head;
-        while(fast->next && fast->next->next){
+        while(fast && fast->next){
             slow=slow->next;
             fast=fast->next->next;
         }
-        ListNode* rev = reverseLinkedList(slow->next);
+        ListNode* rev = reverseLinkedList(slow);
         ListNode *start = head;
         while(rev){
             if(start->val!=rev->val){
