@@ -10,23 +10,19 @@
  */
 class Solution {
 public:
-//     Explanation for reference: https://leetcode.com/problems/odd-even-linked-list/discuss/1607746/C%2B%2B-Simple-Solution-w-Images-and-Explanation-or-Brute-Force-%2B-O(1)-In-place-Transformation
     ListNode* oddEvenList(ListNode* head) {
-        
-        if(head==NULL || head->next==NULL) return head;
-        ListNode * odd = head;
-        ListNode * even = head->next;
-        ListNode * evenHead = even;
-        
-        while(even && even->next){
-            odd->next = even->next;
+        if(head==NULL or head->next==NULL) return head;
+        ListNode* odd = head;
+        ListNode* even = head->next;
+        ListNode* evenHead=head->next;
+        while(even and even->next)
+        {
+            odd->next=even->next;
             odd = odd->next;
-            even->next = odd->next;
+            even->next=odd->next;
             even = even->next;
         }
-        odd->next = evenHead;
-        
-        
+        odd->next=evenHead;        
         return head;
     }
 };
