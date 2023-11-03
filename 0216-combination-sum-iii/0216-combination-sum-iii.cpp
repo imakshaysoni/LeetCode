@@ -4,33 +4,29 @@ public:
         
         vector<vector<int>> ans;
         vector<int> subset;
-        helper(k, n, 1, subset, ans);
-        
+        solve(1, n, k, subset, ans);
         return ans;
         
+        
     }
-    
-    
-    void helper(int k, int n, int i, vector<int> &subset, vector<vector<int>> &ans){
+    void solve(int start, int n, int k, vector<int> &subset, vector<vector<int>> &ans){
         
-        
-        if(k==subset.size()){
-            if(n==0){ ans.push_back(subset); return; }
+        if(subset.size()==k){
+            int sum=0;
+            for(auto it: subset){
+                sum+=it;
+            }
+            if(sum==n){
+                ans.push_back(subset);
+                return;
+            }
             return;
         }
-        
-        if(i>9) return;
-        
-        
-//         Take the ith element
-        subset.push_back(i);
-        helper(k,n-i,i+1,subset,ans);
+        if(start>9) return;        
+//         Pick
+        subset.push_back(start);
+        solve(start+1, n, k, subset, ans);
         subset.pop_back();
-        
-        
-        helper(k,n,i+1,subset,ans);
-        
-        
-        
+        solve(start+1, n, k, subset, ans);      
     }
 };
