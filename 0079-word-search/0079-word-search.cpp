@@ -19,17 +19,9 @@ public:
     }
     
     bool solve(vector<vector<char>>&b, int row, int col, string word, int w_idx){
-        // if(row>=b.size() || row<0 || col>=b[0].size() || col<0 || b[row][col]=='#') return false;
-        // if(word[w_idx]!=b[row][col]) return false;
-        // if(w_idx>=word.size()) return true;
-        
-        if(w_idx == word.size()) {
-            return true;
-        }
-        
-        if(row < 0 || col < 0 || row >= b.size() || col >= b[0].size() || b[row][col] != word[w_idx]) {
-            return false;
-        }
+        if(w_idx>=word.size()) return true;
+        if(row>=b.size() || row<0 || col>=b[0].size() || col<0 || b[row][col]=='#') return false;
+        if(word[w_idx]!=b[row][col]) return false;
         
         b[row][col] = '#';
         bool exist = false;    
