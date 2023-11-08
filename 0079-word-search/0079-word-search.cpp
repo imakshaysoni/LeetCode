@@ -7,6 +7,7 @@ public:
 //         If word size greater then total words present in board.
         if(word.size()>rows*cols) return false;
         
+//         check the frequency of each words.
         unordered_map<char, int> m;
         for(auto &v: board){
             for(auto &ch: v){
@@ -17,6 +18,12 @@ public:
         for(auto ch: word){
             if(m[ch]==0) return false;
             m[ch]--;
+        }
+        
+        int left_pref = word.find_first_not_of(word[0]);
+        int right_pref = word.size() - word.find_last_not_of(word.back());
+        if(left_pref > right_pref) {
+            reverse(word.begin(), word.end());
         }
         
         for(int row=0;row<rows;row++){
