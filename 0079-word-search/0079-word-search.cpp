@@ -4,6 +4,20 @@ public:
         
         int rows = board.size();
         int cols = board[0].size();
+//         If word size greater then total words present in board.
+        if(word.size()>rows*cols) return false;
+        
+        unordered_map<char, int> m;
+        for(auto &v: board){
+            for(auto &ch: v){
+                m[ch]++;
+            }
+        }
+        
+        for(auto ch: word){
+            if(m[ch]==0) return false;
+            m[ch]--;
+        }
         
         for(int row=0;row<rows;row++){
             for(int col=0;col<cols;col++){
