@@ -2,57 +2,47 @@ class Solution {
 public:
     bool exist(vector<vector<char>>& board, string word) {
         
+        int rows = board.size();
+        int cols = board[0].size();
         
-        int r = board.size();
-        int c = board[0].size();
-        if(word.size() > r*c) return false;
-        
-        int arr[128] = {0}; 
-        for(auto &v: board){
-            for(auto c: v){
-                arr[ c ]++; 
-            }
-        }
-        for(auto c: word){
-            if(--arr[c] < 0 ) return false;
-        }
-        
-        int left_pref = word.find_first_not_of(word[0]);
-        int right_pref = word.size() - word.find_last_not_of(word.back());
-        if(left_pref > right_pref) {
-            reverse(word.begin(), word.end());
-        }
-        
-        
-        for(int i=0;i<board.size();i++){
-            for(int j=0;j<board[0].size();j++){
-                if(board[i][j] == word[0]){
-                    if(helper(board, word, i, j, 0)) return true;
+        for(int row=0;row<rows;row++){
+            for(int col=0;col<cols;col++){
+                if(board[row][col]==word[0]){
+                    if(solve(board, row, col, word, 0)){
+                        return true;
+                    }
                 }
             }
         }
         return false;
+        
     }
     
-    bool helper(vector<vector<char>> &board, string &word, int i, int j, int k){
+    bool solve(vector<vector<char>>&b, int row, int col, string word, int w_idx){
+        // if(row>=b.size() || row<0 || col>=b[0].size() || col<0 || b[row][col]=='#') return false;
+        // if(word[w_idx]!=b[row][col]) return false;
+        // if(w_idx>=word.size()) return true;
         
-        if(k >= word.size()) return true;
-       
-        if(i < 0 || j < 0 || i>=board.size() || j>=board[0].size() || board[i][j] != word[k]) return false;
-        
-        if(board[i][j] == '.') return false;
-        
-        board[i][j] = '.';
-        vector<int> dx = {0,0,1,-1};
-        vector<int> dy = {1, -1, 0, 0};
-        
-        bool temp = false;
-        for(int index=0;index<4;index++){
-            temp = temp || helper(board, word, i+dx[index], j+dy[index], k+1);
+        if(w_idx == word.size()) {
+            return true;
         }
         
-        board[i][j] = word[k];
-        return temp;       
+        if(row < 0 || col < 0 || row >= b.size() || col >= b[0].size() || b[row][col] != word[w_idx]) {
+            return false;
+        }
+        
+        b[row][col] = '#';
+        bool exist = false;    
+    
+        for(int dx=-1;dx<=1;dx++){
+            for(int dy=-1;dy<=1;dy++){
+                if(abs(dx)==abs(dy)) continue; //Ignore diagonals
+                exist = exist || solve(b, row+dx, col+dy, word, w_idx+1);
+            }
+        }
+        b[row][col]=word[w_idx];
+        return exist;
+        
         
     }
 };
