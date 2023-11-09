@@ -1,7 +1,7 @@
 class Solution {
 public:
     bool wordBreak(string s, vector<string>& wordDict) {
-         vector<int> dp(301,-1);
+         vector<int> dp(s.size()+1,-1);
         unordered_set<string> dict;
         for(auto it: wordDict){
             dict.insert(it);
