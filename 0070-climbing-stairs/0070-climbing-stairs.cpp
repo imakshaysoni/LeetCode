@@ -1,32 +1,19 @@
 class Solution {
-public:
+public:    
     int climbStairs(int n) {
-        
-        int ways=0;
-        vector<int> dp(n+1, -1);
-        ways = helper(n, dp, 0);
-        return ways;
+        vector<int> dp(n+1, -1);    
+        return solve(n, 0, dp);
         
     }
     
-    int helper(int n, vector<int> &dp, int i){
-     
-//         TLE Now need to add DP
+    int solve(int n, int i, vector<int> &dp){
+        if(i>n) return 0;
         if(i==n){
             return 1;
-        }
-        if(i>n) return 0;
-        
-        if(dp[i]!=-1){
-            return dp[i];
-        }
-        
-        dp[i] = helper(n, dp, i+1) + helper(n, dp, i+2);
+        };
+//         Option 1
+        if(dp[i]!=-1) return dp[i];
+        dp[i] = solve(n, i+1, dp) + solve(n, i+2, dp);
         return dp[i];
-//         Taking one step
-//         helper(n, dp, i+1);
-// //     taking 2 steps
-//         helper(n, dp, i+2);
-        
     }
 };
