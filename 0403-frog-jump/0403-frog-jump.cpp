@@ -1,12 +1,10 @@
 class Solution {
 public:
-    unordered_map<int,bool> mp;
     bool canCross(vector<int>& stones) {
-        for(int x: stones){
-            mp[x]=true;
-        }
-        int n = stones.size();
-        vector<vector<int>> dp(n+1, vector<int> (n+1,-1));
+    
+        
+        
+        vector<vector<int>> dp(stones.size()+1, vector<int> (2001,-1));
         return solve(stones, 0, 1, dp);
     }
     
@@ -27,12 +25,10 @@ public:
         
         
         bool op1 = solve(s, index, jumps, dp);
-        if(op1) return dp[index][jumps]=true;
         bool op2 = solve(s, index, jumps-1, dp);
-        if(op2) return dp[index][jumps]=true;
         bool op3 = solve(s, index, jumps+1, dp);
-        if(op3) return dp[index][jumps]=true;
-        return dp[index][jumps] = false;
+        
+        return dp[index][jumps] = op1 || op2 || op3;
         
         
     }
@@ -46,44 +42,3 @@ public:
         return -1;
     }
 };
-
-// class Solution {
-// public:
-//     unordered_map<int,bool> mp;
-//     bool recursion(int pos, int prevStep, vector<int>& arr, int n, map<pair<int,int>,bool>& memo){
-
-//         if(mp[pos]== false || pos > arr[n-1]) return false;
-//         if(pos == arr[n-1]) return true;  
-//         if(memo.find({pos,prevStep}) != memo.end()) return memo[{pos,prevStep}];
-
-//         bool isPossible;
-
-//         if(pos==0){
-//             isPossible = recursion(pos+1,1,arr,n,memo);
-//         }
-//         else{
-//             if(prevStep-1>0) 
-//                 isPossible = recursion(pos+(prevStep-1),prevStep-1,arr,n,memo);
-//             if(isPossible) return true;
-//             isPossible = recursion(pos+prevStep,prevStep,arr,n,memo);
-//             if(isPossible) return true;
-//             isPossible = recursion(pos+(prevStep+1),prevStep+1,arr,n,memo);
-//             if(isPossible) return true;
-//         }
-        
-//         memo[{pos,prevStep}] = isPossible;
-//         return isPossible;
-
-//     }
-
-//     bool canCross(vector<int>& stones) {
-        
-//         for(auto itr : stones){ 
-//             mp[itr] = true;
-           
-//         }
-//         map<pair<int,int>,bool> memo;
-//         int n = stones.size();
-//         return recursion(0,1,stones,n,memo);
-//     }
-// };
