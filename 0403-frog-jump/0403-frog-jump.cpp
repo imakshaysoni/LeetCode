@@ -23,7 +23,9 @@ public:
         index=new_index;    
         
         int op1 = frog(stones, index, jump, dp, mapper);
+        if(op1) return dp[index][jump] = true;
         int op2 = frog(stones, index, jump + 1, dp, mapper );
+        if(op2) return dp[index][jump] = true;
         int op3 = frog(stones, index, jump - 1, dp, mapper);
         dp[index][jump] = op1 || op2 ||op3;
         return dp[index][jump];
