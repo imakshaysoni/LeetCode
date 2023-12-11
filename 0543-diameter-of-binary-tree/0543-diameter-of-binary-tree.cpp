@@ -11,22 +11,21 @@
  */
 class Solution {
 public:
-    int diameter=0;
+    int maxi=0;
     int diameterOfBinaryTree(TreeNode* root) {
         
+        int height = checkHeight(root);
+        return maxi;
         
-        int height = findLenghtOfBT(root);
-        return diameter;
     }
     
-    int findLenghtOfBT(TreeNode* root){
+    int checkHeight(TreeNode* root){
         if(root==NULL) return 0;
         
-        int leftHeight = findLenghtOfBT(root->left);
-        int rightHeight = findLenghtOfBT(root->right);
+        int lh = checkHeight(root->left);
+        int rh = checkHeight(root->right);
         
-        diameter = max(diameter, leftHeight+rightHeight);
-        
-        return max(leftHeight,rightHeight)+1;
+        maxi = max(maxi, lh+rh);
+        return 1 + max(lh,rh);
     }
 };
