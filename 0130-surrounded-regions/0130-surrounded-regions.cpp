@@ -1,126 +1,46 @@
 class Solution {
 public:
-    void solve(vector<vector<char>>& mat) {
-        int n = mat.size();
-        int m = mat[0].size();
+    void solve(vector<vector<char>>& board) {
         
-         vector<vector<int>> visi(n, vector<int> (m, 0));
+        int rows = board.size();
+        int cols = board[0].size();
+        queue<pair<int,int>> q;
         
-        
-        // FirstRow Boundary
-        for(int j=0;j<m;j++){
-            if(mat[0][j]=='O' and visi[0][j]==0){
-                bfs(mat, 0 , j, visi);
-                // dfs(mat, 0 , j, visi);
-            }
+        for(int col=0;col<cols;col++){
+            if(board[0][col]=='O') q.push({0, col});
+            if(board[rows-1][col]=='O') q.push({rows-1,col});
+        }
+        for(int row=0;row<rows;row++){
+            if(board[row][0]=='O') q.push({row, 0});
+            if(board[row][cols-1]=='O') q.push({row, cols-1});
         }
         
-        // FirstColBoundary
-        for(int i=0;i<n;i++){
-            if(mat[i][0]=='O' and visi[i][0]==0){
-                bfs(mat, i, 0, visi);
-                // dfs(mat, i, 0, visi);
-            }
-        }
-        
-        // lastRowBoundary
-        for(int j=0;j<m;j++){
-            if(mat[n-1][j]=='O' and visi[n-1][j]==0){
-                bfs(mat, n-1, j, visi);
-                // dfs(mat, n-1, j, visi);
-            }
-        }
-        
-        // lastColBoundary
-        for(int i=0;i<n;i++){
-            if(mat[i][m-1]=='O' and visi[i][m-1]==0){
-                bfs(mat, i, m-1, visi);
-                // dfs(mat, i, m-1, visi);
-            }
-        }
-        
-        
-        for(int i=0;i<n;i++){
-            for(int j=0;j<m;j++){
-                if(mat[i][j]=='O' and visi[i][j]==0){
-                    mat[i][j]='X';
-                }
-            }
-        }
-        
-        return;
-    }
-    
-    void bfs(vector<vector<char>> &board, int i, int j, vector<vector<int>> &visi) {
-    int m = board.size();
-    int n = board[0].size();
-    queue<pair<int, int> > q;
-    q.push(make_pair(i, j));
-    while (!q.empty()) {
-        pair<int, int> elem = q.front();
-        q.pop();
-        i = elem.first;
-        j = elem.second;
-        if (i >= 0 && i < m && j >=0 && j < n && board[i][j] == 'O' && visi[i][j]==0) {
-            visi[i][j] = 1;
-            q.push(make_pair(i - 1, j));
-            q.push(make_pair(i + 1, j));
-            q.push(make_pair(i, j - 1));
-            q.push(make_pair(i, j + 1));
-        }
-    }
-}
-    
-    void bfs2(vector<vector<char>> &mat, int i, int j, vector<vector<int>> &visi){
-        
-        queue<pair<int, int>> q;
-        q.push({i,j});
         while(!q.empty()){
             int row = q.front().first;
             int col = q.front().second;
             q.pop();
-            
-            visi[row][col]=1;
-            vector<int> dx = {-1, 0, 1, 0};
-            vector<int> dy = {0, 1, 0, -1};
-        
-        for(int index=0;index<4;index++){
-            int delrow = row + dx[index];
-            int delcol = col + dy[index];
-            
-            if(delrow>=0 && delcol >=0 and delrow<mat.size() and delcol<mat[0].size() and visi[delrow][delcol]==0 and mat[delrow][delcol]=='O'){
-                q.push({delrow,delcol});
+            board[row][col]='#';
+            for(int dx=-1;dx<=1;dx++){
+                for(int dy=-1;dy<=1;dy++){
+                    if(abs(dx)==abs(dy)) continue;
+                    int new_row = row+dx;
+                    int new_col = col + dy;
+                    if(new_row>=0 and new_row<rows && new_col>=0 && new_col<cols
+                       && board[new_row][new_col]=='O'){
+                        board[new_row][new_col]='#';
+                        q.push({new_row,new_col});
+                    }
+                }
             }
-            
-            
-        }
-            
-            
-            
         }
         
-        return;
-        
-    }
-    
-     void dfs(vector<vector<char>> &mat, int i, int j, vector<vector<int>> &visi){
-        visi[i][j]=1;
-        
-        vector<int> dx = {-1, 0, 1, 0};
-        vector<int> dy = {0, 1, 0, -1};
-        
-        for(int index=0;index<4;index++){
-            int delrow = i + dx[index];
-            int delcol = j + dy[index];
-            
-            if(delrow>=0 && delcol >=0 and delrow<mat.size() and delcol<mat[0].size() and visi[delrow][delcol]==0 and mat[delrow][delcol]=='O'){
-                dfs(mat, delrow, delcol, visi);
+        for(int row=0;row<rows;row++){
+            for(int col=0;col<cols;col++){
+                if(board[row][col]=='O') board[row][col]='X';
+                if(board[row][col]=='#') board[row][col] = 'O';
             }
-            
-            
         }
         return;
-        
         
     }
 };
