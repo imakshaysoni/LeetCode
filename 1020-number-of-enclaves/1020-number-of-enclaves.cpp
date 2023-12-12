@@ -2,100 +2,55 @@ class Solution {
 public:
     int numEnclaves(vector<vector<int>>& grid) {
         
-        queue<pair<int,int>> q;
-        int n = grid.size();
-        int m = grid[0].size();
-        
-        vector<vector<int>> visi(n, vector<int> (m,0));
-//         firstRow
-        for(int j=0;j<m;j++){
-            if(grid[0][j]==1 and visi[0][j]==0){
-                // bfs(grid, 0, j, visi);
-                dfs(grid, 0, j, visi);
-                
+        int rows = grid.size();
+        int cols = grid[0].size();
+        vector<vector<int>> visited(rows, vector<int>(cols,0));
+//         First Col/Last Col
+        for(int row=0;row<rows;row++){
+            if(grid[row][0]==1){
+                dfs(grid, row, 0, visited);
+            }
+            if(grid[row][cols-1]==1){
+                dfs(grid, row, cols-1, visited);
             }
         }
         
-//         FirstCol
-        for(int i=0;i<n;i++){
-            if(grid[i][0]==1 and visi[i][0]==0){
-                // bfs(grid, i, 0, visi);
-                dfs(grid, i, 0, visi);
+//         First Row/Last Row
+        for(int col=0;col<cols;col++){
+            if(grid[0][col]==1){
+                dfs(grid, 0, col, visited);
+            }
+            if(grid[rows-1][col]==1){
+                dfs(grid, rows-1, col, visited);
             }
         }
-        
-//         lstRpw
-        for(int j=0;j<m;j++){
-            if(grid[n-1][j]==1 and visi[n-1][j]==0){
-                // bfs(grid, n-1, j,visi);
-                dfs(grid, n-1, j,visi);
-            }
-        }
-        
-//         lastCol
-        for(int i=0;i<n;i++){
-            if(grid[i][m-1]==1 and visi[i][m-1]==0){
-                // bfs(grid, i, m-1,visi);
-                dfs(grid, i, m-1,visi);
-            }
-        }
-        
         int count=0;
-    for(int i=0;i<n;i++){
-        for(int j=0;j<m;j++){
-            if(grid[i][j]==1 && visi[i][j]==0) count++;
+        for(int row=0;row<rows;row++){
+            for(int col=0;col<cols;col++){
+                if(visited[row][col]==0 && grid[row][col]==1){
+                    count++;
+                }
+            }
         }
+        return count;
     }
     
-    return count;
+    void dfs(vector<vector<int>>&grid, int row, int col, vector<vector<int>>&visited){
+        visited[row][col]=1;
         
-    }
-    
-    void dfs(vector<vector<int>> &grid, int i, int j, vector<vector<int>> &visi){
-    
-        visi[i][j]=1;
-        
-        int n = grid.size();
-        int m = grid[0].size();
-        vector<int> dx = {-1, 0, 1, 0};
-            vector<int> dy = {0, 1, 0, -1};
-            
-            for(int index=0;index<4;index++){
-                int delrow = i + dx[index];
-                int delcol = j + dy[index];
-                
-                if(delrow>=0 && delcol >=0 && delrow<n && delcol < m && visi[delrow][delcol]==0 && grid[delrow][delcol]==1){
-                    dfs(grid, delrow, delcol, visi);
+        for(int dx=-1;dx<=1;dx++){
+            for(int dy=-1;dy<=1;dy++){
+                if(abs(dx)==abs(dy)) continue;
+                int new_row = row + dx;
+                int new_col = col + dy;
+                if(new_row>=0 && new_row<grid.size() && new_col>=0 && new_col<grid[0].size()
+                  && visited[new_row][new_col]==0 && grid[new_row][new_col]==1){
+                    dfs(grid, new_row, new_col, visited);
                 }
-            }     
-        
-    }
-    
-    void bfs(vector<vector<int>> &grid, int i, int j, vector<vector<int>> &visi){
-        queue<pair<int,int>> q;
-        int n = grid.size();
-        int m = grid[0].size();
-        q.push({i,j});
-        while(!q.empty()){
-            int row = q.front().first;
-            int col = q.front().second;
-            q.pop();
-            visi[row][col]=1;
-            vector<int> dx = {-1, 0, 1, 0};
-            vector<int> dy = {0, 1, 0, -1};
-            
-            for(int index=0;index<4;index++){
-                int delrow = row + dx[index];
-                int delcol = col + dy[index];
-                
-                if(delrow>=0 && delcol >=0 && delrow<n && delcol < m && visi[delrow][delcol]==0 && grid[delrow][delcol]==1){
-                    q.push({delrow,delcol});
-                }
-            }            
-            
-            
+            }
         }
         
+        
+        
     }
-    
 };
