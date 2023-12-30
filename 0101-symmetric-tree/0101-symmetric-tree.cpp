@@ -17,7 +17,7 @@ public:
     }
     
     bool check(TreeNode* lnode, TreeNode* rnode){
-        if(lnode==NULL and rnode==NULL) return true;
+        if(lnode==rnode) return true;
         else if(lnode==NULL or rnode==NULL) return false;
         
         if(lnode->val!=rnode->val) return false;
