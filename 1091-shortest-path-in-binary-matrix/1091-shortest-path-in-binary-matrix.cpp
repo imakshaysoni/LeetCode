@@ -18,7 +18,7 @@ public:
             int j=it.first.second;
             int dist = it.second;
             if(i==n-1 && j==m-1){
-                final_ans = min(final_ans, dist);
+                return final_ans = min(final_ans, dist) + 1;
             }
             for(int delrow=-1;delrow<=1;delrow++){
             for(int delcol=-1;delcol<=1;delcol++){
@@ -32,47 +32,12 @@ public:
             }   
         }
         }
-    
-    if(final_ans==INT_MAX) return -1;
         
-    return final_ans+1;
+    return -1;
         
         
 //         DFS Apprch Giving TLE, even after optimization
         // return dfsApproch(grid);     
     }
     
-    
-    int dfsApproch(vector<vector<int>>&grid){
-        if(grid[0][0]!=0) return -1;
-        
-        int n = grid.size();
-        int m = grid[0].size();
-        if(grid[n-1][m-1]!=0) return -1;
-        vector<vector<int>> visi(n, vector<int> (m,0));
-        
-        solve(grid, 0, 0, visi, 1);
-        if(final_ans==INT_MAX) return -1;
-        return final_ans;
-    }
-//     DFS Approch, TLE
-    void solve(vector<vector<int>>&grid, int i, int j, vector<vector<int>>&visi, int ans){
-        
-        if(i<0 || i>=grid.size() || j<0 || j>=grid[0].size() || grid[i][j]==1 || visi[i][j]==1 || ans >= final_ans) return;
-        visi[i][j]=1;
-        if(i==grid.size()-1 && j==grid[0].size()-1){
-            final_ans = min(final_ans, ans);
-        }
-        
-        for(int delrow=-1;delrow<=1;delrow++){
-            for(int delcol=-1;delcol<=1;delcol++){
-                if (delrow == 0 && delcol == 0)
-                    continue;
-                solve(grid, i+delrow, j+delcol, visi, ans+1);
-            }
-        }
-        visi[i][j]=0;        
-        return;
-        
-    }
 };
