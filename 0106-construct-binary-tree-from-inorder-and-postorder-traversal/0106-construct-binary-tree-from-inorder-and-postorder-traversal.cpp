@@ -12,35 +12,36 @@
 class Solution {
 public:
     TreeNode* buildTree(vector<int>& inorder, vector<int>& postorder) {
-     
+        
         unordered_map<int, int> inMap;
+        
         for(int i=0;i<inorder.size();i++){
             inMap[inorder[i]]=i;
         }
         
-        
-        TreeNode* root = buildTree(inorder, 0, inorder.size()-1, postorder, 0, postorder.size()-1, inMap);
-        
-        return root;
+        return buildBTree(inorder, 0, inorder.size()-1,
+                        postorder, postorder.size()-1, 0, inMap);        
         
         
     }
     
-    TreeNode* buildTree(vector<int> &in, int inStart, int inEnd, vector<int> &post, int postStart, int postEnd, unordered_map<int, int> &inMap)
-    {
+    TreeNode* buildBTree(vector<int>&inorder, int inStart, int inEnd, vector<int>&postorder, int postStart, int postEnd, unordered_map<int,int>&inMap){
         
-        if(inStart > inEnd || postStart > postEnd) return nullptr;
+        if(postStart < postEnd || inStart>inEnd) return NULL;
         
-        int inRoot = post[postEnd];
-        int rootIdx = inMap[inRoot];
-        int numsLeft = rootIdx-inStart;
-        TreeNode* root = new TreeNode(inRoot);
+        int rnode = postorder[postStart];
+        int inRoot = inMap[rnode];
+        int inLeft = inRoot - inStart;
+        int inRight = inEnd - inRoot;
         
-        root->left = buildTree(in, inStart, rootIdx-1, post, postStart, postStart+numsLeft-1,inMap);
-        // root->right = buildTree(in, rootIdx+1, inEnd, post, postStart+numsLeft+1, postEnd-1, inMap);
-        root->right = buildTree(in, rootIdx+1, inEnd, post, postStart+numsLeft, postEnd-1, inMap);
+        TreeNode* root = new TreeNode(rnode);
+        root->left = buildBTree(inorder, inStart, inRoot-1,
+                               postorder, postStart-inRight-1, postEnd, inMap);
+            
+        root->right = buildBTree(inorder, inRoot+1, inEnd,
+                                postorder, postStart-1, postStart-inRight, inMap);
         
-        return root;        
+        return root;
         
     }
 };
