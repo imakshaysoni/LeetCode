@@ -4,17 +4,17 @@ public:
         int n = prices.size();
         // vector<vector<vector<int>>> dp(n, vector<vector<int>>(2, vector<int>(k+1, -1)));
         // return get_profit(prices, 0, 0, dp, k);
-        return tabulation_code(prices, n, k);    
-        // return space_optimized(prices, n, k);
+        // return tabulation_code(prices, n, k);    
+        return space_optimized(prices, n, k);
         
     }
     
-    int space_optimized(vector<int>&prices, int n){
+    int space_optimized(vector<int>&prices, int n, int k){
         //         Space Optimized
         // vector<vector<vector<int>>>dp(n+1, vector<vector<int>>(2, vector<int>(3, 0)));
         
-        vector<vector<int>> ahead(2, vector<int>(3, 0));
-        vector<vector<int>> curr(2, vector<int>(3, 0));
+        vector<vector<int>> ahead(2, vector<int>(k+1, 0));
+        vector<vector<int>> curr(2, vector<int>(k+1, 0));
 //         First Base case; When k == 2, whatever idx & buy, it shoudl be 0
 //         for(int idx=0;idx<n;idx++){
 //             for(int buy=0;buy<2;buy++){
@@ -36,16 +36,16 @@ public:
         
         for(int i=n-1;i>=0;i--){
             for(int j=0;j<2;j++){
-                for(int k=0;k<2;k++){
+                for(int t=0;t<k;t++){
                     if(j==0){
-                    int op1 = -prices[i] + ahead[1][k]; //  get_profit(prices, idx+1, 1, dp, k);
-                    int op2 = ahead[0][k]; //get_profit(prices, idx+1, 0, dp, k);
-                    curr[j][k] = max(op1, op2);
+                    int op1 = -prices[i] + ahead[1][t]; //  get_profit(prices, idx+1, 1, dp, k);
+                    int op2 = ahead[0][t]; //get_profit(prices, idx+1, 0, dp, k);
+                    curr[j][t] = max(op1, op2);
                     }
                     else{
-                        int op3 = prices[i] + ahead[0][k+1]; //get_profit(prices, idx+1, 0, dp, k+1);
-                        int op4 = ahead[1][k]; //get_profit(prices, idx+1, 1, dp, k);            
-                        curr[j][k] = max(op3, op4);
+                        int op3 = prices[i] + ahead[0][t+1]; //get_profit(prices, idx+1, 0, dp, k+1);
+                        int op4 = ahead[1][t]; //get_profit(prices, idx+1, 1, dp, k);            
+                        curr[j][t] = max(op3, op4);
                     } 
                 }
                 
