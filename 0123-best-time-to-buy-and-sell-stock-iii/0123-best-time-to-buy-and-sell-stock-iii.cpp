@@ -2,8 +2,8 @@ class Solution {
 public:
     int maxProfit(vector<int>& prices) {
         int n = prices.size();
-        vector<vector<vector<int>>> dp(n, vector<vector<int>>(2, vector<int>(2, -1)));
-        return get_profit(prices, 0, 0, dp, 0);
+        // vector<vector<vector<int>>> dp(n, vector<vector<int>>(2, vector<int>(2, -1)));
+        // return get_profit(prices, 0, 0, dp, 0);
         return tabulation_code(prices, n);    
 //         return space_optimized(prices, n);
         
@@ -41,26 +41,45 @@ public:
     
     int tabulation_code(vector<int>&prices, int n){
         //         Tabulation
-        vector<vector<int>>dp(n+1, vector<int>(2, 0));
-        dp[n][0]  = 0;
-        dp[n][1] = 0;
-        
-        for(int i=n-1;i>=0;i--){
-            for(int j=0;j<2;j++){
-                if(j==0){
-                    int op1 = -prices[i] + dp[i+1][1]; //  get_profit(prices, idx+1, 1, dp);
-                    int op2 = dp[i+1][0]; //get_profit(prices, idx+1, 0, dp);
-                    dp[i][j] = max(op1, op2);
-                }
-                else{
-                    int op3 = prices[i] + dp[i+1][0]; //get_profit(prices, idx+1, 0, dp);
-                    int op4 = dp[i+1][1]; //get_profit(prices, idx+1, 1, dp);            
-                    dp[i][j] = max(op3, op4);
-                }
+        vector<vector<vector<int>>>dp(n+1, vector<vector<int>>(2, vector<int>(3, 0)));
+//         First Base case; When k == 2, whatever idx & buy, it shoudl be 0
+        for(int idx=0;idx<n;idx++){
+            for(int buy=0;buy<2;buy++){
+                dp[idx][buy][2] = 0;
             }
         }
         
-        return dp[0][0];
+//         SecondBase Case; When idx==n, whatever buy & cap, it should be 0
+        for(int idx=0;idx<n;idx++){
+            for(int buy=0;buy<2;buy++){
+            for(int k=0;k<=2;k++){
+                dp[idx][buy][k] = 0;
+                }
+            }    
+        }
+        
+        
+        
+        
+        for(int i=n-1;i>=0;i--){
+            for(int j=0;j<2;j++){
+                for(int k=0;k<2;k++){
+                    if(j==0){
+                    int op1 = -prices[i] + dp[i+1][1][k]; //  get_profit(prices, idx+1, 1, dp, k);
+                    int op2 = dp[i+1][0][k]; //get_profit(prices, idx+1, 0, dp, k);
+                    dp[i][j][k] = max(op1, op2);
+                    }
+                    else{
+                        int op3 = prices[i] + dp[i+1][0][k+1]; //get_profit(prices, idx+1, 0, dp, k+1);
+                        int op4 = dp[i+1][1][k]; //get_profit(prices, idx+1, 1, dp, k);            
+                        dp[i][j][k] = max(op3, op4);
+                    } 
+                }
+                
+            }
+        }
+        
+        return dp[0][0][0];
 
     }
     
