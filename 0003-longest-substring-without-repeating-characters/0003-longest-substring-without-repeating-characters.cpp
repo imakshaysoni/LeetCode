@@ -3,25 +3,30 @@ public:
     int lengthOfLongestSubstring(string s) {
         int n = s.size();
         if(n==0) return 0;
-        unordered_set<char> st;
         
-        int left= 0;
-        int right=0;
-        int maxi = INT_MIN;
-        while(left<=right and right<n){
-            
-            if(st.find(s[right])!=st.end()){
-                st.erase(s[left]);
-                left++;
+        int maxi=INT_MIN;
+        int left=0;
+        int right = 0;
+        unordered_map<char,int> mapp;
+        
+        while(right<n){
+            cout<<"Right: "<<right<<endl;
+            char ch = s[right];
+            if(mapp.find(ch) != mapp.end() && mapp[ch]>=left){
+                left = mapp[ch] + 1;
+                mapp[ch] = right;
+                right++;
             }
             else{
-                maxi = max(maxi, (right-left+1));
-                st.insert(s[right]);
+                if(right==6){
+                    cout<<"LeftVal"<<left;
+                }
+                maxi = max(maxi, right-left+1);
+                mapp[ch]=right;
                 right++;
-            }           
+            }
             
         }
-               return maxi;
-        
+        return maxi;
     }
 };
