@@ -1,22 +1,31 @@
 class Solution {
 public:
     int numSubarraysWithSum(vector<int>& nums, int goal) {
+        return countSubArraySumAtMostGoal(nums, goal) - countSubArraySumAtMostGoal(nums, goal-1);
+    }
+    
+    int countSubArraySumAtMostGoal(vector<int>&nums, int goal){
+        
+        int left=0;
+        int right = 0;
         int sum=0;
-        int ans=0;
-        int n = nums.size();
-        unordered_map<int,int> m;
-        m[sum]=1;
-        for(int i=0;i<n;i++){
-            sum += nums[i];
-            int find = sum-goal;
-            if(m.find(find)!=m.end()){
-                ans+=m[find];
+        int count= 0;
+        
+        while(right<nums.size()){
+            
+            sum += nums[right];
+            
+            while(sum>goal and left<=right){
+                sum -= nums[left];
+                left++;
             }
-            m[sum]++;
+            
+            count += (right-left+1);
+            right++;
+            
         }
         
-        return ans;
-        
+        return count;
         
     }
 };
