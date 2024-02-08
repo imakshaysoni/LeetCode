@@ -17,7 +17,7 @@ public:
             
             mapp[nums[right]]++;
             
-            while(mapp.size()>k){
+            while(mapp.size()>k and left<=right){
                 mapp[nums[left]]--;
                 if(mapp[nums[left]]==0){
                     mapp.erase(nums[left]);
