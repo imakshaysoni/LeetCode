@@ -4,6 +4,33 @@ public:
         int n = s.size();
         if(n==0) return 0;
         
+//         Brute Force
+        int maxi = INT_MIN;
+        int count=0;
+        unordered_set<char> st;
+        for(int i=0;i<n;i++){
+            count = 0;
+            st.clear();
+            for(int j=i;j<n;j++){
+                char ch = s[j];
+                if(st.find(ch)!=st.end()){
+                    maxi = max(maxi, count);
+                    break;
+                }
+                st.insert(ch);
+                count++;
+            }
+            maxi = max(maxi, count);
+        }
+        return max(maxi, count);
+        
+        
+//         Optimal Approch
+        // return slidingWindow(s, n);
+        
+    }
+    int slidingWindow(string s, int n){
+        
         int maxi=INT_MIN;
         int left=0;
         int right = 0;
