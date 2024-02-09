@@ -14,7 +14,6 @@ public:
             for(int j=i;j<n;j++){
                 char ch = s[j];
                 if(st.find(ch)!=st.end()){
-                    maxi = max(maxi, count);
                     break;
                 }
                 st.insert(ch);
