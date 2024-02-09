@@ -22,7 +22,7 @@ public:
             }
             maxi = max(maxi, count);
         }
-        return max(maxi, count);
+        return maxi;
         
         
 //         Optimal Approch
