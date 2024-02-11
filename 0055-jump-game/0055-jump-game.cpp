@@ -1,23 +1,14 @@
 class Solution {
 public:
     bool canJump(vector<int>& nums) {
-        vector<int> dp(nums.size(), -1);
-        return solve(nums, 0, dp);
-    }
-    
-    bool solve(vector<int>&nums, int idx, vector<int>&dp){
-        if(idx==nums.size()-1) return true;
-        if(idx>=nums.size()) return false;
-        if(nums[idx]==0) return false;
+        int reachable = 0;
         
-        if(dp[idx]!=-1) return dp[idx];
-        
-        int steps = nums[idx];
-        for(int i=1;i<=steps;i++){
-            bool op1 = solve(nums, idx+i, dp);
-            if(op1) return dp[idx] = true;
+        for(int i=0;i<nums.size();i++){
+            
+            if(reachable<i) return false;
+            reachable = max(reachable, i+nums[i]);
         }
+        return true;
         
-        return dp[idx]=false;
     }
 };
