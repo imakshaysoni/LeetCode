@@ -8,7 +8,8 @@ public:
             if(reachable<i) return false;
             reachable = max(reachable, i+nums[i]);
         }
-        return true;
+        if(reachable>=nums.size()-1) return true;
+        return false;
         
     }
 };
