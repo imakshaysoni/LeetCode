@@ -13,8 +13,8 @@ public:
         string ans = "";
         int n = s.size();
         for(int i=0;i<n;i++){
-                string even = twoPointer(s, i, i);
-                string odd = twoPointer(s, i, i+1);
+                string even = twoPointer(s, i, i+1);
+                string odd = twoPointer(s, i, i);
                 
                 if(even.size()>ans.size()){
                     ans=even;
