@@ -4,27 +4,41 @@ public:
      
         int rows = matrix.size();
         int cols = matrix[0].size();
-        vector<pair<int,int>> zeros;
+        int col1=1;
         for(int row=0;row<rows;row++){
             for(int col=0;col<cols;col++){
                 if(matrix[row][col]==0){
-                    zeros.push_back({row, col});
+                    matrix[row][0] = 0;
+                    
+                    if(col==0){
+                        col1=0;
+                    }
+                    else{
+                        matrix[0][col]=0;
+                    }
                 }
             }
         }
         
-        for(auto row_col: zeros){
-            
-            // make whole row as 0
-            for(int i=0;i<cols;i++){
-                matrix[row_col.first][i] = 0;
-            }
-            
-            //make whole col as 0
-            for(int j=0;j<rows;j++){
-                matrix[j][row_col.second] = 0;
+        for(int row=1;row<rows;row++){
+            for(int col=1;col<cols;col++){
+                if(matrix[row][0]==0 or matrix[0][col]==0){
+                    matrix[row][col]=0;
+                }
             }
         }
+        
+        if(matrix[0][0]==0){
+            for(int col=1;col<cols;col++) matrix[0][col]=0;
+        }
+        
+        if(col1==0){
+            for(int row=0;row<rows;row++){
+                matrix[row][0]=0;
+            }
+        }
+        
+    
         
     }
 };
