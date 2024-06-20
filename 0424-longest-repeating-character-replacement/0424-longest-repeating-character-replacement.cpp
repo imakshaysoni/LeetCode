@@ -12,7 +12,7 @@ public:
             mapp[ch] += 1;
             topFreq = max(topFreq, mapp[ch]);
             
-            while(right-left+1 - topFreq > k ){
+            while(right-left+1 - topFreq > k and left<s.size() ){
                 mapp[s[left]]--;
                 left++;
             }
