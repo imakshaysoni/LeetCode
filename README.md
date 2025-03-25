@@ -29,6 +29,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 ## Array
 |  |
 | ------- |
+| [0045-jump-game-ii](https://github.com/imakshaysoni/LeetCode/tree/master/0045-jump-game-ii) |
 | [0948-sort-an-array](https://github.com/imakshaysoni/LeetCode/tree/master/0948-sort-an-array) |
 | [1046-max-consecutive-ones-iii](https://github.com/imakshaysoni/LeetCode/tree/master/1046-max-consecutive-ones-iii) |
 | [1538-maximum-points-you-can-obtain-from-cards](https://github.com/imakshaysoni/LeetCode/tree/master/1538-maximum-points-you-can-obtain-from-cards) |
@@ -90,6 +91,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 ## Dynamic Programming
 |  |
 | ------- |
+| [0045-jump-game-ii](https://github.com/imakshaysoni/LeetCode/tree/master/0045-jump-game-ii) |
 | [0678-valid-parenthesis-string](https://github.com/imakshaysoni/LeetCode/tree/master/0678-valid-parenthesis-string) |
 ## Stack
 |  |
@@ -98,5 +100,6 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 ## Greedy
 |  |
 | ------- |
+| [0045-jump-game-ii](https://github.com/imakshaysoni/LeetCode/tree/master/0045-jump-game-ii) |
 | [0678-valid-parenthesis-string](https://github.com/imakshaysoni/LeetCode/tree/master/0678-valid-parenthesis-string) |
 <!---LeetCode Topics End-->
