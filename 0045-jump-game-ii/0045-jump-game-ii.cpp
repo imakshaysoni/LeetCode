@@ -10,7 +10,7 @@ public:
         for(int i=0;i<n;i++){
             maxR = max(maxR, i+nums[i]);
             if(i==lastIdx){
-                lastIdx = max(maxR, i+nums[i]);
+                lastIdx = maxR;
                 step++;
                 if(maxR==n-1) return step;
             }
