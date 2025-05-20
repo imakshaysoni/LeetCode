@@ -36,6 +36,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [1046-max-consecutive-ones-iii](https://github.com/imakshaysoni/LeetCode/tree/master/1046-max-consecutive-ones-iii) |
 | [1538-maximum-points-you-can-obtain-from-cards](https://github.com/imakshaysoni/LeetCode/tree/master/1538-maximum-points-you-can-obtain-from-cards) |
 | [1559-cherry-pickup-ii](https://github.com/imakshaysoni/LeetCode/tree/master/1559-cherry-pickup-ii) |
+| [3143-longest-unequal-adjacent-groups-subsequence-i](https://github.com/imakshaysoni/LeetCode/tree/master/3143-longest-unequal-adjacent-groups-subsequence-i) |
 ## Divide and Conquer
 |  |
 | ------- |
@@ -91,6 +92,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0076-minimum-window-substring](https://github.com/imakshaysoni/LeetCode/tree/master/0076-minimum-window-substring) |
 | [0424-longest-repeating-character-replacement](https://github.com/imakshaysoni/LeetCode/tree/master/0424-longest-repeating-character-replacement) |
 | [0678-valid-parenthesis-string](https://github.com/imakshaysoni/LeetCode/tree/master/0678-valid-parenthesis-string) |
+| [3143-longest-unequal-adjacent-groups-subsequence-i](https://github.com/imakshaysoni/LeetCode/tree/master/3143-longest-unequal-adjacent-groups-subsequence-i) |
 ## Dynamic Programming
 |  |
 | ------- |
@@ -99,6 +101,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0678-valid-parenthesis-string](https://github.com/imakshaysoni/LeetCode/tree/master/0678-valid-parenthesis-string) |
 | [0741-cherry-pickup](https://github.com/imakshaysoni/LeetCode/tree/master/0741-cherry-pickup) |
 | [1559-cherry-pickup-ii](https://github.com/imakshaysoni/LeetCode/tree/master/1559-cherry-pickup-ii) |
+| [3143-longest-unequal-adjacent-groups-subsequence-i](https://github.com/imakshaysoni/LeetCode/tree/master/3143-longest-unequal-adjacent-groups-subsequence-i) |
 ## Stack
 |  |
 | ------- |
@@ -108,6 +111,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | ------- |
 | [0045-jump-game-ii](https://github.com/imakshaysoni/LeetCode/tree/master/0045-jump-game-ii) |
 | [0678-valid-parenthesis-string](https://github.com/imakshaysoni/LeetCode/tree/master/0678-valid-parenthesis-string) |
+| [3143-longest-unequal-adjacent-groups-subsequence-i](https://github.com/imakshaysoni/LeetCode/tree/master/3143-longest-unequal-adjacent-groups-subsequence-i) |
 ## Matrix
 |  |
 | ------- |
