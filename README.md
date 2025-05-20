@@ -30,6 +30,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 |  |
 | ------- |
 | [0045-jump-game-ii](https://github.com/imakshaysoni/LeetCode/tree/master/0045-jump-game-ii) |
+| [0221-maximal-square](https://github.com/imakshaysoni/LeetCode/tree/master/0221-maximal-square) |
 | [0741-cherry-pickup](https://github.com/imakshaysoni/LeetCode/tree/master/0741-cherry-pickup) |
 | [0948-sort-an-array](https://github.com/imakshaysoni/LeetCode/tree/master/0948-sort-an-array) |
 | [1046-max-consecutive-ones-iii](https://github.com/imakshaysoni/LeetCode/tree/master/1046-max-consecutive-ones-iii) |
@@ -94,6 +95,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 |  |
 | ------- |
 | [0045-jump-game-ii](https://github.com/imakshaysoni/LeetCode/tree/master/0045-jump-game-ii) |
+| [0221-maximal-square](https://github.com/imakshaysoni/LeetCode/tree/master/0221-maximal-square) |
 | [0678-valid-parenthesis-string](https://github.com/imakshaysoni/LeetCode/tree/master/0678-valid-parenthesis-string) |
 | [0741-cherry-pickup](https://github.com/imakshaysoni/LeetCode/tree/master/0741-cherry-pickup) |
 | [1559-cherry-pickup-ii](https://github.com/imakshaysoni/LeetCode/tree/master/1559-cherry-pickup-ii) |
@@ -109,6 +111,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 ## Matrix
 |  |
 | ------- |
+| [0221-maximal-square](https://github.com/imakshaysoni/LeetCode/tree/master/0221-maximal-square) |
 | [0741-cherry-pickup](https://github.com/imakshaysoni/LeetCode/tree/master/0741-cherry-pickup) |
 | [1559-cherry-pickup-ii](https://github.com/imakshaysoni/LeetCode/tree/master/1559-cherry-pickup-ii) |
 <!---LeetCode Topics End-->
