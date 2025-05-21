@@ -89,6 +89,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 ## String
 |  |
 | ------- |
+| [0014-longest-common-prefix](https://github.com/imakshaysoni/LeetCode/tree/master/0014-longest-common-prefix) |
 | [0076-minimum-window-substring](https://github.com/imakshaysoni/LeetCode/tree/master/0076-minimum-window-substring) |
 | [0424-longest-repeating-character-replacement](https://github.com/imakshaysoni/LeetCode/tree/master/0424-longest-repeating-character-replacement) |
 | [0678-valid-parenthesis-string](https://github.com/imakshaysoni/LeetCode/tree/master/0678-valid-parenthesis-string) |
@@ -118,4 +119,8 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0221-maximal-square](https://github.com/imakshaysoni/LeetCode/tree/master/0221-maximal-square) |
 | [0741-cherry-pickup](https://github.com/imakshaysoni/LeetCode/tree/master/0741-cherry-pickup) |
 | [1559-cherry-pickup-ii](https://github.com/imakshaysoni/LeetCode/tree/master/1559-cherry-pickup-ii) |
+## Trie
+|  |
+| ------- |
+| [0014-longest-common-prefix](https://github.com/imakshaysoni/LeetCode/tree/master/0014-longest-common-prefix) |
 <!---LeetCode Topics End-->
