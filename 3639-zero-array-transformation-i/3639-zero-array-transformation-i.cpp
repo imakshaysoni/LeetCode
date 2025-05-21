@@ -1,5 +1,18 @@
 class Solution {
 public:
+    bool checkNow(vector<int> &diff, vector<int> &nums){
+            vector<int> res;
+            int cSum = 0;
+            for(int i=0;i<nums.size();i++){
+                cSum += diff[i];
+                res.push_back(cSum);
+            }
+            for(auto it: res) cout<<it<<",";
+            for(int i=0;i<nums.size();i++){
+                if(nums[i] > res[i]) return false;
+            }
+            return true;
+        }
     bool isZeroArray(vector<int>& nums, vector<vector<int>>& queries) {
 
         // Brute Force
@@ -10,22 +23,23 @@ public:
         for (auto it : queries) {
             int left = it[0];
             int right = it[1];
-            diff[left] += -1;
+            diff[left] += 1;
             if (right + 1 < diff.size()) {
-                diff[right + 1] -= -1;
+                diff[right + 1] -= 1;
             }
         }
-        // Commulative
-        for (int i = 1; i < diff.size(); i++) {
-            diff[i] += diff[i - 1];
-        }
-        for (auto it : diff)
-            cout << it << ",";
-        for (int i = 0; i < nums.size(); i++) {
-            if (abs(diff[i]) < nums[i])
-                return false;
-        }
-        return true;
+        return checkNow(diff, nums);
+        // // Commulative
+        // for (int i = 1; i < diff.size(); i++) {
+        //     diff[i] += diff[i - 1];
+        // }
+        // for (auto it : diff)
+        //     cout << it << ",";
+        // for (int i = 0; i < nums.size(); i++) {
+        //     if (abs(diff[i]) < nums[i])
+        //         return false;
+        // }
+        // return true;
     }
 
     bool other(vector<int>& nums, vector<vector<int>>& queries) {
