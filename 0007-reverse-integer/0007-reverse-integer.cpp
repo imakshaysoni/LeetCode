@@ -2,7 +2,8 @@ class Solution {
 public:
     int reverse(int x) {
         int ans = 0;
-        int p = pow(2, 31)-1;
+        int p = pow(2,31)-1;
+        cout<<p;
         cout<<p;
         while(x){
             int n = x%10;
