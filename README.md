@@ -93,6 +93,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | ------- |
 | [0076-minimum-window-substring](https://github.com/imakshaysoni/LeetCode/tree/master/0076-minimum-window-substring) |
 | [0424-longest-repeating-character-replacement](https://github.com/imakshaysoni/LeetCode/tree/master/0424-longest-repeating-character-replacement) |
+| [0768-partition-labels](https://github.com/imakshaysoni/LeetCode/tree/master/0768-partition-labels) |
 ## String
 |  |
 | ------- |
@@ -100,6 +101,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0076-minimum-window-substring](https://github.com/imakshaysoni/LeetCode/tree/master/0076-minimum-window-substring) |
 | [0424-longest-repeating-character-replacement](https://github.com/imakshaysoni/LeetCode/tree/master/0424-longest-repeating-character-replacement) |
 | [0678-valid-parenthesis-string](https://github.com/imakshaysoni/LeetCode/tree/master/0678-valid-parenthesis-string) |
+| [0768-partition-labels](https://github.com/imakshaysoni/LeetCode/tree/master/0768-partition-labels) |
 | [2465-shifting-letters-ii](https://github.com/imakshaysoni/LeetCode/tree/master/2465-shifting-letters-ii) |
 | [3143-longest-unequal-adjacent-groups-subsequence-i](https://github.com/imakshaysoni/LeetCode/tree/master/3143-longest-unequal-adjacent-groups-subsequence-i) |
 ## Dynamic Programming
@@ -120,6 +122,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | ------- |
 | [0045-jump-game-ii](https://github.com/imakshaysoni/LeetCode/tree/master/0045-jump-game-ii) |
 | [0678-valid-parenthesis-string](https://github.com/imakshaysoni/LeetCode/tree/master/0678-valid-parenthesis-string) |
+| [0768-partition-labels](https://github.com/imakshaysoni/LeetCode/tree/master/0768-partition-labels) |
 | [3143-longest-unequal-adjacent-groups-subsequence-i](https://github.com/imakshaysoni/LeetCode/tree/master/3143-longest-unequal-adjacent-groups-subsequence-i) |
 ## Matrix
 |  |
@@ -135,4 +138,8 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 |  |
 | ------- |
 | [0007-reverse-integer](https://github.com/imakshaysoni/LeetCode/tree/master/0007-reverse-integer) |
+## Two Pointers
+|  |
+| ------- |
+| [0768-partition-labels](https://github.com/imakshaysoni/LeetCode/tree/master/0768-partition-labels) |
 <!---LeetCode Topics End-->
