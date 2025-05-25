@@ -29,6 +29,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 ## Array
 |  |
 | ------- |
+| [0031-next-permutation](https://github.com/imakshaysoni/LeetCode/tree/master/0031-next-permutation) |
 | [0045-jump-game-ii](https://github.com/imakshaysoni/LeetCode/tree/master/0045-jump-game-ii) |
 | [0221-maximal-square](https://github.com/imakshaysoni/LeetCode/tree/master/0221-maximal-square) |
 | [0741-cherry-pickup](https://github.com/imakshaysoni/LeetCode/tree/master/0741-cherry-pickup) |
@@ -143,6 +144,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 ## Two Pointers
 |  |
 | ------- |
+| [0031-next-permutation](https://github.com/imakshaysoni/LeetCode/tree/master/0031-next-permutation) |
 | [0768-partition-labels](https://github.com/imakshaysoni/LeetCode/tree/master/0768-partition-labels) |
 ## Linked List
 |  |
