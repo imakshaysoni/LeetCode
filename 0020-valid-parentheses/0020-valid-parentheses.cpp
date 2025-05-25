@@ -1,20 +1,29 @@
 class Solution {
 public:
-    bool isValid(string s) {        
+    bool isValid(string s) {
+
+
+
+        return mysol(s);
+    }
+    bool mysol(string s){
+        unordered_map<char, char> mapp = { 
+    {'}', '{'},
+    {')', '('}, 
+    {']', '['}
+};
         stack<char> st;
-        for(auto ch : s){
-            if(ch == '{' || ch == '(' || ch == '['){
-                st.push(ch);
+
+        for(int i=0;i<s.size();i++){
+            char ch = s[i];
+            if(mapp.find(ch)!=mapp.end()){
+                // Its a closing brack
+                if(st.empty() || st.top() != mapp[ch]) return false;
+                st.pop();
             }
             else{
-                if(st.empty()) return false;
-                char it = st.top();
-                if((ch==')' and it=='(') or (ch=='}' and it=='{') or (ch==']' and it=='[')) st.pop();
-                else return false;
-                
-            }
-            
-            
+                st.push(ch);
+            }    
         }
         return st.empty();
     }
