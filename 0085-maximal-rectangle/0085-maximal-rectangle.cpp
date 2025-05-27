@@ -37,7 +37,6 @@ public:
                 right++;
             }
             int width = lwidth + rwidth + 1;
-            cout<<"lwidth:"<<lwidth<<","<<"rwidth"<<rwidth<<","<<"Aread:"<<width * hist[i]<<"-";
             maxArea = max(maxArea, width * hist[i]);
         }
         return maxArea;
