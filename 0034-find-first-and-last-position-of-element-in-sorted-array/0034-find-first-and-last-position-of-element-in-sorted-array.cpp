@@ -31,8 +31,9 @@ public:
         int right = n-1;
         // int minIdx = INT_MAX, maxIdx=INT_MIN;
 
-        binarySearch(nums, target, left, right, true);
         binarySearch(nums, target, left, right, false);
+        if(minIdx==INT_MAX) return {-1, -1};
+        binarySearch(nums, target, left, right, true);
 
         if(minIdx==INT_MAX) return {-1, -1};
         return {minIdx, maxIdx};
