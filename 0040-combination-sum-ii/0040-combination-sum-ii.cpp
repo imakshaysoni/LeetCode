@@ -1,28 +1,33 @@
 class Solution {
 public:
-    vector<vector<int>> result;
+    set<vector<int>> st;
     vector<vector<int>> combinationSum2(vector<int>& candidates, int target) {
         
+        vector<int> subset;
+        vector<vector<int>> ans;
         sort(candidates.begin(), candidates.end());
-        vector<int> arr;
-        solve(candidates, target, arr, 0);
-        return result;
+        solve(candidates, 0, target, subset, ans);
+        return ans;
+
     }
-    void solve(vector<int> &c, int target, vector<int> &arr, int index){
-        if(target==0) {
-            result.push_back(arr);
+
+    void solve(vector<int> &can, int i, int target, vector<int> &subset, vector<vector<int>> &ans){
+
+        if(target==0){
+            ans.push_back(subset);
             return;
         }
-        if(target<0 or index>=c.size()){ return; }
-        
-//         Select First
-        arr.push_back(c[index]);
-        solve(c, target-c[index], arr, index+1);
-        arr.pop_back();
-//             Not Select
-        while(index<c.size()-1 && c[index]==c[index+1]){ index++; }
-        solve(c, target, arr, index+1);
+        if(target < 0 ) return;
+        if(i>=can.size()) return;
+
+        // pick
+        subset.push_back(can[i]);
+        solve(can, i+1, target-can[i], subset, ans);
+
+        subset.pop_back();
+        while(i+1 < can.size() and can[i]==can[i+1]) i++;
+        solve(can, i+1, target, subset, ans);
+
+
     }
-    
-    
 };
