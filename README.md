@@ -164,6 +164,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 |  |
 | ------- |
 | [0007-reverse-integer](https://github.com/imakshaysoni/LeetCode/tree/master/0007-reverse-integer) |
+| [0319-bulb-switcher](https://github.com/imakshaysoni/LeetCode/tree/master/0319-bulb-switcher) |
 | [3172-divisible-and-non-divisible-sums-difference](https://github.com/imakshaysoni/LeetCode/tree/master/3172-divisible-and-non-divisible-sums-difference) |
 ## Two Pointers
 |  |
@@ -194,4 +195,8 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | ------- |
 | [0040-combination-sum-ii](https://github.com/imakshaysoni/LeetCode/tree/master/0040-combination-sum-ii) |
 | [0077-combinations](https://github.com/imakshaysoni/LeetCode/tree/master/0077-combinations) |
+## Brainteaser
+|  |
+| ------- |
+| [0319-bulb-switcher](https://github.com/imakshaysoni/LeetCode/tree/master/0319-bulb-switcher) |
 <!---LeetCode Topics End-->
