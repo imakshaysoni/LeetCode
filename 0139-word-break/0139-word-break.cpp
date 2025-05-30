@@ -1,33 +1,27 @@
 class Solution {
 public:
     bool wordBreak(string s, vector<string>& wordDict) {
-         vector<int> dp(s.size()+1,-1);
-        unordered_set<string> dict;
-        for(auto it: wordDict){
-            dict.insert(it);
-        }
-        return solve(s, dict, 0, dp);
+
+        unordered_set<string> st;
+        for(auto it: wordDict) st.insert(it);
+        vector<int> dp(s.size(), -1);
+        return solve(s, st, 0, dp);
         
-    }    
-    bool solve(string s, unordered_set<string> &dict, int index, vector<int> &dp){
-    
-        if(index>=s.size())
-        {
-            dp[index]=1;
-            return dp[index];
-        };
-        if(dp[index]!=-1) return dp[index];
+    }
+
+    bool solve(string s, unordered_set<string> st, int idx, vector<int> &dp){
+
+        if(idx>=s.size()) return true;
+
+        if(dp[idx]!=-1) return dp[idx];
+
         string word = "";
-        for(int i=index;i<s.size();i++){
-            word += s[i];
-            if(dict.find(word)!=dict.end()){
-                if(solve(s, dict, i+1, dp)){
-                  dp[index]=1;
-                    return dp[index];
-                } 
+        for(int index=idx; index<s.size();index++){
+            word += s[index];
+            if(st.find(word)!=st.end()){
+                if(solve(s, st, index+1, dp)) return true;
             }
         }
-        dp[index]=0;
-        return dp[index];
+        return dp[idx] = false;
     }
 };
