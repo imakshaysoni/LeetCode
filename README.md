@@ -122,6 +122,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0424-longest-repeating-character-replacement](https://github.com/imakshaysoni/LeetCode/tree/master/0424-longest-repeating-character-replacement) |
 | [0678-valid-parenthesis-string](https://github.com/imakshaysoni/LeetCode/tree/master/0678-valid-parenthesis-string) |
 | [0768-partition-labels](https://github.com/imakshaysoni/LeetCode/tree/master/0768-partition-labels) |
+| [1197-parsing-a-boolean-expression](https://github.com/imakshaysoni/LeetCode/tree/master/1197-parsing-a-boolean-expression) |
 | [2237-longest-palindrome-by-concatenating-two-letter-words](https://github.com/imakshaysoni/LeetCode/tree/master/2237-longest-palindrome-by-concatenating-two-letter-words) |
 | [2465-shifting-letters-ii](https://github.com/imakshaysoni/LeetCode/tree/master/2465-shifting-letters-ii) |
 | [3143-longest-unequal-adjacent-groups-subsequence-i](https://github.com/imakshaysoni/LeetCode/tree/master/3143-longest-unequal-adjacent-groups-subsequence-i) |
@@ -146,6 +147,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0084-largest-rectangle-in-histogram](https://github.com/imakshaysoni/LeetCode/tree/master/0084-largest-rectangle-in-histogram) |
 | [0085-maximal-rectangle](https://github.com/imakshaysoni/LeetCode/tree/master/0085-maximal-rectangle) |
 | [0678-valid-parenthesis-string](https://github.com/imakshaysoni/LeetCode/tree/master/0678-valid-parenthesis-string) |
+| [1197-parsing-a-boolean-expression](https://github.com/imakshaysoni/LeetCode/tree/master/1197-parsing-a-boolean-expression) |
 ## Greedy
 |  |
 | ------- |
@@ -188,6 +190,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 |  |
 | ------- |
 | [0024-swap-nodes-in-pairs](https://github.com/imakshaysoni/LeetCode/tree/master/0024-swap-nodes-in-pairs) |
+| [1197-parsing-a-boolean-expression](https://github.com/imakshaysoni/LeetCode/tree/master/1197-parsing-a-boolean-expression) |
 ## Simulation
 |  |
 | ------- |
