@@ -1,8 +1,8 @@
 class Solution {
 public:
     int minCut(string s) {
-        
-        if (checkPalindrom(s, 0, s.size() - 1))
+        vector<vector<int>> memo(s.size(), vector<int> (s.size(), -1));
+        if (checkPalindrom(s, 0, s.size() - 1, memo))
             return 0;
         
         // vector<int> dp(s.size(), -1);
@@ -15,7 +15,7 @@ public:
             int mini = INT_MAX;
             for (int index = idx; index < s.size(); index++) {
                 curr += s[index];
-                if (checkPalindrom(s, idx, index))
+                if (checkPalindrom(s, idx, index, memo))
                     mini = min(mini, 1 + dp[index+1]);
             }
             dp[idx] = mini;
@@ -24,29 +24,32 @@ public:
         
 
     }
-    bool checkPalindrom(string &s, int left, int right) {
+    bool checkPalindrom(string &s, int left, int right, vector<vector<int>> &memo) {
+        int ldx =left;
+        int rdx = right;
+        if(memo[left][right]!=-1) return memo[ldx][rdx];
         while (left <= right) {
             if (s[left] != s[right]) {
-                return false;
+                return memo[ldx][rdx] = false;
             }
             right--;
             left++;
         }
-        return true;
+        return memo[ldx][rdx] = true;
     }
-    int solve(string &s, int idx, vector<int> &dp) {
+    // int solve(string &s, int idx, vector<int> &dp) {
 
-        if (idx >= s.size())
-            return 0;
-        if(dp[idx]!=-1) return dp[idx];
+    //     if (idx >= s.size())
+    //         return 0;
+    //     if(dp[idx]!=-1) return dp[idx];
 
-        string curr = "";
-        int mini = INT_MAX;
-        for (int index = idx; index < s.size(); index++) {
-            curr += s[index];
-            if (checkPalindrom(s, idx, index))
-                mini = min(mini, 1 + solve(s, index + 1, dp));
-        }
-        return dp[idx] = mini;
-    }
+    //     string curr = "";
+    //     int mini = INT_MAX;
+    //     for (int index = idx; index < s.size(); index++) {
+    //         curr += s[index];
+    //         if (checkPalindrom(s, idx, index))
+    //             mini = min(mini, 1 + solve(s, index + 1, dp));
+    //     }
+    //     return dp[idx] = mini;
+    // }
 };
