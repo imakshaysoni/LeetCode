@@ -139,6 +139,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0741-cherry-pickup](https://github.com/imakshaysoni/LeetCode/tree/master/0741-cherry-pickup) |
 | [1121-partition-array-for-maximum-sum](https://github.com/imakshaysoni/LeetCode/tree/master/1121-partition-array-for-maximum-sum) |
 | [1559-cherry-pickup-ii](https://github.com/imakshaysoni/LeetCode/tree/master/1559-cherry-pickup-ii) |
+| [2408-number-of-people-aware-of-a-secret](https://github.com/imakshaysoni/LeetCode/tree/master/2408-number-of-people-aware-of-a-secret) |
 | [3143-longest-unequal-adjacent-groups-subsequence-i](https://github.com/imakshaysoni/LeetCode/tree/master/3143-longest-unequal-adjacent-groups-subsequence-i) |
 ## Stack
 |  |
@@ -195,6 +196,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 |  |
 | ------- |
 | [2265-partition-array-according-to-given-pivot](https://github.com/imakshaysoni/LeetCode/tree/master/2265-partition-array-according-to-given-pivot) |
+| [2408-number-of-people-aware-of-a-secret](https://github.com/imakshaysoni/LeetCode/tree/master/2408-number-of-people-aware-of-a-secret) |
 ## Monotonic Stack
 |  |
 | ------- |
@@ -213,4 +215,8 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 |  |
 | ------- |
 | [0139-word-break](https://github.com/imakshaysoni/LeetCode/tree/master/0139-word-break) |
+## Queue
+|  |
+| ------- |
+| [2408-number-of-people-aware-of-a-secret](https://github.com/imakshaysoni/LeetCode/tree/master/2408-number-of-people-aware-of-a-secret) |
 <!---LeetCode Topics End-->
