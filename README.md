@@ -43,6 +43,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0948-sort-an-array](https://github.com/imakshaysoni/LeetCode/tree/master/0948-sort-an-array) |
 | [1046-max-consecutive-ones-iii](https://github.com/imakshaysoni/LeetCode/tree/master/1046-max-consecutive-ones-iii) |
 | [1121-partition-array-for-maximum-sum](https://github.com/imakshaysoni/LeetCode/tree/master/1121-partition-array-for-maximum-sum) |
+| [1335-maximum-candies-allocated-to-k-children](https://github.com/imakshaysoni/LeetCode/tree/master/1335-maximum-candies-allocated-to-k-children) |
 | [1538-maximum-points-you-can-obtain-from-cards](https://github.com/imakshaysoni/LeetCode/tree/master/1538-maximum-points-you-can-obtain-from-cards) |
 | [1559-cherry-pickup-ii](https://github.com/imakshaysoni/LeetCode/tree/master/1559-cherry-pickup-ii) |
 | [2237-longest-palindrome-by-concatenating-two-letter-words](https://github.com/imakshaysoni/LeetCode/tree/master/2237-longest-palindrome-by-concatenating-two-letter-words) |
@@ -86,6 +87,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | ------- |
 | [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/imakshaysoni/LeetCode/tree/master/0034-find-first-and-last-position-of-element-in-sorted-array) |
 | [1046-max-consecutive-ones-iii](https://github.com/imakshaysoni/LeetCode/tree/master/1046-max-consecutive-ones-iii) |
+| [1335-maximum-candies-allocated-to-k-children](https://github.com/imakshaysoni/LeetCode/tree/master/1335-maximum-candies-allocated-to-k-children) |
 | [3643-zero-array-transformation-ii](https://github.com/imakshaysoni/LeetCode/tree/master/3643-zero-array-transformation-ii) |
 ## Sliding Window
 |  |
