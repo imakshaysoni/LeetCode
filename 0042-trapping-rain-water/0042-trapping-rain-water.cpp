@@ -6,15 +6,14 @@ public:
         vector<int> rightMax(n, 0);
 
         int lmax=0;
+        int rmax = 0;
         for(int i=0;i<n;i++){
             lmax= max(lmax, height[i]);
             leftMax[i] = lmax;
+            rmax = max(rmax, height[n-i-1]);
+            rightMax[n-i-1] = rmax;
         }
-        int rMax=0;
-        for(int i=n-1;i>=0;i--){
-            rMax = max(rMax, height[i]);
-            rightMax[i] = rMax;
-        }
+        
         int water = 0;
         for(int i=0;i<n;i++){
             water += min(rightMax[i], leftMax[i]) - height[i];
