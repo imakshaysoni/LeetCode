@@ -33,6 +33,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0031-next-permutation](https://github.com/imakshaysoni/LeetCode/tree/master/0031-next-permutation) |
 | [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/imakshaysoni/LeetCode/tree/master/0034-find-first-and-last-position-of-element-in-sorted-array) |
 | [0040-combination-sum-ii](https://github.com/imakshaysoni/LeetCode/tree/master/0040-combination-sum-ii) |
+| [0042-trapping-rain-water](https://github.com/imakshaysoni/LeetCode/tree/master/0042-trapping-rain-water) |
 | [0045-jump-game-ii](https://github.com/imakshaysoni/LeetCode/tree/master/0045-jump-game-ii) |
 | [0084-largest-rectangle-in-histogram](https://github.com/imakshaysoni/LeetCode/tree/master/0084-largest-rectangle-in-histogram) |
 | [0085-maximal-rectangle](https://github.com/imakshaysoni/LeetCode/tree/master/0085-maximal-rectangle) |
@@ -135,6 +136,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 ## Dynamic Programming
 |  |
 | ------- |
+| [0042-trapping-rain-water](https://github.com/imakshaysoni/LeetCode/tree/master/0042-trapping-rain-water) |
 | [0045-jump-game-ii](https://github.com/imakshaysoni/LeetCode/tree/master/0045-jump-game-ii) |
 | [0085-maximal-rectangle](https://github.com/imakshaysoni/LeetCode/tree/master/0085-maximal-rectangle) |
 | [0132-palindrome-partitioning-ii](https://github.com/imakshaysoni/LeetCode/tree/master/0132-palindrome-partitioning-ii) |
@@ -153,6 +155,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 |  |
 | ------- |
 | [0020-valid-parentheses](https://github.com/imakshaysoni/LeetCode/tree/master/0020-valid-parentheses) |
+| [0042-trapping-rain-water](https://github.com/imakshaysoni/LeetCode/tree/master/0042-trapping-rain-water) |
 | [0084-largest-rectangle-in-histogram](https://github.com/imakshaysoni/LeetCode/tree/master/0084-largest-rectangle-in-histogram) |
 | [0085-maximal-rectangle](https://github.com/imakshaysoni/LeetCode/tree/master/0085-maximal-rectangle) |
 | [0678-valid-parenthesis-string](https://github.com/imakshaysoni/LeetCode/tree/master/0678-valid-parenthesis-string) |
@@ -189,6 +192,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | ------- |
 | [0011-container-with-most-water](https://github.com/imakshaysoni/LeetCode/tree/master/0011-container-with-most-water) |
 | [0031-next-permutation](https://github.com/imakshaysoni/LeetCode/tree/master/0031-next-permutation) |
+| [0042-trapping-rain-water](https://github.com/imakshaysoni/LeetCode/tree/master/0042-trapping-rain-water) |
 | [0768-partition-labels](https://github.com/imakshaysoni/LeetCode/tree/master/0768-partition-labels) |
 | [2265-partition-array-according-to-given-pivot](https://github.com/imakshaysoni/LeetCode/tree/master/2265-partition-array-according-to-given-pivot) |
 ## Linked List
@@ -208,6 +212,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 ## Monotonic Stack
 |  |
 | ------- |
+| [0042-trapping-rain-water](https://github.com/imakshaysoni/LeetCode/tree/master/0042-trapping-rain-water) |
 | [0084-largest-rectangle-in-histogram](https://github.com/imakshaysoni/LeetCode/tree/master/0084-largest-rectangle-in-histogram) |
 | [0085-maximal-rectangle](https://github.com/imakshaysoni/LeetCode/tree/master/0085-maximal-rectangle) |
 ## Backtracking
