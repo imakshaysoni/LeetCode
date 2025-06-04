@@ -41,6 +41,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0221-maximal-square](https://github.com/imakshaysoni/LeetCode/tree/master/0221-maximal-square) |
 | [0741-cherry-pickup](https://github.com/imakshaysoni/LeetCode/tree/master/0741-cherry-pickup) |
 | [0948-sort-an-array](https://github.com/imakshaysoni/LeetCode/tree/master/0948-sort-an-array) |
+| [1039-find-the-town-judge](https://github.com/imakshaysoni/LeetCode/tree/master/1039-find-the-town-judge) |
 | [1046-max-consecutive-ones-iii](https://github.com/imakshaysoni/LeetCode/tree/master/1046-max-consecutive-ones-iii) |
 | [1121-partition-array-for-maximum-sum](https://github.com/imakshaysoni/LeetCode/tree/master/1121-partition-array-for-maximum-sum) |
 | [1335-maximum-candies-allocated-to-k-children](https://github.com/imakshaysoni/LeetCode/tree/master/1335-maximum-candies-allocated-to-k-children) |
@@ -111,6 +112,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0139-word-break](https://github.com/imakshaysoni/LeetCode/tree/master/0139-word-break) |
 | [0424-longest-repeating-character-replacement](https://github.com/imakshaysoni/LeetCode/tree/master/0424-longest-repeating-character-replacement) |
 | [0768-partition-labels](https://github.com/imakshaysoni/LeetCode/tree/master/0768-partition-labels) |
+| [1039-find-the-town-judge](https://github.com/imakshaysoni/LeetCode/tree/master/1039-find-the-town-judge) |
 | [2237-longest-palindrome-by-concatenating-two-letter-words](https://github.com/imakshaysoni/LeetCode/tree/master/2237-longest-palindrome-by-concatenating-two-letter-words) |
 | [3621-minimum-operations-to-make-array-values-equal-to-k](https://github.com/imakshaysoni/LeetCode/tree/master/3621-minimum-operations-to-make-array-values-equal-to-k) |
 ## String
@@ -221,4 +223,8 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 |  |
 | ------- |
 | [2408-number-of-people-aware-of-a-secret](https://github.com/imakshaysoni/LeetCode/tree/master/2408-number-of-people-aware-of-a-secret) |
+## Graph
+|  |
+| ------- |
+| [1039-find-the-town-judge](https://github.com/imakshaysoni/LeetCode/tree/master/1039-find-the-town-judge) |
 <!---LeetCode Topics End-->
