@@ -3,6 +3,16 @@ public:
     string answerString(string word, int numFriends) {
         
         if(numFriends==1) return word;
+         // same comp but better code
+        int n = word.size();
+        string result = "";
+        int maxLen = n - (numFriends-1);
+        for(int i=0;i<n;i++){
+            int canTake = min(maxLen, n-i);
+            result = max(result, word.substr(i, canTake));
+        }
+        return result;
+
         
         // index of largest element
         char max_ch = word[0];
