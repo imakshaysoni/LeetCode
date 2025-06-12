@@ -41,6 +41,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0198-house-robber](https://github.com/imakshaysoni/LeetCode/tree/master/0198-house-robber) |
 | [0221-maximal-square](https://github.com/imakshaysoni/LeetCode/tree/master/0221-maximal-square) |
 | [0322-coin-change](https://github.com/imakshaysoni/LeetCode/tree/master/0322-coin-change) |
+| [0410-split-array-largest-sum](https://github.com/imakshaysoni/LeetCode/tree/master/0410-split-array-largest-sum) |
 | [0518-coin-change-ii](https://github.com/imakshaysoni/LeetCode/tree/master/0518-coin-change-ii) |
 | [0741-cherry-pickup](https://github.com/imakshaysoni/LeetCode/tree/master/0741-cherry-pickup) |
 | [0948-sort-an-array](https://github.com/imakshaysoni/LeetCode/tree/master/0948-sort-an-array) |
@@ -91,6 +92,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 |  |
 | ------- |
 | [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/imakshaysoni/LeetCode/tree/master/0034-find-first-and-last-position-of-element-in-sorted-array) |
+| [0410-split-array-largest-sum](https://github.com/imakshaysoni/LeetCode/tree/master/0410-split-array-largest-sum) |
 | [1046-max-consecutive-ones-iii](https://github.com/imakshaysoni/LeetCode/tree/master/1046-max-consecutive-ones-iii) |
 | [1335-maximum-candies-allocated-to-k-children](https://github.com/imakshaysoni/LeetCode/tree/master/1335-maximum-candies-allocated-to-k-children) |
 | [3643-zero-array-transformation-ii](https://github.com/imakshaysoni/LeetCode/tree/master/3643-zero-array-transformation-ii) |
@@ -104,6 +106,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 ## Prefix Sum
 |  |
 | ------- |
+| [0410-split-array-largest-sum](https://github.com/imakshaysoni/LeetCode/tree/master/0410-split-array-largest-sum) |
 | [1046-max-consecutive-ones-iii](https://github.com/imakshaysoni/LeetCode/tree/master/1046-max-consecutive-ones-iii) |
 | [1538-maximum-points-you-can-obtain-from-cards](https://github.com/imakshaysoni/LeetCode/tree/master/1538-maximum-points-you-can-obtain-from-cards) |
 | [2465-shifting-letters-ii](https://github.com/imakshaysoni/LeetCode/tree/master/2465-shifting-letters-ii) |
@@ -148,6 +151,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0198-house-robber](https://github.com/imakshaysoni/LeetCode/tree/master/0198-house-robber) |
 | [0221-maximal-square](https://github.com/imakshaysoni/LeetCode/tree/master/0221-maximal-square) |
 | [0322-coin-change](https://github.com/imakshaysoni/LeetCode/tree/master/0322-coin-change) |
+| [0410-split-array-largest-sum](https://github.com/imakshaysoni/LeetCode/tree/master/0410-split-array-largest-sum) |
 | [0518-coin-change-ii](https://github.com/imakshaysoni/LeetCode/tree/master/0518-coin-change-ii) |
 | [0678-valid-parenthesis-string](https://github.com/imakshaysoni/LeetCode/tree/master/0678-valid-parenthesis-string) |
 | [0741-cherry-pickup](https://github.com/imakshaysoni/LeetCode/tree/master/0741-cherry-pickup) |
@@ -170,6 +174,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | ------- |
 | [0011-container-with-most-water](https://github.com/imakshaysoni/LeetCode/tree/master/0011-container-with-most-water) |
 | [0045-jump-game-ii](https://github.com/imakshaysoni/LeetCode/tree/master/0045-jump-game-ii) |
+| [0410-split-array-largest-sum](https://github.com/imakshaysoni/LeetCode/tree/master/0410-split-array-largest-sum) |
 | [0678-valid-parenthesis-string](https://github.com/imakshaysoni/LeetCode/tree/master/0678-valid-parenthesis-string) |
 | [0768-partition-labels](https://github.com/imakshaysoni/LeetCode/tree/master/0768-partition-labels) |
 | [2237-longest-palindrome-by-concatenating-two-letter-words](https://github.com/imakshaysoni/LeetCode/tree/master/2237-longest-palindrome-by-concatenating-two-letter-words) |
