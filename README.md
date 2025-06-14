@@ -54,6 +54,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [1402-count-square-submatrices-with-all-ones](https://github.com/imakshaysoni/LeetCode/tree/master/1402-count-square-submatrices-with-all-ones) |
 | [1538-maximum-points-you-can-obtain-from-cards](https://github.com/imakshaysoni/LeetCode/tree/master/1538-maximum-points-you-can-obtain-from-cards) |
 | [1559-cherry-pickup-ii](https://github.com/imakshaysoni/LeetCode/tree/master/1559-cherry-pickup-ii) |
+| [2047-find-a-peak-element-ii](https://github.com/imakshaysoni/LeetCode/tree/master/2047-find-a-peak-element-ii) |
 | [2237-longest-palindrome-by-concatenating-two-letter-words](https://github.com/imakshaysoni/LeetCode/tree/master/2237-longest-palindrome-by-concatenating-two-letter-words) |
 | [2265-partition-array-according-to-given-pivot](https://github.com/imakshaysoni/LeetCode/tree/master/2265-partition-array-according-to-given-pivot) |
 | [2465-shifting-letters-ii](https://github.com/imakshaysoni/LeetCode/tree/master/2465-shifting-letters-ii) |
@@ -100,6 +101,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [1046-max-consecutive-ones-iii](https://github.com/imakshaysoni/LeetCode/tree/master/1046-max-consecutive-ones-iii) |
 | [1056-capacity-to-ship-packages-within-d-days](https://github.com/imakshaysoni/LeetCode/tree/master/1056-capacity-to-ship-packages-within-d-days) |
 | [1335-maximum-candies-allocated-to-k-children](https://github.com/imakshaysoni/LeetCode/tree/master/1335-maximum-candies-allocated-to-k-children) |
+| [2047-find-a-peak-element-ii](https://github.com/imakshaysoni/LeetCode/tree/master/2047-find-a-peak-element-ii) |
 | [3643-zero-array-transformation-ii](https://github.com/imakshaysoni/LeetCode/tree/master/3643-zero-array-transformation-ii) |
 ## Sliding Window
 |  |
@@ -194,6 +196,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0741-cherry-pickup](https://github.com/imakshaysoni/LeetCode/tree/master/0741-cherry-pickup) |
 | [1402-count-square-submatrices-with-all-ones](https://github.com/imakshaysoni/LeetCode/tree/master/1402-count-square-submatrices-with-all-ones) |
 | [1559-cherry-pickup-ii](https://github.com/imakshaysoni/LeetCode/tree/master/1559-cherry-pickup-ii) |
+| [2047-find-a-peak-element-ii](https://github.com/imakshaysoni/LeetCode/tree/master/2047-find-a-peak-element-ii) |
 ## Trie
 |  |
 | ------- |
