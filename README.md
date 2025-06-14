@@ -47,6 +47,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0948-sort-an-array](https://github.com/imakshaysoni/LeetCode/tree/master/0948-sort-an-array) |
 | [1039-find-the-town-judge](https://github.com/imakshaysoni/LeetCode/tree/master/1039-find-the-town-judge) |
 | [1046-max-consecutive-ones-iii](https://github.com/imakshaysoni/LeetCode/tree/master/1046-max-consecutive-ones-iii) |
+| [1056-capacity-to-ship-packages-within-d-days](https://github.com/imakshaysoni/LeetCode/tree/master/1056-capacity-to-ship-packages-within-d-days) |
 | [1121-partition-array-for-maximum-sum](https://github.com/imakshaysoni/LeetCode/tree/master/1121-partition-array-for-maximum-sum) |
 | [1335-maximum-candies-allocated-to-k-children](https://github.com/imakshaysoni/LeetCode/tree/master/1335-maximum-candies-allocated-to-k-children) |
 | [1402-count-square-submatrices-with-all-ones](https://github.com/imakshaysoni/LeetCode/tree/master/1402-count-square-submatrices-with-all-ones) |
@@ -94,6 +95,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/imakshaysoni/LeetCode/tree/master/0034-find-first-and-last-position-of-element-in-sorted-array) |
 | [0410-split-array-largest-sum](https://github.com/imakshaysoni/LeetCode/tree/master/0410-split-array-largest-sum) |
 | [1046-max-consecutive-ones-iii](https://github.com/imakshaysoni/LeetCode/tree/master/1046-max-consecutive-ones-iii) |
+| [1056-capacity-to-ship-packages-within-d-days](https://github.com/imakshaysoni/LeetCode/tree/master/1056-capacity-to-ship-packages-within-d-days) |
 | [1335-maximum-candies-allocated-to-k-children](https://github.com/imakshaysoni/LeetCode/tree/master/1335-maximum-candies-allocated-to-k-children) |
 | [3643-zero-array-transformation-ii](https://github.com/imakshaysoni/LeetCode/tree/master/3643-zero-array-transformation-ii) |
 ## Sliding Window
