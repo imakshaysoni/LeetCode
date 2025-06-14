@@ -1,10 +1,13 @@
 class Solution:
-    dp = [-1 for _ in range(0, 30+2)]
     def fib(self, n: int) -> int:
-        if n==0: return 0
-        if n==1: return 1
 
-        if(Solution.dp[n]!=-1): return Solution.dp[n]
-        Solution.dp[n] = self.fib(n-1) + self.fib(n-2)
-        return Solution.dp[n]
+        dp = [-1 for _ in range(0, n+1)]
+        return self.solve(n, dp)
+    
+    def solve(self, n, dp):
+        if(n==0): return 0
+        if(n==1): return 1
+
+        dp[n] = self.solve(n-1, dp) + self.solve(n-2, dp)
+        return dp[n]
         
