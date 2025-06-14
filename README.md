@@ -31,6 +31,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | ------- |
 | [0011-container-with-most-water](https://github.com/imakshaysoni/LeetCode/tree/master/0011-container-with-most-water) |
 | [0031-next-permutation](https://github.com/imakshaysoni/LeetCode/tree/master/0031-next-permutation) |
+| [0033-search-in-rotated-sorted-array](https://github.com/imakshaysoni/LeetCode/tree/master/0033-search-in-rotated-sorted-array) |
 | [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/imakshaysoni/LeetCode/tree/master/0034-find-first-and-last-position-of-element-in-sorted-array) |
 | [0040-combination-sum-ii](https://github.com/imakshaysoni/LeetCode/tree/master/0040-combination-sum-ii) |
 | [0042-trapping-rain-water](https://github.com/imakshaysoni/LeetCode/tree/master/0042-trapping-rain-water) |
@@ -97,6 +98,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 ## Binary Search
 |  |
 | ------- |
+| [0033-search-in-rotated-sorted-array](https://github.com/imakshaysoni/LeetCode/tree/master/0033-search-in-rotated-sorted-array) |
 | [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/imakshaysoni/LeetCode/tree/master/0034-find-first-and-last-position-of-element-in-sorted-array) |
 | [0162-find-peak-element](https://github.com/imakshaysoni/LeetCode/tree/master/0162-find-peak-element) |
 | [0240-search-a-2d-matrix-ii](https://github.com/imakshaysoni/LeetCode/tree/master/0240-search-a-2d-matrix-ii) |
