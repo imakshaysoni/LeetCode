@@ -8,6 +8,8 @@ public:
         
     }
     int solve(vector<int> &arr, int left, int right){
+        if(arr[0] > arr[1]) return 0;
+        if(arr[arr.size()-1] > arr[arr.size()-2]) return arr.size()-1;
             
         while(left<=right){
             int mid = left + (right-left)/2;
