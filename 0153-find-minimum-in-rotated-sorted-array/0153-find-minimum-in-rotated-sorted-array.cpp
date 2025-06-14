@@ -10,14 +10,13 @@ public:
         int mini = INT_MAX;
         while(left<=right){
             int mid = left + (right-left)/2;
-            mini = min(mini, nums[mid]);
             if(nums[left]<=nums[mid]){
                 // left sorted array
                 mini = min(mini,nums[left]);
                 left = mid+1;
             }
             else{
-                mini = min(mini,nums[right]);
+                mini = min(mini,nums[mid]);
                 right = mid-1;
             }
         }
