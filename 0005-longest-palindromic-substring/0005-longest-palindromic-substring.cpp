@@ -1,29 +1,29 @@
 class Solution {
 public:
-    string twoPointer(string s, int left, int right){
-        while(left>=0 && right<s.size() && s[left]==s[right]){
+    string isPalindrome(string s, int left, int right){
+        while(left >=0 and right<s.size() and s[left]==s[right]){
             left--;
             right++;
         }
-        return s.substr(left+1, right-left-1);
-        
+        return s.substr(left+1, right - left - 1);
+
+
     }
     string longestPalindrome(string s) {
-        if(s.size()<=1) return s;
-        string ans = "";
         int n = s.size();
+        string ans = "";
         for(int i=0;i<n;i++){
-                string even = twoPointer(s, i, i+1);
-                string odd = twoPointer(s, i, i);
-                
-                if(even.size()>ans.size()){
-                    ans=even;
-                }
-                if(odd.size()>ans.size()){
-                    ans = odd;
-                }
+
+            //even len string
+            string op1 = isPalindrome(s, i, i);
+
+            //odd len string
+            string op2 = isPalindrome(s, i, i+1);
+
+            if(op1.size() > ans.size()) ans = op1;
+            if(op2.size() > ans.size()) ans = op2;
+
         }
-        
         return ans;
         
     }
