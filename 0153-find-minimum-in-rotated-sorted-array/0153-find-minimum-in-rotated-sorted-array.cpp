@@ -10,6 +10,7 @@ public:
         int mini = INT_MAX;
         while(left<=right){
             int mid = left + (right-left)/2;
+            if(nums[left]<nums[right]) return mini = min(mini,nums[left]);
             if(nums[left]<=nums[mid]){
                 // left sorted array
                 mini = min(mini,nums[left]);
