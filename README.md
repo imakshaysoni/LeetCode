@@ -56,6 +56,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [1046-max-consecutive-ones-iii](https://github.com/imakshaysoni/LeetCode/tree/master/1046-max-consecutive-ones-iii) |
 | [1056-capacity-to-ship-packages-within-d-days](https://github.com/imakshaysoni/LeetCode/tree/master/1056-capacity-to-ship-packages-within-d-days) |
 | [1121-partition-array-for-maximum-sum](https://github.com/imakshaysoni/LeetCode/tree/master/1121-partition-array-for-maximum-sum) |
+| [1129-longest-string-chain](https://github.com/imakshaysoni/LeetCode/tree/master/1129-longest-string-chain) |
 | [1335-maximum-candies-allocated-to-k-children](https://github.com/imakshaysoni/LeetCode/tree/master/1335-maximum-candies-allocated-to-k-children) |
 | [1402-count-square-submatrices-with-all-ones](https://github.com/imakshaysoni/LeetCode/tree/master/1402-count-square-submatrices-with-all-ones) |
 | [1538-maximum-points-you-can-obtain-from-cards](https://github.com/imakshaysoni/LeetCode/tree/master/1538-maximum-points-you-can-obtain-from-cards) |
@@ -78,6 +79,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | ------- |
 | [0646-maximum-length-of-pair-chain](https://github.com/imakshaysoni/LeetCode/tree/master/0646-maximum-length-of-pair-chain) |
 | [0948-sort-an-array](https://github.com/imakshaysoni/LeetCode/tree/master/0948-sort-an-array) |
+| [1129-longest-string-chain](https://github.com/imakshaysoni/LeetCode/tree/master/1129-longest-string-chain) |
 ## Heap (Priority Queue)
 |  |
 | ------- |
@@ -139,6 +141,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0424-longest-repeating-character-replacement](https://github.com/imakshaysoni/LeetCode/tree/master/0424-longest-repeating-character-replacement) |
 | [0768-partition-labels](https://github.com/imakshaysoni/LeetCode/tree/master/0768-partition-labels) |
 | [1039-find-the-town-judge](https://github.com/imakshaysoni/LeetCode/tree/master/1039-find-the-town-judge) |
+| [1129-longest-string-chain](https://github.com/imakshaysoni/LeetCode/tree/master/1129-longest-string-chain) |
 | [2237-longest-palindrome-by-concatenating-two-letter-words](https://github.com/imakshaysoni/LeetCode/tree/master/2237-longest-palindrome-by-concatenating-two-letter-words) |
 | [3621-minimum-operations-to-make-array-values-equal-to-k](https://github.com/imakshaysoni/LeetCode/tree/master/3621-minimum-operations-to-make-array-values-equal-to-k) |
 ## String
@@ -153,6 +156,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0424-longest-repeating-character-replacement](https://github.com/imakshaysoni/LeetCode/tree/master/0424-longest-repeating-character-replacement) |
 | [0678-valid-parenthesis-string](https://github.com/imakshaysoni/LeetCode/tree/master/0678-valid-parenthesis-string) |
 | [0768-partition-labels](https://github.com/imakshaysoni/LeetCode/tree/master/0768-partition-labels) |
+| [1129-longest-string-chain](https://github.com/imakshaysoni/LeetCode/tree/master/1129-longest-string-chain) |
 | [1197-parsing-a-boolean-expression](https://github.com/imakshaysoni/LeetCode/tree/master/1197-parsing-a-boolean-expression) |
 | [2237-longest-palindrome-by-concatenating-two-letter-words](https://github.com/imakshaysoni/LeetCode/tree/master/2237-longest-palindrome-by-concatenating-two-letter-words) |
 | [2465-shifting-letters-ii](https://github.com/imakshaysoni/LeetCode/tree/master/2465-shifting-letters-ii) |
@@ -177,6 +181,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0741-cherry-pickup](https://github.com/imakshaysoni/LeetCode/tree/master/0741-cherry-pickup) |
 | [1013-fibonacci-number](https://github.com/imakshaysoni/LeetCode/tree/master/1013-fibonacci-number) |
 | [1121-partition-array-for-maximum-sum](https://github.com/imakshaysoni/LeetCode/tree/master/1121-partition-array-for-maximum-sum) |
+| [1129-longest-string-chain](https://github.com/imakshaysoni/LeetCode/tree/master/1129-longest-string-chain) |
 | [1402-count-square-submatrices-with-all-ones](https://github.com/imakshaysoni/LeetCode/tree/master/1402-count-square-submatrices-with-all-ones) |
 | [1559-cherry-pickup-ii](https://github.com/imakshaysoni/LeetCode/tree/master/1559-cherry-pickup-ii) |
 | [2408-number-of-people-aware-of-a-secret](https://github.com/imakshaysoni/LeetCode/tree/master/2408-number-of-people-aware-of-a-secret) |
@@ -230,6 +235,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0031-next-permutation](https://github.com/imakshaysoni/LeetCode/tree/master/0031-next-permutation) |
 | [0042-trapping-rain-water](https://github.com/imakshaysoni/LeetCode/tree/master/0042-trapping-rain-water) |
 | [0768-partition-labels](https://github.com/imakshaysoni/LeetCode/tree/master/0768-partition-labels) |
+| [1129-longest-string-chain](https://github.com/imakshaysoni/LeetCode/tree/master/1129-longest-string-chain) |
 | [2265-partition-array-according-to-given-pivot](https://github.com/imakshaysoni/LeetCode/tree/master/2265-partition-array-according-to-given-pivot) |
 | [3683-find-the-lexicographically-largest-string-from-the-box-i](https://github.com/imakshaysoni/LeetCode/tree/master/3683-find-the-lexicographically-largest-string-from-the-box-i) |
 ## Linked List
