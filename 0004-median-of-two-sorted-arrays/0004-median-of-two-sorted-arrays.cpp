@@ -19,12 +19,13 @@ public:
         int n1 = nums1.size();
         int n2 = nums2.size();
         int n = n1+n2;
-        int maxPos = n1;
-        int minPos = 0;
-        int left = (n1+n2+1)/2;
+
+        int k = (n1+n2+1)/2;
+        int maxPos = min(k, n1);
+        int minPos = max(0, k-n2);
         while(minPos <= maxPos){
             int mid = (minPos + maxPos )/2;
-            int mid2 = left - mid;
+            int mid2 = k - mid;
             int l1 = INT_MIN, r1=INT_MAX;
             int l2 = INT_MIN, r2=INT_MAX;
             if(mid-1 >=0 ) l1 = nums1[mid-1];
