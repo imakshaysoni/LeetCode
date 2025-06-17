@@ -110,6 +110,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0004-median-of-two-sorted-arrays](https://github.com/imakshaysoni/LeetCode/tree/master/0004-median-of-two-sorted-arrays) |
 | [0033-search-in-rotated-sorted-array](https://github.com/imakshaysoni/LeetCode/tree/master/0033-search-in-rotated-sorted-array) |
 | [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/imakshaysoni/LeetCode/tree/master/0034-find-first-and-last-position-of-element-in-sorted-array) |
+| [0069-sqrtx](https://github.com/imakshaysoni/LeetCode/tree/master/0069-sqrtx) |
 | [0081-search-in-rotated-sorted-array-ii](https://github.com/imakshaysoni/LeetCode/tree/master/0081-search-in-rotated-sorted-array-ii) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/imakshaysoni/LeetCode/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0162-find-peak-element](https://github.com/imakshaysoni/LeetCode/tree/master/0162-find-peak-element) |
@@ -232,6 +233,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 |  |
 | ------- |
 | [0007-reverse-integer](https://github.com/imakshaysoni/LeetCode/tree/master/0007-reverse-integer) |
+| [0069-sqrtx](https://github.com/imakshaysoni/LeetCode/tree/master/0069-sqrtx) |
 | [0319-bulb-switcher](https://github.com/imakshaysoni/LeetCode/tree/master/0319-bulb-switcher) |
 | [1013-fibonacci-number](https://github.com/imakshaysoni/LeetCode/tree/master/1013-fibonacci-number) |
 | [3172-divisible-and-non-divisible-sums-difference](https://github.com/imakshaysoni/LeetCode/tree/master/3172-divisible-and-non-divisible-sums-difference) |
