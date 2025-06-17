@@ -8,7 +8,7 @@ public:
         int ans = -1;
         while(low<=high){
             int mid = low + (high-low)/2;
-            if(mid > INT_MAX/mid) { high = mid-1; continue; }
+            if(mid > x/mid) { high = mid-1; continue; }
             int num = mid*mid;
             if(num==x) return mid;
             if(num > x) high = mid - 1;
