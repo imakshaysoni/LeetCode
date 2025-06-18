@@ -35,7 +35,7 @@ public:
             }
 
         }
-        return ans;
+        return low;
 
         
     }
