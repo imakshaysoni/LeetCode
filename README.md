@@ -67,6 +67,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [2047-find-a-peak-element-ii](https://github.com/imakshaysoni/LeetCode/tree/master/2047-find-a-peak-element-ii) |
 | [2237-longest-palindrome-by-concatenating-two-letter-words](https://github.com/imakshaysoni/LeetCode/tree/master/2237-longest-palindrome-by-concatenating-two-letter-words) |
 | [2265-partition-array-according-to-given-pivot](https://github.com/imakshaysoni/LeetCode/tree/master/2265-partition-array-according-to-given-pivot) |
+| [2387-partition-array-such-that-maximum-difference-is-k](https://github.com/imakshaysoni/LeetCode/tree/master/2387-partition-array-such-that-maximum-difference-is-k) |
 | [2465-shifting-letters-ii](https://github.com/imakshaysoni/LeetCode/tree/master/2465-shifting-letters-ii) |
 | [3143-longest-unequal-adjacent-groups-subsequence-i](https://github.com/imakshaysoni/LeetCode/tree/master/3143-longest-unequal-adjacent-groups-subsequence-i) |
 | [3621-minimum-operations-to-make-array-values-equal-to-k](https://github.com/imakshaysoni/LeetCode/tree/master/3621-minimum-operations-to-make-array-values-equal-to-k) |
@@ -84,6 +85,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0646-maximum-length-of-pair-chain](https://github.com/imakshaysoni/LeetCode/tree/master/0646-maximum-length-of-pair-chain) |
 | [0948-sort-an-array](https://github.com/imakshaysoni/LeetCode/tree/master/0948-sort-an-array) |
 | [1129-longest-string-chain](https://github.com/imakshaysoni/LeetCode/tree/master/1129-longest-string-chain) |
+| [2387-partition-array-such-that-maximum-difference-is-k](https://github.com/imakshaysoni/LeetCode/tree/master/2387-partition-array-such-that-maximum-difference-is-k) |
 ## Heap (Priority Queue)
 |  |
 | ------- |
@@ -215,6 +217,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0678-valid-parenthesis-string](https://github.com/imakshaysoni/LeetCode/tree/master/0678-valid-parenthesis-string) |
 | [0768-partition-labels](https://github.com/imakshaysoni/LeetCode/tree/master/0768-partition-labels) |
 | [2237-longest-palindrome-by-concatenating-two-letter-words](https://github.com/imakshaysoni/LeetCode/tree/master/2237-longest-palindrome-by-concatenating-two-letter-words) |
+| [2387-partition-array-such-that-maximum-difference-is-k](https://github.com/imakshaysoni/LeetCode/tree/master/2387-partition-array-such-that-maximum-difference-is-k) |
 | [3143-longest-unequal-adjacent-groups-subsequence-i](https://github.com/imakshaysoni/LeetCode/tree/master/3143-longest-unequal-adjacent-groups-subsequence-i) |
 ## Matrix
 |  |
