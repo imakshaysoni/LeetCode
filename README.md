@@ -86,6 +86,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0948-sort-an-array](https://github.com/imakshaysoni/LeetCode/tree/master/0948-sort-an-array) |
 | [1129-longest-string-chain](https://github.com/imakshaysoni/LeetCode/tree/master/1129-longest-string-chain) |
 | [2387-partition-array-such-that-maximum-difference-is-k](https://github.com/imakshaysoni/LeetCode/tree/master/2387-partition-array-such-that-maximum-difference-is-k) |
+| [3360-minimum-deletions-to-make-string-k-special](https://github.com/imakshaysoni/LeetCode/tree/master/3360-minimum-deletions-to-make-string-k-special) |
 ## Heap (Priority Queue)
 |  |
 | ------- |
@@ -107,6 +108,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | ------- |
 | [0948-sort-an-array](https://github.com/imakshaysoni/LeetCode/tree/master/0948-sort-an-array) |
 | [2237-longest-palindrome-by-concatenating-two-letter-words](https://github.com/imakshaysoni/LeetCode/tree/master/2237-longest-palindrome-by-concatenating-two-letter-words) |
+| [3360-minimum-deletions-to-make-string-k-special](https://github.com/imakshaysoni/LeetCode/tree/master/3360-minimum-deletions-to-make-string-k-special) |
 | [3754-maximum-manhattan-distance-after-k-changes](https://github.com/imakshaysoni/LeetCode/tree/master/3754-maximum-manhattan-distance-after-k-changes) |
 ## Binary Search
 |  |
@@ -154,6 +156,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [1039-find-the-town-judge](https://github.com/imakshaysoni/LeetCode/tree/master/1039-find-the-town-judge) |
 | [1129-longest-string-chain](https://github.com/imakshaysoni/LeetCode/tree/master/1129-longest-string-chain) |
 | [2237-longest-palindrome-by-concatenating-two-letter-words](https://github.com/imakshaysoni/LeetCode/tree/master/2237-longest-palindrome-by-concatenating-two-letter-words) |
+| [3360-minimum-deletions-to-make-string-k-special](https://github.com/imakshaysoni/LeetCode/tree/master/3360-minimum-deletions-to-make-string-k-special) |
 | [3621-minimum-operations-to-make-array-values-equal-to-k](https://github.com/imakshaysoni/LeetCode/tree/master/3621-minimum-operations-to-make-array-values-equal-to-k) |
 | [3754-maximum-manhattan-distance-after-k-changes](https://github.com/imakshaysoni/LeetCode/tree/master/3754-maximum-manhattan-distance-after-k-changes) |
 ## String
@@ -174,6 +177,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [2237-longest-palindrome-by-concatenating-two-letter-words](https://github.com/imakshaysoni/LeetCode/tree/master/2237-longest-palindrome-by-concatenating-two-letter-words) |
 | [2465-shifting-letters-ii](https://github.com/imakshaysoni/LeetCode/tree/master/2465-shifting-letters-ii) |
 | [3143-longest-unequal-adjacent-groups-subsequence-i](https://github.com/imakshaysoni/LeetCode/tree/master/3143-longest-unequal-adjacent-groups-subsequence-i) |
+| [3360-minimum-deletions-to-make-string-k-special](https://github.com/imakshaysoni/LeetCode/tree/master/3360-minimum-deletions-to-make-string-k-special) |
 | [3683-find-the-lexicographically-largest-string-from-the-box-i](https://github.com/imakshaysoni/LeetCode/tree/master/3683-find-the-lexicographically-largest-string-from-the-box-i) |
 | [3754-maximum-manhattan-distance-after-k-changes](https://github.com/imakshaysoni/LeetCode/tree/master/3754-maximum-manhattan-distance-after-k-changes) |
 ## Dynamic Programming
@@ -222,6 +226,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [2237-longest-palindrome-by-concatenating-two-letter-words](https://github.com/imakshaysoni/LeetCode/tree/master/2237-longest-palindrome-by-concatenating-two-letter-words) |
 | [2387-partition-array-such-that-maximum-difference-is-k](https://github.com/imakshaysoni/LeetCode/tree/master/2387-partition-array-such-that-maximum-difference-is-k) |
 | [3143-longest-unequal-adjacent-groups-subsequence-i](https://github.com/imakshaysoni/LeetCode/tree/master/3143-longest-unequal-adjacent-groups-subsequence-i) |
+| [3360-minimum-deletions-to-make-string-k-special](https://github.com/imakshaysoni/LeetCode/tree/master/3360-minimum-deletions-to-make-string-k-special) |
 ## Matrix
 |  |
 | ------- |
