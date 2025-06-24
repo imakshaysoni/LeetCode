@@ -8,8 +8,8 @@ public:
             for(int j=i;j<i+k and j<s.size();j++){
                 ch += s[j];
             }
-            while(ch.size()< k){
-                ch += fill;
+            if(ch.size()<k){
+                ch += string(k - ch.size(), fill);
             }
             ans.push_back(ch);
             i+=k;
