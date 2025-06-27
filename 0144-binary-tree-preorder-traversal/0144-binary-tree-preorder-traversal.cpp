@@ -11,20 +11,18 @@
  */
 class Solution {
 public:
-    vector<int> ans;
     vector<int> preorderTraversal(TreeNode* root) {
-        
-        solve(root);
+        if(root==NULL) return {};
+        stack<TreeNode*> st;
+        st.push(root);
+        vector<int> ans;
+        while(!st.empty()){
+            TreeNode* node = st.top(); st.pop();
+            ans.push_back(node->val);
+            if(node->right) st.push(node->right);
+            if(node->left) st.push(node->left);
+        }
+
         return ans;
-        
-    }
-
-    void solve(TreeNode* root){
-        if(root==NULL) return;
-
-        ans.push_back(root->val);
-        if(root->left) solve(root->left);
-        if(root->right) solve(root->right);
-        return;
     }
 };
