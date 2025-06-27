@@ -213,6 +213,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0042-trapping-rain-water](https://github.com/imakshaysoni/LeetCode/tree/master/0042-trapping-rain-water) |
 | [0084-largest-rectangle-in-histogram](https://github.com/imakshaysoni/LeetCode/tree/master/0084-largest-rectangle-in-histogram) |
 | [0085-maximal-rectangle](https://github.com/imakshaysoni/LeetCode/tree/master/0085-maximal-rectangle) |
+| [0144-binary-tree-preorder-traversal](https://github.com/imakshaysoni/LeetCode/tree/master/0144-binary-tree-preorder-traversal) |
 | [0678-valid-parenthesis-string](https://github.com/imakshaysoni/LeetCode/tree/master/0678-valid-parenthesis-string) |
 | [1197-parsing-a-boolean-expression](https://github.com/imakshaysoni/LeetCode/tree/master/1197-parsing-a-boolean-expression) |
 ## Greedy
@@ -320,8 +321,14 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 |  |
 | ------- |
 | [0102-binary-tree-level-order-traversal](https://github.com/imakshaysoni/LeetCode/tree/master/0102-binary-tree-level-order-traversal) |
+| [0144-binary-tree-preorder-traversal](https://github.com/imakshaysoni/LeetCode/tree/master/0144-binary-tree-preorder-traversal) |
 ## Binary Tree
 |  |
 | ------- |
 | [0102-binary-tree-level-order-traversal](https://github.com/imakshaysoni/LeetCode/tree/master/0102-binary-tree-level-order-traversal) |
+| [0144-binary-tree-preorder-traversal](https://github.com/imakshaysoni/LeetCode/tree/master/0144-binary-tree-preorder-traversal) |
+## Depth-First Search
+|  |
+| ------- |
+| [0144-binary-tree-preorder-traversal](https://github.com/imakshaysoni/LeetCode/tree/master/0144-binary-tree-preorder-traversal) |
 <!---LeetCode Topics End-->
