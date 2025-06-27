@@ -11,34 +11,20 @@
  */
 class Solution {
 public:
+    vector<int> ans;
     vector<int> preorderTraversal(TreeNode* root) {
         
-        vector<int> ans;        
-        string mode = "preorder";
-        traverse(root, ans, mode);
+        solve(root);
         return ans;
+        
     }
-    
-    void traverse(TreeNode* root, vector<int> &ans, string &mode){
-        
+
+    void solve(TreeNode* root){
         if(root==NULL) return;
-        
-        if(mode=="preorder")
-        {
-            ans.push_back(root->val);
-            traverse(root->left, ans, mode);
-            traverse(root->right, ans, mode);
-        }
-        else if(mode=="postorder"){
-            traverse(root->left, ans, mode);
-            traverse(root->right, ans, mode);
-            ans.push_back(root->val);
-        }
-        else if(mode=="inorder"){
-            traverse(root->left, ans, mode);
-            ans.push_back(root->val);
-            traverse(root->right, ans, mode);
-        }
-        
+
+        ans.push_back(root->val);
+        if(root->left) solve(root->left);
+        if(root->right) solve(root->right);
+        return;
     }
 };
