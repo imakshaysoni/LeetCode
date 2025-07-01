@@ -171,6 +171,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0097-interleaving-string](https://github.com/imakshaysoni/LeetCode/tree/master/0097-interleaving-string) |
 | [0132-palindrome-partitioning-ii](https://github.com/imakshaysoni/LeetCode/tree/master/0132-palindrome-partitioning-ii) |
 | [0139-word-break](https://github.com/imakshaysoni/LeetCode/tree/master/0139-word-break) |
+| [0257-binary-tree-paths](https://github.com/imakshaysoni/LeetCode/tree/master/0257-binary-tree-paths) |
 | [0424-longest-repeating-character-replacement](https://github.com/imakshaysoni/LeetCode/tree/master/0424-longest-repeating-character-replacement) |
 | [0678-valid-parenthesis-string](https://github.com/imakshaysoni/LeetCode/tree/master/0678-valid-parenthesis-string) |
 | [0768-partition-labels](https://github.com/imakshaysoni/LeetCode/tree/master/0768-partition-labels) |
@@ -295,6 +296,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | ------- |
 | [0040-combination-sum-ii](https://github.com/imakshaysoni/LeetCode/tree/master/0040-combination-sum-ii) |
 | [0077-combinations](https://github.com/imakshaysoni/LeetCode/tree/master/0077-combinations) |
+| [0257-binary-tree-paths](https://github.com/imakshaysoni/LeetCode/tree/master/0257-binary-tree-paths) |
 ## Brainteaser
 |  |
 | ------- |
@@ -329,6 +331,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0102-binary-tree-level-order-traversal](https://github.com/imakshaysoni/LeetCode/tree/master/0102-binary-tree-level-order-traversal) |
 | [0124-binary-tree-maximum-path-sum](https://github.com/imakshaysoni/LeetCode/tree/master/0124-binary-tree-maximum-path-sum) |
 | [0144-binary-tree-preorder-traversal](https://github.com/imakshaysoni/LeetCode/tree/master/0144-binary-tree-preorder-traversal) |
+| [0257-binary-tree-paths](https://github.com/imakshaysoni/LeetCode/tree/master/0257-binary-tree-paths) |
 | [0543-diameter-of-binary-tree](https://github.com/imakshaysoni/LeetCode/tree/master/0543-diameter-of-binary-tree) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/imakshaysoni/LeetCode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 ## Binary Tree
@@ -338,6 +341,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0102-binary-tree-level-order-traversal](https://github.com/imakshaysoni/LeetCode/tree/master/0102-binary-tree-level-order-traversal) |
 | [0124-binary-tree-maximum-path-sum](https://github.com/imakshaysoni/LeetCode/tree/master/0124-binary-tree-maximum-path-sum) |
 | [0144-binary-tree-preorder-traversal](https://github.com/imakshaysoni/LeetCode/tree/master/0144-binary-tree-preorder-traversal) |
+| [0257-binary-tree-paths](https://github.com/imakshaysoni/LeetCode/tree/master/0257-binary-tree-paths) |
 | [0543-diameter-of-binary-tree](https://github.com/imakshaysoni/LeetCode/tree/master/0543-diameter-of-binary-tree) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/imakshaysoni/LeetCode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 ## Depth-First Search
@@ -346,6 +350,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0094-binary-tree-inorder-traversal](https://github.com/imakshaysoni/LeetCode/tree/master/0094-binary-tree-inorder-traversal) |
 | [0124-binary-tree-maximum-path-sum](https://github.com/imakshaysoni/LeetCode/tree/master/0124-binary-tree-maximum-path-sum) |
 | [0144-binary-tree-preorder-traversal](https://github.com/imakshaysoni/LeetCode/tree/master/0144-binary-tree-preorder-traversal) |
+| [0257-binary-tree-paths](https://github.com/imakshaysoni/LeetCode/tree/master/0257-binary-tree-paths) |
 | [0543-diameter-of-binary-tree](https://github.com/imakshaysoni/LeetCode/tree/master/0543-diameter-of-binary-tree) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/imakshaysoni/LeetCode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 <!---LeetCode Topics End-->
