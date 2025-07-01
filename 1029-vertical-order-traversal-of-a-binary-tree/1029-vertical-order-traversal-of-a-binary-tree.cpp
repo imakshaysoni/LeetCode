@@ -12,33 +12,31 @@
 class Solution {
 public:
     vector<vector<int>> verticalTraversal(TreeNode* root) {
-        if(root==NULL) return {{}};
         
-        queue<pair<TreeNode*, pair<int,int>>> q;
-        map<int, vector<pair<int,int>>> mapper;
-        q.push({root, {0,0}});
-        while(!q.empty()){
-            TreeNode* node = q.front().first;
-            int h_level = q.front().second.first;
-            int v_level = q.front().second.second;
-            mapper[v_level].push_back({h_level,node->val});
-            q.pop();
-            if(node->left) q.push({node->left, {h_level+1, v_level-1}});
-            if(node->right) q.push({node->right, {h_level+1, v_level+1}});
-            
-        }
         vector<vector<int>> result;
-        for(auto nodes: mapper){
-            vector<int> temp;
-            sort(nodes.second.begin(), nodes.second.end());
-            for(auto node: nodes.second){
-                temp.push_back(node.second);
+
+        map<int, map<int, multiset<int>>> mapp;
+        traverse(root, mapp, 0, 0);
+
+        for(auto it: mapp){
+            vector<int> ans;
+            for(auto temp: it.second){
+                for(auto val: temp.second) ans.push_back(val);
             }
-            result.push_back(temp);
+            // sort(ans.begin(), ans.end());
+            result.push_back(ans);
         }
-        
         return result;
         
-        
+    }
+
+    void traverse(TreeNode* root, map<int, map<int, multiset<int>>> & mapp, int x, int y){
+        if(root==NULL) return;
+
+        mapp[x][y].insert(root->val);
+
+        traverse(root->left, mapp, x-1, y+1);
+        traverse(root->right, mapp, x+1, y+1);
+        return;
     }
 };
