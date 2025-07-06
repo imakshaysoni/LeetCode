@@ -11,21 +11,19 @@ class Solution {
 public:
     TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
         
-        TreeNode* ans = nullptr;
-        bool op = lca(root, p, q, ans);
-        return ans;
-
-        
+        return lca(root, p, q);
     }
-    bool lca(TreeNode* root, TreeNode* p, TreeNode* q, TreeNode* &ans){
-        if(root==NULL) return false;
-        // if(root==p or root==q) {
-        //     return true;
-        // }
-        bool op1 = lca(root->left, p, q, ans);
-        bool op2 = lca(root->right, p, q, ans);
-        bool op3 = (root==p or root==q);
-        if(op1+op2+op3 >=2) ans = root;
-        return op1 or op2 or op3;
+    
+    TreeNode* lca(TreeNode* root, TreeNode* p, TreeNode* q){
+        
+        if(root==NULL || root==p || root==q) return root;
+        
+        
+        TreeNode* left = lca(root->left, p, q);
+        TreeNode* right = lca(root->right, p, q);
+        
+        if(left==NULL) return right;
+        else if(right==NULL) return left;
+        else return root;
     }
 };
