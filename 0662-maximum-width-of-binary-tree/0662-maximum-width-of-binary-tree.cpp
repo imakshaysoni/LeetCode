@@ -13,7 +13,8 @@ class Solution {
 public:
     int widthOfBinaryTree(TreeNode* root) {
 
-        typedef unsigned long long ll;
+        // typedef unsigned long long ll;
+        using ll = unsigned long long ;
 
         queue<pair<TreeNode*, ll>> q;
         ll maxWidth = 0;
