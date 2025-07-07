@@ -13,10 +13,10 @@ class Solution {
 public:
     int widthOfBinaryTree(TreeNode* root) {
 
-        using ll = unsigned long long;
+        typedef unsigned long long ll;
 
         queue<pair<TreeNode*, ll>> q;
-        int maxWidth = 0;
+        ll maxWidth = 0;
         q.push({root, 0});
         while(!q.empty()){
             int size = q.size();
@@ -34,7 +34,7 @@ public:
                 if(i==size-1) maxIdx = idx;
                 
             }
-            maxWidth = max(maxWidth, static_cast<int>(maxIdx-minIdx+1));
+            maxWidth = max(maxWidth, (maxIdx-minIdx+1));
         }
         return maxWidth;
         
