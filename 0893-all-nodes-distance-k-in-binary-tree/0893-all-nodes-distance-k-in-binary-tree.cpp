@@ -41,13 +41,10 @@ public:
         getParent(root, mapper);
 
         vector<int> ans;
-        traverse(target, ans, k);
         set<TreeNode*> st;
         st.insert(target);
         queue<pair<TreeNode*, int>> q;
-        if(mapper.find(target)!=mapper.end()){
-            q.push({mapper[target], 1});
-        }
+        q.push({target, 0});
         while(!q.empty()){
             int size = q.size();
             for(int i=0;i<size;i++){
@@ -71,23 +68,5 @@ public:
             }
         }
         return ans;
-        
-    }
-    void traverse(TreeNode* target, vector<int> &ans, int k){
-
-        queue<pair<TreeNode* , int>> q;
-        q.push({target, 0 });
-        while(!q.empty()){
-            int size = q.size();
-            for(int i=0;i<size;i++){
-                TreeNode* node  = q.front().first;
-                int level = q.front().second;
-                q.pop();
-                if(level==k) ans.push_back(node->val);
-                if(level>k) break;
-                if(node->left) q.push({node->left, level+1});
-                if(node->right) q.push({node->right, level+1});
-            }
-        }
     }
 };
