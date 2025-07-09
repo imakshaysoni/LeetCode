@@ -159,6 +159,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [1039-find-the-town-judge](https://github.com/imakshaysoni/LeetCode/tree/master/1039-find-the-town-judge) |
 | [1129-longest-string-chain](https://github.com/imakshaysoni/LeetCode/tree/master/1129-longest-string-chain) |
 | [2237-longest-palindrome-by-concatenating-two-letter-words](https://github.com/imakshaysoni/LeetCode/tree/master/2237-longest-palindrome-by-concatenating-two-letter-words) |
+| [2461-amount-of-time-for-binary-tree-to-be-infected](https://github.com/imakshaysoni/LeetCode/tree/master/2461-amount-of-time-for-binary-tree-to-be-infected) |
 | [3360-minimum-deletions-to-make-string-k-special](https://github.com/imakshaysoni/LeetCode/tree/master/3360-minimum-deletions-to-make-string-k-special) |
 | [3621-minimum-operations-to-make-array-values-equal-to-k](https://github.com/imakshaysoni/LeetCode/tree/master/3621-minimum-operations-to-make-array-values-equal-to-k) |
 | [3754-maximum-manhattan-distance-after-k-changes](https://github.com/imakshaysoni/LeetCode/tree/master/3754-maximum-manhattan-distance-after-k-changes) |
@@ -323,6 +324,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0662-maximum-width-of-binary-tree](https://github.com/imakshaysoni/LeetCode/tree/master/0662-maximum-width-of-binary-tree) |
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/imakshaysoni/LeetCode/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/imakshaysoni/LeetCode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
+| [2461-amount-of-time-for-binary-tree-to-be-infected](https://github.com/imakshaysoni/LeetCode/tree/master/2461-amount-of-time-for-binary-tree-to-be-infected) |
 ## Enumeration
 |  |
 | ------- |
@@ -341,6 +343,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/imakshaysoni/LeetCode/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/imakshaysoni/LeetCode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [2384-root-equals-sum-of-children](https://github.com/imakshaysoni/LeetCode/tree/master/2384-root-equals-sum-of-children) |
+| [2461-amount-of-time-for-binary-tree-to-be-infected](https://github.com/imakshaysoni/LeetCode/tree/master/2461-amount-of-time-for-binary-tree-to-be-infected) |
 ## Binary Tree
 |  |
 | ------- |
@@ -355,6 +358,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/imakshaysoni/LeetCode/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/imakshaysoni/LeetCode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [2384-root-equals-sum-of-children](https://github.com/imakshaysoni/LeetCode/tree/master/2384-root-equals-sum-of-children) |
+| [2461-amount-of-time-for-binary-tree-to-be-infected](https://github.com/imakshaysoni/LeetCode/tree/master/2461-amount-of-time-for-binary-tree-to-be-infected) |
 ## Depth-First Search
 |  |
 | ------- |
@@ -367,4 +371,5 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0662-maximum-width-of-binary-tree](https://github.com/imakshaysoni/LeetCode/tree/master/0662-maximum-width-of-binary-tree) |
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/imakshaysoni/LeetCode/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/imakshaysoni/LeetCode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
+| [2461-amount-of-time-for-binary-tree-to-be-infected](https://github.com/imakshaysoni/LeetCode/tree/master/2461-amount-of-time-for-binary-tree-to-be-infected) |
 <!---LeetCode Topics End-->
