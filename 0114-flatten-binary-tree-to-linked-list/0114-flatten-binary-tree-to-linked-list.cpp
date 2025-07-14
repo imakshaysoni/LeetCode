@@ -12,24 +12,19 @@
 class Solution {
 public:
     void flatten(TreeNode* root) {
-        
-
         TreeNode* prev = NULL;
-        flatBT(root, prev);
+        return flat(root, prev);
+        
     }
-    
-    void flatBT(TreeNode* root, TreeNode* &prev){
-        
+    void flat(TreeNode* &root, TreeNode* &prev){
         if(root==NULL) return;
-        
-        flatBT(root->right, prev);
-        flatBT(root->left, prev);
-        
+
+        flat(root->right, prev);
+        flat(root->left, prev);
+
         root->left = NULL;
         root->right = prev;
         prev=root;
-        
-        
-        
+        return;
     }
 };
