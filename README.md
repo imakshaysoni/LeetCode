@@ -48,6 +48,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0198-house-robber](https://github.com/imakshaysoni/LeetCode/tree/master/0198-house-robber) |
 | [0221-maximal-square](https://github.com/imakshaysoni/LeetCode/tree/master/0221-maximal-square) |
 | [0240-search-a-2d-matrix-ii](https://github.com/imakshaysoni/LeetCode/tree/master/0240-search-a-2d-matrix-ii) |
+| [0268-missing-number](https://github.com/imakshaysoni/LeetCode/tree/master/0268-missing-number) |
 | [0322-coin-change](https://github.com/imakshaysoni/LeetCode/tree/master/0322-coin-change) |
 | [0410-split-array-largest-sum](https://github.com/imakshaysoni/LeetCode/tree/master/0410-split-array-largest-sum) |
 | [0518-coin-change-ii](https://github.com/imakshaysoni/LeetCode/tree/master/0518-coin-change-ii) |
@@ -87,6 +88,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 ## Sorting
 |  |
 | ------- |
+| [0268-missing-number](https://github.com/imakshaysoni/LeetCode/tree/master/0268-missing-number) |
 | [0646-maximum-length-of-pair-chain](https://github.com/imakshaysoni/LeetCode/tree/master/0646-maximum-length-of-pair-chain) |
 | [0948-sort-an-array](https://github.com/imakshaysoni/LeetCode/tree/master/0948-sort-an-array) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/imakshaysoni/LeetCode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
@@ -127,6 +129,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/imakshaysoni/LeetCode/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0162-find-peak-element](https://github.com/imakshaysoni/LeetCode/tree/master/0162-find-peak-element) |
 | [0240-search-a-2d-matrix-ii](https://github.com/imakshaysoni/LeetCode/tree/master/0240-search-a-2d-matrix-ii) |
+| [0268-missing-number](https://github.com/imakshaysoni/LeetCode/tree/master/0268-missing-number) |
 | [0410-split-array-largest-sum](https://github.com/imakshaysoni/LeetCode/tree/master/0410-split-array-largest-sum) |
 | [0540-single-element-in-a-sorted-array](https://github.com/imakshaysoni/LeetCode/tree/master/0540-single-element-in-a-sorted-array) |
 | [0882-peak-index-in-a-mountain-array](https://github.com/imakshaysoni/LeetCode/tree/master/0882-peak-index-in-a-mountain-array) |
@@ -159,6 +162,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/imakshaysoni/LeetCode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0106-construct-binary-tree-from-inorder-and-postorder-traversal](https://github.com/imakshaysoni/LeetCode/tree/master/0106-construct-binary-tree-from-inorder-and-postorder-traversal) |
 | [0139-word-break](https://github.com/imakshaysoni/LeetCode/tree/master/0139-word-break) |
+| [0268-missing-number](https://github.com/imakshaysoni/LeetCode/tree/master/0268-missing-number) |
 | [0424-longest-repeating-character-replacement](https://github.com/imakshaysoni/LeetCode/tree/master/0424-longest-repeating-character-replacement) |
 | [0768-partition-labels](https://github.com/imakshaysoni/LeetCode/tree/master/0768-partition-labels) |
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/imakshaysoni/LeetCode/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
@@ -266,6 +270,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | ------- |
 | [0007-reverse-integer](https://github.com/imakshaysoni/LeetCode/tree/master/0007-reverse-integer) |
 | [0069-sqrtx](https://github.com/imakshaysoni/LeetCode/tree/master/0069-sqrtx) |
+| [0268-missing-number](https://github.com/imakshaysoni/LeetCode/tree/master/0268-missing-number) |
 | [0319-bulb-switcher](https://github.com/imakshaysoni/LeetCode/tree/master/0319-bulb-switcher) |
 | [1013-fibonacci-number](https://github.com/imakshaysoni/LeetCode/tree/master/1013-fibonacci-number) |
 | [3172-divisible-and-non-divisible-sums-difference](https://github.com/imakshaysoni/LeetCode/tree/master/3172-divisible-and-non-divisible-sums-difference) |
@@ -411,4 +416,8 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/imakshaysoni/LeetCode/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0450-delete-node-in-a-bst](https://github.com/imakshaysoni/LeetCode/tree/master/0450-delete-node-in-a-bst) |
 | [1050-construct-binary-search-tree-from-preorder-traversal](https://github.com/imakshaysoni/LeetCode/tree/master/1050-construct-binary-search-tree-from-preorder-traversal) |
+## Bit Manipulation
+|  |
+| ------- |
+| [0268-missing-number](https://github.com/imakshaysoni/LeetCode/tree/master/0268-missing-number) |
 <!---LeetCode Topics End-->
