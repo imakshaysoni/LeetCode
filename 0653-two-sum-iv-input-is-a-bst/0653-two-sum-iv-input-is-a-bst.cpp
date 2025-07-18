@@ -9,60 +9,80 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
-class BSTIterator {
-public:
-    stack<TreeNode*> st;
-    bool forword;
-    BSTIterator(TreeNode* root, bool forr) {
-        forword = forr;
-        pushAll(root);
-    }
-    
-    int next() {
-        TreeNode * node = st.top();
-        st.pop();
-        if(forword){
-          pushAll(node->right);   
+ class BstIterator{
+        stack<TreeNode*> st;
+        bool rev;
+        public:
+        BstIterator(TreeNode* root, bool reverse){
+            rev = reverse;
+            pushAll(root);
         }
-        else pushAll(node->left);
-        return node->val;
-        
-    }
-    
-    bool hasNext() {
-        return !st.empty();
-    }
-    void pushAll(TreeNode* root){
-        while(root){
-            st.push(root);
-            if(forword) root=root->left;
-            else root=root->right;
+
+        void pushAll(TreeNode* root){
+            while(root){
+                st.push(root);
+                if(rev==true) root = root->right;
+                else root = root->left;
+            }
         }
-    }
-};
+
+        int next(){
+            TreeNode* root = st.top();
+            st.pop();
+
+            if(rev==true){
+                pushAll(root->left);
+            }
+            else{
+                pushAll(root->right);
+            }
+
+            return root->val;
+            
+        }
+ };
 class Solution {
-private:
-    
 public:
-    bool findTarget(TreeNode* root, int k) {
-        if (!root) return false;
-        BSTIterator l(root, true);
-        BSTIterator r(root, false);
-        
-        int i = l.next();
-        int j = r.next();
-        while(true){
-            if(i>=j) return false;            
-            int sum = i+j;            
-            if(sum== k) return true;
-            else if(sum > k) {j=r.next();}
-            else {i=l.next();}
-        }
-        
-        return false;
+
     
+    bool findTarget(TreeNode* root, int k) {
+        if(root==NULL) return false;
+
+        BstIterator nextOne(root, false);
+        BstIterator prevOne(root, true);
         
-        
+        int left = nextOne.next();
+        int right = prevOne.next();
+
+        while(left<right){
+            if(left+right==k) return true;
+            if(left+right < k) left = nextOne.next();
+            else right = prevOne.next();
+        } 
+
+        return false;
+
+
+
+        // return solve(root, k, st);
+
+
         
     }
+
+    bool solve(TreeNode* root, int k, set<int> &st){
+
+            if(root==NULL) return false;
+            bool op1 = solve(root->left, k, st);
+            
+            int rem = k - root->val;
+            
+            if(st.find(rem)!=st.end()) return true;
+
+            st.insert(root->val);
+            bool op2 = solve(root->right, k, st);
+            return op1 or op2;
+    }
+
+
 };
