@@ -57,6 +57,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0741-cherry-pickup](https://github.com/imakshaysoni/LeetCode/tree/master/0741-cherry-pickup) |
 | [0882-peak-index-in-a-mountain-array](https://github.com/imakshaysoni/LeetCode/tree/master/0882-peak-index-in-a-mountain-array) |
 | [0907-koko-eating-bananas](https://github.com/imakshaysoni/LeetCode/tree/master/0907-koko-eating-bananas) |
+| [0925-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/imakshaysoni/LeetCode/tree/master/0925-construct-binary-tree-from-preorder-and-postorder-traversal) |
 | [0948-sort-an-array](https://github.com/imakshaysoni/LeetCode/tree/master/0948-sort-an-array) |
 | [1039-find-the-town-judge](https://github.com/imakshaysoni/LeetCode/tree/master/1039-find-the-town-judge) |
 | [1046-max-consecutive-ones-iii](https://github.com/imakshaysoni/LeetCode/tree/master/1046-max-consecutive-ones-iii) |
@@ -84,6 +85,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/imakshaysoni/LeetCode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0106-construct-binary-tree-from-inorder-and-postorder-traversal](https://github.com/imakshaysoni/LeetCode/tree/master/0106-construct-binary-tree-from-inorder-and-postorder-traversal) |
 | [0240-search-a-2d-matrix-ii](https://github.com/imakshaysoni/LeetCode/tree/master/0240-search-a-2d-matrix-ii) |
+| [0925-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/imakshaysoni/LeetCode/tree/master/0925-construct-binary-tree-from-preorder-and-postorder-traversal) |
 | [0948-sort-an-array](https://github.com/imakshaysoni/LeetCode/tree/master/0948-sort-an-array) |
 ## Sorting
 |  |
@@ -166,6 +168,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0424-longest-repeating-character-replacement](https://github.com/imakshaysoni/LeetCode/tree/master/0424-longest-repeating-character-replacement) |
 | [0768-partition-labels](https://github.com/imakshaysoni/LeetCode/tree/master/0768-partition-labels) |
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/imakshaysoni/LeetCode/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
+| [0925-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/imakshaysoni/LeetCode/tree/master/0925-construct-binary-tree-from-preorder-and-postorder-traversal) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/imakshaysoni/LeetCode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [1039-find-the-town-judge](https://github.com/imakshaysoni/LeetCode/tree/master/1039-find-the-town-judge) |
 | [1129-longest-string-chain](https://github.com/imakshaysoni/LeetCode/tree/master/1129-longest-string-chain) |
@@ -365,6 +368,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0543-diameter-of-binary-tree](https://github.com/imakshaysoni/LeetCode/tree/master/0543-diameter-of-binary-tree) |
 | [0662-maximum-width-of-binary-tree](https://github.com/imakshaysoni/LeetCode/tree/master/0662-maximum-width-of-binary-tree) |
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/imakshaysoni/LeetCode/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
+| [0925-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/imakshaysoni/LeetCode/tree/master/0925-construct-binary-tree-from-preorder-and-postorder-traversal) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/imakshaysoni/LeetCode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [1050-construct-binary-search-tree-from-preorder-traversal](https://github.com/imakshaysoni/LeetCode/tree/master/1050-construct-binary-search-tree-from-preorder-traversal) |
 | [2384-root-equals-sum-of-children](https://github.com/imakshaysoni/LeetCode/tree/master/2384-root-equals-sum-of-children) |
@@ -388,6 +392,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0543-diameter-of-binary-tree](https://github.com/imakshaysoni/LeetCode/tree/master/0543-diameter-of-binary-tree) |
 | [0662-maximum-width-of-binary-tree](https://github.com/imakshaysoni/LeetCode/tree/master/0662-maximum-width-of-binary-tree) |
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/imakshaysoni/LeetCode/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
+| [0925-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/imakshaysoni/LeetCode/tree/master/0925-construct-binary-tree-from-preorder-and-postorder-traversal) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/imakshaysoni/LeetCode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [1050-construct-binary-search-tree-from-preorder-traversal](https://github.com/imakshaysoni/LeetCode/tree/master/1050-construct-binary-search-tree-from-preorder-traversal) |
 | [2384-root-equals-sum-of-children](https://github.com/imakshaysoni/LeetCode/tree/master/2384-root-equals-sum-of-children) |
