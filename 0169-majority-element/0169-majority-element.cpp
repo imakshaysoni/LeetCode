@@ -9,7 +9,7 @@ public:
         int count;
         for(int i=0;i<n;i++){
             // if(st.find(maj)!=st.end()) continue;
-            count=0;
+            count=1;
             for(int j=i+1;j<n;j++){
                 if(nums[i]==nums[j]) count++;
             }
