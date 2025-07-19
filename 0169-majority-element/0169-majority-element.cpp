@@ -2,52 +2,23 @@ class Solution {
 public:
     int majorityElement(vector<int>& nums) {
         
-        
-        
-        
-//          int major=num[0];
-//          int count = 1;
-//         for(int i=1; i<num.size();i++){
-//             if(count==0){
-//                 count++;
-//                 major=num[i];
-//             }else if(major==num[i]){
-//                 count++;
-//             }else count--;
-            
-//         }
-//         return major;
-        
-        
-        int count=1;
-        int max = nums[0];
-        for(int i=1; i<nums.size();i++){
-            if(count==0){
-                count++;
-                max=nums[i];
+        int maj = nums[0];
+        int n = nums.size();
+        set<int> st;
+        int majCount=0;
+        int count;
+        for(int i=0;i<n;i++){
+            // if(st.find(maj)!=st.end()) continue;
+            count=0;
+            for(int j=i+1;j<n;j++){
+                if(nums[i]==nums[j]) count++;
             }
-            else if(max==nums[i]){
-                count++;
+            if(majCount<count){
+                maj = nums[i];
+                majCount = count;
             }
-            else{count--;}
-            
+            // st.insert(maj);
         }
-        return max;
-        
-        
-        // int n=nums.size()/2;
-        // sort(nums.begin(),nums.end());
-        // int count=1;
-        // for(int i=0;i<nums.size()-1;i++){
-        //     cout<<nums[i]<<endl;
-        //     if(nums[i]==nums[i+1]){
-        //         count++;
-        //     }
-        //     cout<<count<<endl;
-        //     if(count>n){
-        //         return nums[i];
-        //     }
-        // }
-        // return nums[0];
+        return maj;
     }
 };
