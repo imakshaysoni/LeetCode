@@ -1,24 +1,19 @@
 class Solution {
 public:
     int majorityElement(vector<int>& nums) {
-        
-        int maj = nums[0];
+
+
+        // RBute force
         int n = nums.size();
-        set<int> st;
-        int majCount=0;
-        int count;
         for(int i=0;i<n;i++){
-            // if(st.find(maj)!=st.end()) continue;
-            count=1;
+            int number= nums[i];
+            int count = 1;
             for(int j=i+1;j<n;j++){
-                if(nums[i]==nums[j]) count++;
+                if(nums[j]==number) count++;
             }
-            if(majCount<count){
-                maj = nums[i];
-                majCount = count;
-            }
-            // st.insert(maj);
+            if(count>n/2) return number;
         }
-        return maj;
+        return -1;
+        
     }
 };
