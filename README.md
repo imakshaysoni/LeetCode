@@ -37,6 +37,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0040-combination-sum-ii](https://github.com/imakshaysoni/LeetCode/tree/master/0040-combination-sum-ii) |
 | [0042-trapping-rain-water](https://github.com/imakshaysoni/LeetCode/tree/master/0042-trapping-rain-water) |
 | [0045-jump-game-ii](https://github.com/imakshaysoni/LeetCode/tree/master/0045-jump-game-ii) |
+| [0075-sort-colors](https://github.com/imakshaysoni/LeetCode/tree/master/0075-sort-colors) |
 | [0081-search-in-rotated-sorted-array-ii](https://github.com/imakshaysoni/LeetCode/tree/master/0081-search-in-rotated-sorted-array-ii) |
 | [0084-largest-rectangle-in-histogram](https://github.com/imakshaysoni/LeetCode/tree/master/0084-largest-rectangle-in-histogram) |
 | [0085-maximal-rectangle](https://github.com/imakshaysoni/LeetCode/tree/master/0085-maximal-rectangle) |
@@ -92,6 +93,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 ## Sorting
 |  |
 | ------- |
+| [0075-sort-colors](https://github.com/imakshaysoni/LeetCode/tree/master/0075-sort-colors) |
 | [0169-majority-element](https://github.com/imakshaysoni/LeetCode/tree/master/0169-majority-element) |
 | [0268-missing-number](https://github.com/imakshaysoni/LeetCode/tree/master/0268-missing-number) |
 | [0646-maximum-length-of-pair-chain](https://github.com/imakshaysoni/LeetCode/tree/master/0646-maximum-length-of-pair-chain) |
@@ -292,6 +294,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0011-container-with-most-water](https://github.com/imakshaysoni/LeetCode/tree/master/0011-container-with-most-water) |
 | [0031-next-permutation](https://github.com/imakshaysoni/LeetCode/tree/master/0031-next-permutation) |
 | [0042-trapping-rain-water](https://github.com/imakshaysoni/LeetCode/tree/master/0042-trapping-rain-water) |
+| [0075-sort-colors](https://github.com/imakshaysoni/LeetCode/tree/master/0075-sort-colors) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/imakshaysoni/LeetCode/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0768-partition-labels](https://github.com/imakshaysoni/LeetCode/tree/master/0768-partition-labels) |
 | [1129-longest-string-chain](https://github.com/imakshaysoni/LeetCode/tree/master/1129-longest-string-chain) |
