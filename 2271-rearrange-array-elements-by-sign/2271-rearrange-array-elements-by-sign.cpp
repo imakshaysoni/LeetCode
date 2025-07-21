@@ -21,6 +21,13 @@ public:
             posIdx++;
             negIdx++;
         }
+        while(posIdx<pos.size()){
+            nums[idx] = pos[posIdx];
+        }
+
+        while(negIdx<neg.size()){
+            nums[idx] = pos[negIdx];
+        }
         return nums;
 
     }
