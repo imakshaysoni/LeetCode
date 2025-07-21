@@ -57,6 +57,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0540-single-element-in-a-sorted-array](https://github.com/imakshaysoni/LeetCode/tree/master/0540-single-element-in-a-sorted-array) |
 | [0646-maximum-length-of-pair-chain](https://github.com/imakshaysoni/LeetCode/tree/master/0646-maximum-length-of-pair-chain) |
 | [0741-cherry-pickup](https://github.com/imakshaysoni/LeetCode/tree/master/0741-cherry-pickup) |
+| [0747-min-cost-climbing-stairs](https://github.com/imakshaysoni/LeetCode/tree/master/0747-min-cost-climbing-stairs) |
 | [0882-peak-index-in-a-mountain-array](https://github.com/imakshaysoni/LeetCode/tree/master/0882-peak-index-in-a-mountain-array) |
 | [0907-koko-eating-bananas](https://github.com/imakshaysoni/LeetCode/tree/master/0907-koko-eating-bananas) |
 | [0925-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/imakshaysoni/LeetCode/tree/master/0925-construct-binary-tree-from-preorder-and-postorder-traversal) |
@@ -228,6 +229,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0646-maximum-length-of-pair-chain](https://github.com/imakshaysoni/LeetCode/tree/master/0646-maximum-length-of-pair-chain) |
 | [0678-valid-parenthesis-string](https://github.com/imakshaysoni/LeetCode/tree/master/0678-valid-parenthesis-string) |
 | [0741-cherry-pickup](https://github.com/imakshaysoni/LeetCode/tree/master/0741-cherry-pickup) |
+| [0747-min-cost-climbing-stairs](https://github.com/imakshaysoni/LeetCode/tree/master/0747-min-cost-climbing-stairs) |
 | [1013-fibonacci-number](https://github.com/imakshaysoni/LeetCode/tree/master/1013-fibonacci-number) |
 | [1121-partition-array-for-maximum-sum](https://github.com/imakshaysoni/LeetCode/tree/master/1121-partition-array-for-maximum-sum) |
 | [1129-longest-string-chain](https://github.com/imakshaysoni/LeetCode/tree/master/1129-longest-string-chain) |
