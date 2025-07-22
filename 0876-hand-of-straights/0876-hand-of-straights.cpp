@@ -1,26 +1,36 @@
 class Solution {
 public:
     bool isNStraightHand(vector<int>& hand, int groupSize) {
-        if(hand.size()%groupSize!=0) return false;
+        
         map<int, int> mapper;
-        for(auto it: hand){
-            if(mapper.find(it)!=mapper.end()){
-                mapper[it] += 1;
+        for(int i=0;i<hand.size();i++){
+
+            if(mapper.find(hand[i])!=mapper.end()){
+                mapper[hand[i]]+=1;
             }
-            else mapper[it] = 1;
+            else{
+                mapper[hand[i]] = 1;
+            }
         }
 
         while(!mapper.empty()){
-            int curr = mapper.begin()->first;
-            for(int i=0;i<groupSize;i++){
-                if(mapper[curr+i]==0) return false;
-                
-                mapper[curr+i]--;
 
-                if(mapper[curr+i]==0) mapper.erase(curr+i);
+            int number = mapper.begin()->first;
+            //1 -> 1, 2, 3 
+            for(int i=0;i<groupSize;i++){
+                if(mapper[number+i]==0) return false;
+
+                mapper[number+i]--;
+                if(mapper[number+i]==0) mapper.erase(number+i);
+
             }
         }
+
         return true;
+
+
+
+
 
     }
 };
