@@ -55,6 +55,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0410-split-array-largest-sum](https://github.com/imakshaysoni/LeetCode/tree/master/0410-split-array-largest-sum) |
 | [0518-coin-change-ii](https://github.com/imakshaysoni/LeetCode/tree/master/0518-coin-change-ii) |
 | [0540-single-element-in-a-sorted-array](https://github.com/imakshaysoni/LeetCode/tree/master/0540-single-element-in-a-sorted-array) |
+| [0621-task-scheduler](https://github.com/imakshaysoni/LeetCode/tree/master/0621-task-scheduler) |
 | [0646-maximum-length-of-pair-chain](https://github.com/imakshaysoni/LeetCode/tree/master/0646-maximum-length-of-pair-chain) |
 | [0741-cherry-pickup](https://github.com/imakshaysoni/LeetCode/tree/master/0741-cherry-pickup) |
 | [0747-min-cost-climbing-stairs](https://github.com/imakshaysoni/LeetCode/tree/master/0747-min-cost-climbing-stairs) |
@@ -99,6 +100,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0075-sort-colors](https://github.com/imakshaysoni/LeetCode/tree/master/0075-sort-colors) |
 | [0169-majority-element](https://github.com/imakshaysoni/LeetCode/tree/master/0169-majority-element) |
 | [0268-missing-number](https://github.com/imakshaysoni/LeetCode/tree/master/0268-missing-number) |
+| [0621-task-scheduler](https://github.com/imakshaysoni/LeetCode/tree/master/0621-task-scheduler) |
 | [0646-maximum-length-of-pair-chain](https://github.com/imakshaysoni/LeetCode/tree/master/0646-maximum-length-of-pair-chain) |
 | [0876-hand-of-straights](https://github.com/imakshaysoni/LeetCode/tree/master/0876-hand-of-straights) |
 | [0948-sort-an-array](https://github.com/imakshaysoni/LeetCode/tree/master/0948-sort-an-array) |
@@ -109,6 +111,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 ## Heap (Priority Queue)
 |  |
 | ------- |
+| [0621-task-scheduler](https://github.com/imakshaysoni/LeetCode/tree/master/0621-task-scheduler) |
 | [0948-sort-an-array](https://github.com/imakshaysoni/LeetCode/tree/master/0948-sort-an-array) |
 ## Merge Sort
 |  |
@@ -126,6 +129,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 |  |
 | ------- |
 | [0169-majority-element](https://github.com/imakshaysoni/LeetCode/tree/master/0169-majority-element) |
+| [0621-task-scheduler](https://github.com/imakshaysoni/LeetCode/tree/master/0621-task-scheduler) |
 | [0948-sort-an-array](https://github.com/imakshaysoni/LeetCode/tree/master/0948-sort-an-array) |
 | [2237-longest-palindrome-by-concatenating-two-letter-words](https://github.com/imakshaysoni/LeetCode/tree/master/2237-longest-palindrome-by-concatenating-two-letter-words) |
 | [3360-minimum-deletions-to-make-string-k-special](https://github.com/imakshaysoni/LeetCode/tree/master/3360-minimum-deletions-to-make-string-k-special) |
@@ -177,6 +181,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0169-majority-element](https://github.com/imakshaysoni/LeetCode/tree/master/0169-majority-element) |
 | [0268-missing-number](https://github.com/imakshaysoni/LeetCode/tree/master/0268-missing-number) |
 | [0424-longest-repeating-character-replacement](https://github.com/imakshaysoni/LeetCode/tree/master/0424-longest-repeating-character-replacement) |
+| [0621-task-scheduler](https://github.com/imakshaysoni/LeetCode/tree/master/0621-task-scheduler) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/imakshaysoni/LeetCode/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0768-partition-labels](https://github.com/imakshaysoni/LeetCode/tree/master/0768-partition-labels) |
 | [0876-hand-of-straights](https://github.com/imakshaysoni/LeetCode/tree/master/0876-hand-of-straights) |
@@ -261,6 +266,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0011-container-with-most-water](https://github.com/imakshaysoni/LeetCode/tree/master/0011-container-with-most-water) |
 | [0045-jump-game-ii](https://github.com/imakshaysoni/LeetCode/tree/master/0045-jump-game-ii) |
 | [0410-split-array-largest-sum](https://github.com/imakshaysoni/LeetCode/tree/master/0410-split-array-largest-sum) |
+| [0621-task-scheduler](https://github.com/imakshaysoni/LeetCode/tree/master/0621-task-scheduler) |
 | [0646-maximum-length-of-pair-chain](https://github.com/imakshaysoni/LeetCode/tree/master/0646-maximum-length-of-pair-chain) |
 | [0678-valid-parenthesis-string](https://github.com/imakshaysoni/LeetCode/tree/master/0678-valid-parenthesis-string) |
 | [0768-partition-labels](https://github.com/imakshaysoni/LeetCode/tree/master/0768-partition-labels) |
