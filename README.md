@@ -38,6 +38,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0042-trapping-rain-water](https://github.com/imakshaysoni/LeetCode/tree/master/0042-trapping-rain-water) |
 | [0045-jump-game-ii](https://github.com/imakshaysoni/LeetCode/tree/master/0045-jump-game-ii) |
 | [0075-sort-colors](https://github.com/imakshaysoni/LeetCode/tree/master/0075-sort-colors) |
+| [0078-subsets](https://github.com/imakshaysoni/LeetCode/tree/master/0078-subsets) |
 | [0081-search-in-rotated-sorted-array-ii](https://github.com/imakshaysoni/LeetCode/tree/master/0081-search-in-rotated-sorted-array-ii) |
 | [0084-largest-rectangle-in-histogram](https://github.com/imakshaysoni/LeetCode/tree/master/0084-largest-rectangle-in-histogram) |
 | [0085-maximal-rectangle](https://github.com/imakshaysoni/LeetCode/tree/master/0085-maximal-rectangle) |
@@ -344,6 +345,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | ------- |
 | [0040-combination-sum-ii](https://github.com/imakshaysoni/LeetCode/tree/master/0040-combination-sum-ii) |
 | [0077-combinations](https://github.com/imakshaysoni/LeetCode/tree/master/0077-combinations) |
+| [0078-subsets](https://github.com/imakshaysoni/LeetCode/tree/master/0078-subsets) |
 | [0257-binary-tree-paths](https://github.com/imakshaysoni/LeetCode/tree/master/0257-binary-tree-paths) |
 ## Brainteaser
 |  |
@@ -462,6 +464,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 ## Bit Manipulation
 |  |
 | ------- |
+| [0078-subsets](https://github.com/imakshaysoni/LeetCode/tree/master/0078-subsets) |
 | [0268-missing-number](https://github.com/imakshaysoni/LeetCode/tree/master/0268-missing-number) |
 ## Design
 |  |
