@@ -1,54 +1,32 @@
 class Solution {
 public:
     vector<vector<int>> subsets(vector<int>& nums) {
-       
-        vector<vector<int>> ans;
         vector<int> subset;
-        // subarray(nums,0,subset,ans);
-        // return ans;
-        return SubSets(nums,0);
-        
+        vector<vector<int>> final_subset;
+        solve(nums, 0, subset, final_subset);
+        return final_subset;
     }
-    
-    
-    
-    vector<vector<int>> SubSets(vector<int> &v, int i){
+
+    void solve(vector<int> &nums, int idx, vector<int>&subset, vector<vector<int>>&ans){
         
-        if(i==v.size()) return {{}};
-        
-        vector<vector<int>> partialAns = SubSets(v,i+1);
-        vector<vector<int> > ans;
-        for(auto x: partialAns){
-            ans.push_back(x);
+        if(idx>=nums.size()){
+            ans.push_back(subset);
+            return;
         }
-        
-        for(auto x: partialAns){
-            x.push_back(v[i]);
-            ans.push_back(x);
-        }
-        
-        return ans;
+
+
+        //Option 1 Pick
+        subset.push_back(nums[idx]);
+        solve(nums, idx+1, subset, ans);
+        subset.pop_back();
+
+        //Option 2 not pick
+        while(idx+1<nums.size() and nums[idx]==nums[idx+1]) idx++;
+        solve(nums, idx+1, subset, ans);
+        return;
     }
-    
-//    void subarray(vector<int> &v, int i, vector<int> &subset, vector<vector<int>> &ans){
-        
-//         if(i==v.size()) {
-//             ans.push_back(subset);
-//             return;
-//         }
-       
-// //         Include first Term
-//         subset.push_back(v[i]);
-//         subarray(v,i+1,subset,ans);
-        
-// //         Ignore first term
-//         subset.pop_back();
-//         subarray(v,i+1,subset,ans);
-       
-       
-        
-//         return;
-        
-        
-//     }
+
+
+
+
 };
