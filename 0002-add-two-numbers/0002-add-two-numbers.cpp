@@ -11,61 +11,39 @@
 class Solution {
 public:
     ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
-        ListNode * head = new ListNode();
-        ListNode * temp = head;
-        int carry = 0;
         
-        while(l1 && l2){
-            int val = l1->val + l2->val + carry;
-            if(val>9) {
-                carry=1;
-                val=val-10;
-            }
-            else carry =0;
-            ListNode * t = new ListNode(val);
-            temp->next = t;
-            temp = t;
-            
+        int carry = 0;
+        ListNode *ans = new ListNode(0);
+        ListNode *head = ans;
+        while(l1 and l2){
+            int val1 = l1->val;
+            int val2 = l2->val;
+            int sum = carry + val1 + val2;
+            ans->next = new ListNode(sum%10);
+
+            carry = sum/10;
+            ans = ans->next;
             l1 = l1->next;
             l2 = l2->next;
-            
         }
-        
         while(l1){
-            int val = l1->val + carry;
-            if(val>9){
-                carry=1;
-                val = val-10;
-            }
-            else carry=0;
-            ListNode * t1 = new ListNode(val);
-            temp->next = t1;
-            temp = t1;
-            l1=l1->next;
+            int sum = l1->val + carry;
+            ans->next = new ListNode(sum%10);
+            carry = sum/10;
+            l1 = l1->next;
+            ans = ans->next;
         }
-        
         while(l2){
-            int val = l2->val + carry;
-            if(val>9){
-                carry=1;
-                val = val-10;
-            }
-            else carry = 0;
-            ListNode * t2 = new ListNode(val);
-            temp->next = t2;
-            temp = t2;
+            int sum = l2->val + carry;
+            ans->next = new ListNode(sum%10);
+            carry = sum/10;
             l2 = l2->next;
+            ans = ans->next;
         }
-        if (carry){
-            ListNode * t3 = new ListNode(carry);
-            temp->next = t3;
-            temp = t3;
-            
-        }        
-        
+        if(carry!=0){
+            ans->next = new ListNode(carry);
+        }
         return head->next;
-        
-        
         
     }
 };
