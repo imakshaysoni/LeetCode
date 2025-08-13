@@ -297,6 +297,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 ## Math
 |  |
 | ------- |
+| [0002-add-two-numbers](https://github.com/imakshaysoni/LeetCode/tree/master/0002-add-two-numbers) |
 | [0007-reverse-integer](https://github.com/imakshaysoni/LeetCode/tree/master/0007-reverse-integer) |
 | [0069-sqrtx](https://github.com/imakshaysoni/LeetCode/tree/master/0069-sqrtx) |
 | [0268-missing-number](https://github.com/imakshaysoni/LeetCode/tree/master/0268-missing-number) |
@@ -321,11 +322,13 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 ## Linked List
 |  |
 | ------- |
+| [0002-add-two-numbers](https://github.com/imakshaysoni/LeetCode/tree/master/0002-add-two-numbers) |
 | [0024-swap-nodes-in-pairs](https://github.com/imakshaysoni/LeetCode/tree/master/0024-swap-nodes-in-pairs) |
 | [0114-flatten-binary-tree-to-linked-list](https://github.com/imakshaysoni/LeetCode/tree/master/0114-flatten-binary-tree-to-linked-list) |
 ## Recursion
 |  |
 | ------- |
+| [0002-add-two-numbers](https://github.com/imakshaysoni/LeetCode/tree/master/0002-add-two-numbers) |
 | [0024-swap-nodes-in-pairs](https://github.com/imakshaysoni/LeetCode/tree/master/0024-swap-nodes-in-pairs) |
 | [1013-fibonacci-number](https://github.com/imakshaysoni/LeetCode/tree/master/1013-fibonacci-number) |
 | [1197-parsing-a-boolean-expression](https://github.com/imakshaysoni/LeetCode/tree/master/1197-parsing-a-boolean-expression) |
