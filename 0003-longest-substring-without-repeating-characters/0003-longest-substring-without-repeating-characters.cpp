@@ -5,19 +5,17 @@ public:
         int left = 0;
         int right = 0;
         int n = s.size();
-        // unordered_map<char,int> mapp;
-        set<char> st;
         int ans = 0;
 
-        while(right < n){
+        unordered_map<char, int> mapp;
+        while(right<n){
             char ch = s[right];
-            while(st.find(ch)!=st.end()){
-                char c = s[left];
-                st.erase(c);
-                left++;
+
+            if(mapp.find(ch)!=mapp.end() and mapp[ch] >= left ){
+                left = mapp[ch]+1;
             }
-            ans = max(ans, right-left+1);
-            st.insert(ch);
+            mapp[ch] = right;
+            ans = max(ans, right - left + 1);
             right++;
 
         }
