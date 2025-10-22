@@ -56,6 +56,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0268-missing-number](https://github.com/imakshaysoni/LeetCode/tree/master/0268-missing-number) |
 | [0322-coin-change](https://github.com/imakshaysoni/LeetCode/tree/master/0322-coin-change) |
 | [0410-split-array-largest-sum](https://github.com/imakshaysoni/LeetCode/tree/master/0410-split-array-largest-sum) |
+| [0494-target-sum](https://github.com/imakshaysoni/LeetCode/tree/master/0494-target-sum) |
 | [0518-coin-change-ii](https://github.com/imakshaysoni/LeetCode/tree/master/0518-coin-change-ii) |
 | [0540-single-element-in-a-sorted-array](https://github.com/imakshaysoni/LeetCode/tree/master/0540-single-element-in-a-sorted-array) |
 | [0621-task-scheduler](https://github.com/imakshaysoni/LeetCode/tree/master/0621-task-scheduler) |
@@ -241,6 +242,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0221-maximal-square](https://github.com/imakshaysoni/LeetCode/tree/master/0221-maximal-square) |
 | [0322-coin-change](https://github.com/imakshaysoni/LeetCode/tree/master/0322-coin-change) |
 | [0410-split-array-largest-sum](https://github.com/imakshaysoni/LeetCode/tree/master/0410-split-array-largest-sum) |
+| [0494-target-sum](https://github.com/imakshaysoni/LeetCode/tree/master/0494-target-sum) |
 | [0518-coin-change-ii](https://github.com/imakshaysoni/LeetCode/tree/master/0518-coin-change-ii) |
 | [0646-maximum-length-of-pair-chain](https://github.com/imakshaysoni/LeetCode/tree/master/0646-maximum-length-of-pair-chain) |
 | [0678-valid-parenthesis-string](https://github.com/imakshaysoni/LeetCode/tree/master/0678-valid-parenthesis-string) |
@@ -366,6 +368,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0079-word-search](https://github.com/imakshaysoni/LeetCode/tree/master/0079-word-search) |
 | [0090-subsets-ii](https://github.com/imakshaysoni/LeetCode/tree/master/0090-subsets-ii) |
 | [0257-binary-tree-paths](https://github.com/imakshaysoni/LeetCode/tree/master/0257-binary-tree-paths) |
+| [0494-target-sum](https://github.com/imakshaysoni/LeetCode/tree/master/0494-target-sum) |
 ## Brainteaser
 |  |
 | ------- |
