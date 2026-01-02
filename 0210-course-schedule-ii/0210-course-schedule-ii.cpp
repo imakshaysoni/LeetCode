@@ -1,22 +1,17 @@
 class Solution {
 public:
-    vector<int> findOrder(int V, vector<vector<int>>& prerequisites) {
-            // BFS Approch Kahan's Algorithm
-        vector<vector<int>> adj(V);
-    for (vector<int> it : prerequisites) {
-        adj[it[1]].push_back(it[0]);
-    }
+    vector<int> findOrder(int numCourses, vector<vector<int>>& prerequisites) {
+        vector<int> indegree(numCourses, 0);
+        vector<vector<int>> adjList(numCourses);
         
-        vector<int> indegree(V, 0);
-        for(int i=0;i<V;i++){
-            for(int node : adj[i]){
-                indegree[node]++;
-            }
+        for(auto e: prerequisites){
+            adjList[e[0]].push_back(e[1]);
+            indegree[e[1]]++;
         }
         
         queue<int> q;
-        for(int i=0;i<V;i++){
-            if(indegree[i]==0) q.push(i);
+        for(int node=0;node<numCourses;node++){
+            if(indegree[node]==0) q.push(node);
         }
         vector<int> topo;
         while(!q.empty()){
@@ -25,14 +20,15 @@ public:
             q.pop();
             topo.push_back(node);
             
-            for(int n: adj[node]){
-                indegree[n]--;
-                if(indegree[n]==0) q.push(n);
+            for(auto adjNode: adjList[node]){
+                indegree[adjNode]--;
+                if(indegree[adjNode]==0) q.push(adjNode);
             }
             
-            
         }
-        if(topo.size()==V) return topo;
-        return {};    
+        // for(auto node: topo) cout<<node<<"->";
+        reverse(topo.begin(), topo.end());
+        if(topo.size()==numCourses) return topo;
+        return {};
     }
 };
