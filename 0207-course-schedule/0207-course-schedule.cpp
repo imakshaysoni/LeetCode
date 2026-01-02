@@ -1,66 +1,32 @@
 class Solution {
 public:
-    bool canFinish(int V, vector<vector<int>>& prerequisites) {
-        // BFS Approch Kahan's Algorithm
-        vector<vector<int>> adj(V);
-    for (vector<int> it : prerequisites) {
-        adj[it[1]].push_back(it[0]);
-    }
+    bool canFinish(int numCourses, vector<vector<int>>& prerequisites) {
+        vector<int> indegree(numCourses, 0);
+        vector<vector<int>> adjList(numCourses);
         
-        vector<int> indegree(V, 0);
-        for(int i=0;i<V;i++){
-            for(int node : adj[i]){
-                indegree[node]++;
-            }
+        for(auto e: prerequisites){
+            adjList[e[0]].push_back(e[1]);
+            indegree[e[1]]++;
         }
         
         queue<int> q;
-        for(int i=0;i<V;i++){
-            if(indegree[i]==0) q.push(i);
+        for(int node=0;node<numCourses;node++){
+            if(indegree[node]==0) q.push(node);
         }
-        int cnt=0;
+        vector<int> topo;
         while(!q.empty()){
             
             int node = q.front();
             q.pop();
-            cnt++;
+            topo.push_back(node);
             
-            for(int n: adj[node]){
-                indegree[n]--;
-                if(indegree[n]==0) q.push(n);
+            for(auto adjNode: adjList[node]){
+                indegree[adjNode]--;
+                if(indegree[adjNode]==0) q.push(adjNode);
             }
             
-            
         }
-        if(cnt==V) return 1;
-        return 0;
+        // for(auto node: topo) cout<<node<<"->";
+        return topo.size() == numCourses;
     }
-//         ////////////////////////////////////////////
-        
-//         vector<int> indegree(numCourses,0);
-//         for(auto x: prerequisites){
-//             indegree[x[0]]++;
-//         }
-        
-        
-//         queue<int> q;
-//         int cnt=0;
-//         for(int i=0;i<numCourses;i++){
-//             if(indegree[i]==0) q.push(i);
-//         }
-        
-//         while(!q.empty()){
-//             int n = q.front();
-//             q.pop();
-//             cnt++;
-//             for(int x: prerequisites[n]){
-//                 indegree[x]--;
-//                 if(indegree[x]==0) q.push(x);
-//             }
-//         }
-        
-//         if(cnt==numCourses) return true;
-//         return false;
-        
-    // }
 };
