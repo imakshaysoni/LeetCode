@@ -387,6 +387,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | ------- |
 | [0207-course-schedule](https://github.com/imakshaysoni/LeetCode/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/imakshaysoni/LeetCode/tree/master/0210-course-schedule-ii) |
+| [0802-find-eventual-safe-states](https://github.com/imakshaysoni/LeetCode/tree/master/0802-find-eventual-safe-states) |
 | [1039-find-the-town-judge](https://github.com/imakshaysoni/LeetCode/tree/master/1039-find-the-town-judge) |
 ## Breadth-First Search
 |  |
@@ -397,6 +398,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0322-coin-change](https://github.com/imakshaysoni/LeetCode/tree/master/0322-coin-change) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/imakshaysoni/LeetCode/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0662-maximum-width-of-binary-tree](https://github.com/imakshaysoni/LeetCode/tree/master/0662-maximum-width-of-binary-tree) |
+| [0802-find-eventual-safe-states](https://github.com/imakshaysoni/LeetCode/tree/master/0802-find-eventual-safe-states) |
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/imakshaysoni/LeetCode/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/imakshaysoni/LeetCode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [2461-amount-of-time-for-binary-tree-to-be-infected](https://github.com/imakshaysoni/LeetCode/tree/master/2461-amount-of-time-for-binary-tree-to-be-infected) |
@@ -477,6 +479,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0543-diameter-of-binary-tree](https://github.com/imakshaysoni/LeetCode/tree/master/0543-diameter-of-binary-tree) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/imakshaysoni/LeetCode/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0662-maximum-width-of-binary-tree](https://github.com/imakshaysoni/LeetCode/tree/master/0662-maximum-width-of-binary-tree) |
+| [0802-find-eventual-safe-states](https://github.com/imakshaysoni/LeetCode/tree/master/0802-find-eventual-safe-states) |
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/imakshaysoni/LeetCode/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/imakshaysoni/LeetCode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [2461-amount-of-time-for-binary-tree-to-be-infected](https://github.com/imakshaysoni/LeetCode/tree/master/2461-amount-of-time-for-binary-tree-to-be-infected) |
@@ -509,4 +512,5 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | ------- |
 | [0207-course-schedule](https://github.com/imakshaysoni/LeetCode/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/imakshaysoni/LeetCode/tree/master/0210-course-schedule-ii) |
+| [0802-find-eventual-safe-states](https://github.com/imakshaysoni/LeetCode/tree/master/0802-find-eventual-safe-states) |
 <!---LeetCode Topics End-->
