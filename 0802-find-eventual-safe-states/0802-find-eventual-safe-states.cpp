@@ -6,10 +6,10 @@ public:
         vector<int> indegree(nodes, 0);
         
         vector<int> adjList[nodes];
-        for(int i=0;i<nodes;i++){
-            for(int x: graph[i]){
-                adjList[x].push_back(i);
-                indegree[i]++;
+        for(int node=0;node<nodes;node++){
+            for(auto adjNode: graph[node]){
+                adjList[adjNode].push_back(node);
+                indegree[node]++;
             }
         }
         
