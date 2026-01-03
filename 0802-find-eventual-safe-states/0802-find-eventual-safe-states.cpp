@@ -2,51 +2,38 @@ class Solution {
 public:
     vector<int> eventualSafeNodes(vector<vector<int>>& graph) {
         int nodes = graph.size();
-        vector<int> adj[nodes];
+
+        vector<int> indegree(nodes, 0);
+        
+        vector<int> adjList[nodes];
         for(int i=0;i<nodes;i++){
-            for(auto it: graph[i]){
-                adj[i].push_back(it);
+            for(int x: graph[i]){
+                adjList[x].push_back(i);
+                indegree[i]++;
             }
         }
         
+
         
-        
-        vector<int> safeNodes;
-        vector<int> visited(nodes, 0);
-        vector<int> pathVis(nodes, 0);
-        vector<int> check(nodes, 0);
-        for(int i=0; i<nodes;i++){
-            if(visited[i]==0){
-                dfs(adj, i, visited, pathVis, check);
-            }
+        queue<int> q;
+        for(int node=0;node<nodes;node++){
+            if(indegree[node]==0) q.push(node);
         }
-        
-        for(int i=0;i<nodes;i++){
-            if(check[i]==1) safeNodes.push_back(i);
-        }
-        
-        return safeNodes;
-    }
-    
-    bool dfs(vector<int> adj[], int node, vector<int> &visited, vector<int> &pathVis, vector<int> &check){
-        
-        visited[node]=1;
-        pathVis[node]=1;
-        
-        for(auto adjNode: adj[node]){
-            if(visited[adjNode]==0){
-                if(dfs(adj, adjNode, visited, pathVis, check)==true){
-                    check[node]=0;
-                    return true;
-                }
+        vector<int> topo;
+        while(!q.empty()){
+            
+            int node = q.front();
+            q.pop();
+            topo.push_back(node);
+            
+            for(auto adjNode: adjList[node]){
+                indegree[adjNode]--;
+                if(indegree[adjNode]==0) q.push(adjNode);
             }
-            else if(pathVis[adjNode]==1){
-                check[adjNode]=0;
-                return true;
-            }
+            
         }
-        check[node]=1;
-        pathVis[node]=0;
-        return false;
+        // for(auto node: topo) cout<<node<<"->";
+        sort(topo.begin(), topo.end());
+        return topo;
     }
 };
