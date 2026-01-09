@@ -256,6 +256,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [1129-longest-string-chain](https://github.com/imakshaysoni/LeetCode/tree/master/1129-longest-string-chain) |
 | [1402-count-square-submatrices-with-all-ones](https://github.com/imakshaysoni/LeetCode/tree/master/1402-count-square-submatrices-with-all-ones) |
 | [1559-cherry-pickup-ii](https://github.com/imakshaysoni/LeetCode/tree/master/1559-cherry-pickup-ii) |
+| [1976-number-of-ways-to-arrive-at-destination](https://github.com/imakshaysoni/LeetCode/tree/master/1976-number-of-ways-to-arrive-at-destination) |
 | [2408-number-of-people-aware-of-a-secret](https://github.com/imakshaysoni/LeetCode/tree/master/2408-number-of-people-aware-of-a-secret) |
 | [3143-longest-unequal-adjacent-groups-subsequence-i](https://github.com/imakshaysoni/LeetCode/tree/master/3143-longest-unequal-adjacent-groups-subsequence-i) |
 ## Stack
@@ -394,6 +395,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0210-course-schedule-ii](https://github.com/imakshaysoni/LeetCode/tree/master/0210-course-schedule-ii) |
 | [0802-find-eventual-safe-states](https://github.com/imakshaysoni/LeetCode/tree/master/0802-find-eventual-safe-states) |
 | [1039-find-the-town-judge](https://github.com/imakshaysoni/LeetCode/tree/master/1039-find-the-town-judge) |
+| [1976-number-of-ways-to-arrive-at-destination](https://github.com/imakshaysoni/LeetCode/tree/master/1976-number-of-ways-to-arrive-at-destination) |
 ## Breadth-First Search
 |  |
 | ------- |
@@ -520,4 +522,9 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0207-course-schedule](https://github.com/imakshaysoni/LeetCode/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/imakshaysoni/LeetCode/tree/master/0210-course-schedule-ii) |
 | [0802-find-eventual-safe-states](https://github.com/imakshaysoni/LeetCode/tree/master/0802-find-eventual-safe-states) |
+| [1976-number-of-ways-to-arrive-at-destination](https://github.com/imakshaysoni/LeetCode/tree/master/1976-number-of-ways-to-arrive-at-destination) |
+## Shortest Path
+|  |
+| ------- |
+| [1976-number-of-ways-to-arrive-at-destination](https://github.com/imakshaysoni/LeetCode/tree/master/1976-number-of-ways-to-arrive-at-destination) |
 <!---LeetCode Topics End-->
