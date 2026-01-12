@@ -41,14 +41,17 @@ public:
         }
 
         int count =0;
-        for(int i=0;i<n-1;i++){
-            if(dsu_find(i, parent) != dsu_find(i+1, parent)){
-                dsu_union(i, i+1, parent, rank);
+        for(int i=0;i<n;i++){
+            if(parent[i]==i){
                 count++;
             }
+            // if(dsu_find(i, parent) != dsu_find(i+1, parent)){
+            //     dsu_union(i, i+1, parent, rank);
+            //     count++;
+            // }
         }
 
-        return count;
+        return count-1;
 
     }
 };
