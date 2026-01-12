@@ -80,6 +80,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [1402-count-square-submatrices-with-all-ones](https://github.com/imakshaysoni/LeetCode/tree/master/1402-count-square-submatrices-with-all-ones) |
 | [1538-maximum-points-you-can-obtain-from-cards](https://github.com/imakshaysoni/LeetCode/tree/master/1538-maximum-points-you-can-obtain-from-cards) |
 | [1559-cherry-pickup-ii](https://github.com/imakshaysoni/LeetCode/tree/master/1559-cherry-pickup-ii) |
+| [1584-min-cost-to-connect-all-points](https://github.com/imakshaysoni/LeetCode/tree/master/1584-min-cost-to-connect-all-points) |
 | [2047-find-a-peak-element-ii](https://github.com/imakshaysoni/LeetCode/tree/master/2047-find-a-peak-element-ii) |
 | [2237-longest-palindrome-by-concatenating-two-letter-words](https://github.com/imakshaysoni/LeetCode/tree/master/2237-longest-palindrome-by-concatenating-two-letter-words) |
 | [2265-partition-array-according-to-given-pivot](https://github.com/imakshaysoni/LeetCode/tree/master/2265-partition-array-according-to-given-pivot) |
@@ -395,6 +396,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0210-course-schedule-ii](https://github.com/imakshaysoni/LeetCode/tree/master/0210-course-schedule-ii) |
 | [0802-find-eventual-safe-states](https://github.com/imakshaysoni/LeetCode/tree/master/0802-find-eventual-safe-states) |
 | [1039-find-the-town-judge](https://github.com/imakshaysoni/LeetCode/tree/master/1039-find-the-town-judge) |
+| [1584-min-cost-to-connect-all-points](https://github.com/imakshaysoni/LeetCode/tree/master/1584-min-cost-to-connect-all-points) |
 | [1976-number-of-ways-to-arrive-at-destination](https://github.com/imakshaysoni/LeetCode/tree/master/1976-number-of-ways-to-arrive-at-destination) |
 ## Breadth-First Search
 |  |
@@ -527,4 +529,12 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 |  |
 | ------- |
 | [1976-number-of-ways-to-arrive-at-destination](https://github.com/imakshaysoni/LeetCode/tree/master/1976-number-of-ways-to-arrive-at-destination) |
+## Union Find
+|  |
+| ------- |
+| [1584-min-cost-to-connect-all-points](https://github.com/imakshaysoni/LeetCode/tree/master/1584-min-cost-to-connect-all-points) |
+## Minimum Spanning Tree
+|  |
+| ------- |
+| [1584-min-cost-to-connect-all-points](https://github.com/imakshaysoni/LeetCode/tree/master/1584-min-cost-to-connect-all-points) |
 <!---LeetCode Topics End-->
