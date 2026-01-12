@@ -61,6 +61,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0540-single-element-in-a-sorted-array](https://github.com/imakshaysoni/LeetCode/tree/master/0540-single-element-in-a-sorted-array) |
 | [0621-task-scheduler](https://github.com/imakshaysoni/LeetCode/tree/master/0621-task-scheduler) |
 | [0646-maximum-length-of-pair-chain](https://github.com/imakshaysoni/LeetCode/tree/master/0646-maximum-length-of-pair-chain) |
+| [0721-accounts-merge](https://github.com/imakshaysoni/LeetCode/tree/master/0721-accounts-merge) |
 | [0739-daily-temperatures](https://github.com/imakshaysoni/LeetCode/tree/master/0739-daily-temperatures) |
 | [0741-cherry-pickup](https://github.com/imakshaysoni/LeetCode/tree/master/0741-cherry-pickup) |
 | [0747-min-cost-climbing-stairs](https://github.com/imakshaysoni/LeetCode/tree/master/0747-min-cost-climbing-stairs) |
@@ -109,6 +110,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0268-missing-number](https://github.com/imakshaysoni/LeetCode/tree/master/0268-missing-number) |
 | [0621-task-scheduler](https://github.com/imakshaysoni/LeetCode/tree/master/0621-task-scheduler) |
 | [0646-maximum-length-of-pair-chain](https://github.com/imakshaysoni/LeetCode/tree/master/0646-maximum-length-of-pair-chain) |
+| [0721-accounts-merge](https://github.com/imakshaysoni/LeetCode/tree/master/0721-accounts-merge) |
 | [0876-hand-of-straights](https://github.com/imakshaysoni/LeetCode/tree/master/0876-hand-of-straights) |
 | [0948-sort-an-array](https://github.com/imakshaysoni/LeetCode/tree/master/0948-sort-an-array) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/imakshaysoni/LeetCode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
@@ -193,6 +195,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0424-longest-repeating-character-replacement](https://github.com/imakshaysoni/LeetCode/tree/master/0424-longest-repeating-character-replacement) |
 | [0621-task-scheduler](https://github.com/imakshaysoni/LeetCode/tree/master/0621-task-scheduler) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/imakshaysoni/LeetCode/tree/master/0653-two-sum-iv-input-is-a-bst) |
+| [0721-accounts-merge](https://github.com/imakshaysoni/LeetCode/tree/master/0721-accounts-merge) |
 | [0768-partition-labels](https://github.com/imakshaysoni/LeetCode/tree/master/0768-partition-labels) |
 | [0876-hand-of-straights](https://github.com/imakshaysoni/LeetCode/tree/master/0876-hand-of-straights) |
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/imakshaysoni/LeetCode/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
@@ -221,6 +224,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0257-binary-tree-paths](https://github.com/imakshaysoni/LeetCode/tree/master/0257-binary-tree-paths) |
 | [0424-longest-repeating-character-replacement](https://github.com/imakshaysoni/LeetCode/tree/master/0424-longest-repeating-character-replacement) |
 | [0678-valid-parenthesis-string](https://github.com/imakshaysoni/LeetCode/tree/master/0678-valid-parenthesis-string) |
+| [0721-accounts-merge](https://github.com/imakshaysoni/LeetCode/tree/master/0721-accounts-merge) |
 | [0768-partition-labels](https://github.com/imakshaysoni/LeetCode/tree/master/0768-partition-labels) |
 | [1129-longest-string-chain](https://github.com/imakshaysoni/LeetCode/tree/master/1129-longest-string-chain) |
 | [1197-parsing-a-boolean-expression](https://github.com/imakshaysoni/LeetCode/tree/master/1197-parsing-a-boolean-expression) |
@@ -410,6 +414,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0322-coin-change](https://github.com/imakshaysoni/LeetCode/tree/master/0322-coin-change) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/imakshaysoni/LeetCode/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0662-maximum-width-of-binary-tree](https://github.com/imakshaysoni/LeetCode/tree/master/0662-maximum-width-of-binary-tree) |
+| [0721-accounts-merge](https://github.com/imakshaysoni/LeetCode/tree/master/0721-accounts-merge) |
 | [0802-find-eventual-safe-states](https://github.com/imakshaysoni/LeetCode/tree/master/0802-find-eventual-safe-states) |
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/imakshaysoni/LeetCode/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/imakshaysoni/LeetCode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
@@ -494,6 +499,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0543-diameter-of-binary-tree](https://github.com/imakshaysoni/LeetCode/tree/master/0543-diameter-of-binary-tree) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/imakshaysoni/LeetCode/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0662-maximum-width-of-binary-tree](https://github.com/imakshaysoni/LeetCode/tree/master/0662-maximum-width-of-binary-tree) |
+| [0721-accounts-merge](https://github.com/imakshaysoni/LeetCode/tree/master/0721-accounts-merge) |
 | [0802-find-eventual-safe-states](https://github.com/imakshaysoni/LeetCode/tree/master/0802-find-eventual-safe-states) |
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/imakshaysoni/LeetCode/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/imakshaysoni/LeetCode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
@@ -538,6 +544,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 ## Union Find
 |  |
 | ------- |
+| [0721-accounts-merge](https://github.com/imakshaysoni/LeetCode/tree/master/0721-accounts-merge) |
 | [1319-number-of-operations-to-make-network-connected](https://github.com/imakshaysoni/LeetCode/tree/master/1319-number-of-operations-to-make-network-connected) |
 | [1584-min-cost-to-connect-all-points](https://github.com/imakshaysoni/LeetCode/tree/master/1584-min-cost-to-connect-all-points) |
 | [2316-count-unreachable-pairs-of-nodes-in-an-undirected-graph](https://github.com/imakshaysoni/LeetCode/tree/master/2316-count-unreachable-pairs-of-nodes-in-an-undirected-graph) |
