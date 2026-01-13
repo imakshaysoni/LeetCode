@@ -65,6 +65,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0739-daily-temperatures](https://github.com/imakshaysoni/LeetCode/tree/master/0739-daily-temperatures) |
 | [0741-cherry-pickup](https://github.com/imakshaysoni/LeetCode/tree/master/0741-cherry-pickup) |
 | [0747-min-cost-climbing-stairs](https://github.com/imakshaysoni/LeetCode/tree/master/0747-min-cost-climbing-stairs) |
+| [0827-making-a-large-island](https://github.com/imakshaysoni/LeetCode/tree/master/0827-making-a-large-island) |
 | [0876-hand-of-straights](https://github.com/imakshaysoni/LeetCode/tree/master/0876-hand-of-straights) |
 | [0882-peak-index-in-a-mountain-array](https://github.com/imakshaysoni/LeetCode/tree/master/0882-peak-index-in-a-mountain-array) |
 | [0907-koko-eating-bananas](https://github.com/imakshaysoni/LeetCode/tree/master/0907-koko-eating-bananas) |
@@ -304,6 +305,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0221-maximal-square](https://github.com/imakshaysoni/LeetCode/tree/master/0221-maximal-square) |
 | [0240-search-a-2d-matrix-ii](https://github.com/imakshaysoni/LeetCode/tree/master/0240-search-a-2d-matrix-ii) |
 | [0741-cherry-pickup](https://github.com/imakshaysoni/LeetCode/tree/master/0741-cherry-pickup) |
+| [0827-making-a-large-island](https://github.com/imakshaysoni/LeetCode/tree/master/0827-making-a-large-island) |
 | [1091-shortest-path-in-binary-matrix](https://github.com/imakshaysoni/LeetCode/tree/master/1091-shortest-path-in-binary-matrix) |
 | [1402-count-square-submatrices-with-all-ones](https://github.com/imakshaysoni/LeetCode/tree/master/1402-count-square-submatrices-with-all-ones) |
 | [1559-cherry-pickup-ii](https://github.com/imakshaysoni/LeetCode/tree/master/1559-cherry-pickup-ii) |
@@ -416,6 +418,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0662-maximum-width-of-binary-tree](https://github.com/imakshaysoni/LeetCode/tree/master/0662-maximum-width-of-binary-tree) |
 | [0721-accounts-merge](https://github.com/imakshaysoni/LeetCode/tree/master/0721-accounts-merge) |
 | [0802-find-eventual-safe-states](https://github.com/imakshaysoni/LeetCode/tree/master/0802-find-eventual-safe-states) |
+| [0827-making-a-large-island](https://github.com/imakshaysoni/LeetCode/tree/master/0827-making-a-large-island) |
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/imakshaysoni/LeetCode/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/imakshaysoni/LeetCode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [1091-shortest-path-in-binary-matrix](https://github.com/imakshaysoni/LeetCode/tree/master/1091-shortest-path-in-binary-matrix) |
@@ -501,6 +504,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0662-maximum-width-of-binary-tree](https://github.com/imakshaysoni/LeetCode/tree/master/0662-maximum-width-of-binary-tree) |
 | [0721-accounts-merge](https://github.com/imakshaysoni/LeetCode/tree/master/0721-accounts-merge) |
 | [0802-find-eventual-safe-states](https://github.com/imakshaysoni/LeetCode/tree/master/0802-find-eventual-safe-states) |
+| [0827-making-a-large-island](https://github.com/imakshaysoni/LeetCode/tree/master/0827-making-a-large-island) |
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/imakshaysoni/LeetCode/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/imakshaysoni/LeetCode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [1319-number-of-operations-to-make-network-connected](https://github.com/imakshaysoni/LeetCode/tree/master/1319-number-of-operations-to-make-network-connected) |
@@ -545,6 +549,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 |  |
 | ------- |
 | [0721-accounts-merge](https://github.com/imakshaysoni/LeetCode/tree/master/0721-accounts-merge) |
+| [0827-making-a-large-island](https://github.com/imakshaysoni/LeetCode/tree/master/0827-making-a-large-island) |
 | [1319-number-of-operations-to-make-network-connected](https://github.com/imakshaysoni/LeetCode/tree/master/1319-number-of-operations-to-make-network-connected) |
 | [1584-min-cost-to-connect-all-points](https://github.com/imakshaysoni/LeetCode/tree/master/1584-min-cost-to-connect-all-points) |
 | [2316-count-unreachable-pairs-of-nodes-in-an-undirected-graph](https://github.com/imakshaysoni/LeetCode/tree/master/2316-count-unreachable-pairs-of-nodes-in-an-undirected-graph) |
