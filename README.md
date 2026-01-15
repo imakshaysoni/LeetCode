@@ -405,6 +405,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [1319-number-of-operations-to-make-network-connected](https://github.com/imakshaysoni/LeetCode/tree/master/1319-number-of-operations-to-make-network-connected) |
 | [1584-min-cost-to-connect-all-points](https://github.com/imakshaysoni/LeetCode/tree/master/1584-min-cost-to-connect-all-points) |
 | [1976-number-of-ways-to-arrive-at-destination](https://github.com/imakshaysoni/LeetCode/tree/master/1976-number-of-ways-to-arrive-at-destination) |
+| [2097-valid-arrangement-of-pairs](https://github.com/imakshaysoni/LeetCode/tree/master/2097-valid-arrangement-of-pairs) |
 | [2316-count-unreachable-pairs-of-nodes-in-an-undirected-graph](https://github.com/imakshaysoni/LeetCode/tree/master/2316-count-unreachable-pairs-of-nodes-in-an-undirected-graph) |
 ## Breadth-First Search
 |  |
@@ -508,6 +509,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/imakshaysoni/LeetCode/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/imakshaysoni/LeetCode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [1319-number-of-operations-to-make-network-connected](https://github.com/imakshaysoni/LeetCode/tree/master/1319-number-of-operations-to-make-network-connected) |
+| [2097-valid-arrangement-of-pairs](https://github.com/imakshaysoni/LeetCode/tree/master/2097-valid-arrangement-of-pairs) |
 | [2316-count-unreachable-pairs-of-nodes-in-an-undirected-graph](https://github.com/imakshaysoni/LeetCode/tree/master/2316-count-unreachable-pairs-of-nodes-in-an-undirected-graph) |
 | [2461-amount-of-time-for-binary-tree-to-be-infected](https://github.com/imakshaysoni/LeetCode/tree/master/2461-amount-of-time-for-binary-tree-to-be-infected) |
 ## Binary Search Tree
@@ -557,4 +559,8 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 |  |
 | ------- |
 | [1584-min-cost-to-connect-all-points](https://github.com/imakshaysoni/LeetCode/tree/master/1584-min-cost-to-connect-all-points) |
+## Eulerian Circuit
+|  |
+| ------- |
+| [2097-valid-arrangement-of-pairs](https://github.com/imakshaysoni/LeetCode/tree/master/2097-valid-arrangement-of-pairs) |
 <!---LeetCode Topics End-->
