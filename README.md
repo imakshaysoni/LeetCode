@@ -57,6 +57,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0268-missing-number](https://github.com/imakshaysoni/LeetCode/tree/master/0268-missing-number) |
 | [0322-coin-change](https://github.com/imakshaysoni/LeetCode/tree/master/0322-coin-change) |
 | [0410-split-array-largest-sum](https://github.com/imakshaysoni/LeetCode/tree/master/0410-split-array-largest-sum) |
+| [0421-maximum-xor-of-two-numbers-in-an-array](https://github.com/imakshaysoni/LeetCode/tree/master/0421-maximum-xor-of-two-numbers-in-an-array) |
 | [0494-target-sum](https://github.com/imakshaysoni/LeetCode/tree/master/0494-target-sum) |
 | [0518-coin-change-ii](https://github.com/imakshaysoni/LeetCode/tree/master/0518-coin-change-ii) |
 | [0540-single-element-in-a-sorted-array](https://github.com/imakshaysoni/LeetCode/tree/master/0540-single-element-in-a-sorted-array) |
@@ -195,6 +196,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0169-majority-element](https://github.com/imakshaysoni/LeetCode/tree/master/0169-majority-element) |
 | [0208-implement-trie-prefix-tree](https://github.com/imakshaysoni/LeetCode/tree/master/0208-implement-trie-prefix-tree) |
 | [0268-missing-number](https://github.com/imakshaysoni/LeetCode/tree/master/0268-missing-number) |
+| [0421-maximum-xor-of-two-numbers-in-an-array](https://github.com/imakshaysoni/LeetCode/tree/master/0421-maximum-xor-of-two-numbers-in-an-array) |
 | [0424-longest-repeating-character-replacement](https://github.com/imakshaysoni/LeetCode/tree/master/0424-longest-repeating-character-replacement) |
 | [0621-task-scheduler](https://github.com/imakshaysoni/LeetCode/tree/master/0621-task-scheduler) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/imakshaysoni/LeetCode/tree/master/0653-two-sum-iv-input-is-a-bst) |
@@ -322,6 +324,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0139-word-break](https://github.com/imakshaysoni/LeetCode/tree/master/0139-word-break) |
 | [0208-implement-trie-prefix-tree](https://github.com/imakshaysoni/LeetCode/tree/master/0208-implement-trie-prefix-tree) |
 | [0212-word-search-ii](https://github.com/imakshaysoni/LeetCode/tree/master/0212-word-search-ii) |
+| [0421-maximum-xor-of-two-numbers-in-an-array](https://github.com/imakshaysoni/LeetCode/tree/master/0421-maximum-xor-of-two-numbers-in-an-array) |
 ## Math
 |  |
 | ------- |
@@ -536,6 +539,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0078-subsets](https://github.com/imakshaysoni/LeetCode/tree/master/0078-subsets) |
 | [0090-subsets-ii](https://github.com/imakshaysoni/LeetCode/tree/master/0090-subsets-ii) |
 | [0268-missing-number](https://github.com/imakshaysoni/LeetCode/tree/master/0268-missing-number) |
+| [0421-maximum-xor-of-two-numbers-in-an-array](https://github.com/imakshaysoni/LeetCode/tree/master/0421-maximum-xor-of-two-numbers-in-an-array) |
 ## Design
 |  |
 | ------- |
