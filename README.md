@@ -91,6 +91,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [2271-rearrange-array-elements-by-sign](https://github.com/imakshaysoni/LeetCode/tree/master/2271-rearrange-array-elements-by-sign) |
 | [2387-partition-array-such-that-maximum-difference-is-k](https://github.com/imakshaysoni/LeetCode/tree/master/2387-partition-array-such-that-maximum-difference-is-k) |
 | [2465-shifting-letters-ii](https://github.com/imakshaysoni/LeetCode/tree/master/2465-shifting-letters-ii) |
+| [3047-find-the-largest-area-of-square-inside-two-rectangles](https://github.com/imakshaysoni/LeetCode/tree/master/3047-find-the-largest-area-of-square-inside-two-rectangles) |
 | [3143-longest-unequal-adjacent-groups-subsequence-i](https://github.com/imakshaysoni/LeetCode/tree/master/3143-longest-unequal-adjacent-groups-subsequence-i) |
 | [3621-minimum-operations-to-make-array-values-equal-to-k](https://github.com/imakshaysoni/LeetCode/tree/master/3621-minimum-operations-to-make-array-values-equal-to-k) |
 | [3639-zero-array-transformation-i](https://github.com/imakshaysoni/LeetCode/tree/master/3639-zero-array-transformation-i) |
@@ -334,6 +335,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0268-missing-number](https://github.com/imakshaysoni/LeetCode/tree/master/0268-missing-number) |
 | [0319-bulb-switcher](https://github.com/imakshaysoni/LeetCode/tree/master/0319-bulb-switcher) |
 | [1013-fibonacci-number](https://github.com/imakshaysoni/LeetCode/tree/master/1013-fibonacci-number) |
+| [3047-find-the-largest-area-of-square-inside-two-rectangles](https://github.com/imakshaysoni/LeetCode/tree/master/3047-find-the-largest-area-of-square-inside-two-rectangles) |
 | [3172-divisible-and-non-divisible-sums-difference](https://github.com/imakshaysoni/LeetCode/tree/master/3172-divisible-and-non-divisible-sums-difference) |
 | [3754-maximum-manhattan-distance-after-k-changes](https://github.com/imakshaysoni/LeetCode/tree/master/3754-maximum-manhattan-distance-after-k-changes) |
 ## Two Pointers
@@ -576,4 +578,8 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 |  |
 | ------- |
 | [2097-valid-arrangement-of-pairs](https://github.com/imakshaysoni/LeetCode/tree/master/2097-valid-arrangement-of-pairs) |
+## Geometry
+|  |
+| ------- |
+| [3047-find-the-largest-area-of-square-inside-two-rectangles](https://github.com/imakshaysoni/LeetCode/tree/master/3047-find-the-largest-area-of-square-inside-two-rectangles) |
 <!---LeetCode Topics End-->
