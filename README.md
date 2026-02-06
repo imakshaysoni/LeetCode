@@ -85,6 +85,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [1538-maximum-points-you-can-obtain-from-cards](https://github.com/imakshaysoni/LeetCode/tree/master/1538-maximum-points-you-can-obtain-from-cards) |
 | [1559-cherry-pickup-ii](https://github.com/imakshaysoni/LeetCode/tree/master/1559-cherry-pickup-ii) |
 | [1584-min-cost-to-connect-all-points](https://github.com/imakshaysoni/LeetCode/tree/master/1584-min-cost-to-connect-all-points) |
+| [1854-maximum-population-year](https://github.com/imakshaysoni/LeetCode/tree/master/1854-maximum-population-year) |
 | [2047-find-a-peak-element-ii](https://github.com/imakshaysoni/LeetCode/tree/master/2047-find-a-peak-element-ii) |
 | [2237-longest-palindrome-by-concatenating-two-letter-words](https://github.com/imakshaysoni/LeetCode/tree/master/2237-longest-palindrome-by-concatenating-two-letter-words) |
 | [2265-partition-array-according-to-given-pivot](https://github.com/imakshaysoni/LeetCode/tree/master/2265-partition-array-according-to-given-pivot) |
@@ -144,6 +145,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0169-majority-element](https://github.com/imakshaysoni/LeetCode/tree/master/0169-majority-element) |
 | [0621-task-scheduler](https://github.com/imakshaysoni/LeetCode/tree/master/0621-task-scheduler) |
 | [0948-sort-an-array](https://github.com/imakshaysoni/LeetCode/tree/master/0948-sort-an-array) |
+| [1854-maximum-population-year](https://github.com/imakshaysoni/LeetCode/tree/master/1854-maximum-population-year) |
 | [2237-longest-palindrome-by-concatenating-two-letter-words](https://github.com/imakshaysoni/LeetCode/tree/master/2237-longest-palindrome-by-concatenating-two-letter-words) |
 | [3360-minimum-deletions-to-make-string-k-special](https://github.com/imakshaysoni/LeetCode/tree/master/3360-minimum-deletions-to-make-string-k-special) |
 | [3754-maximum-manhattan-distance-after-k-changes](https://github.com/imakshaysoni/LeetCode/tree/master/3754-maximum-manhattan-distance-after-k-changes) |
@@ -182,6 +184,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0410-split-array-largest-sum](https://github.com/imakshaysoni/LeetCode/tree/master/0410-split-array-largest-sum) |
 | [1046-max-consecutive-ones-iii](https://github.com/imakshaysoni/LeetCode/tree/master/1046-max-consecutive-ones-iii) |
 | [1538-maximum-points-you-can-obtain-from-cards](https://github.com/imakshaysoni/LeetCode/tree/master/1538-maximum-points-you-can-obtain-from-cards) |
+| [1854-maximum-population-year](https://github.com/imakshaysoni/LeetCode/tree/master/1854-maximum-population-year) |
 | [2465-shifting-letters-ii](https://github.com/imakshaysoni/LeetCode/tree/master/2465-shifting-letters-ii) |
 | [3639-zero-array-transformation-i](https://github.com/imakshaysoni/LeetCode/tree/master/3639-zero-array-transformation-i) |
 | [3643-zero-array-transformation-ii](https://github.com/imakshaysoni/LeetCode/tree/master/3643-zero-array-transformation-ii) |
