@@ -198,6 +198,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0106-construct-binary-tree-from-inorder-and-postorder-traversal](https://github.com/imakshaysoni/LeetCode/tree/master/0106-construct-binary-tree-from-inorder-and-postorder-traversal) |
 | [0126-word-ladder-ii](https://github.com/imakshaysoni/LeetCode/tree/master/0126-word-ladder-ii) |
 | [0139-word-break](https://github.com/imakshaysoni/LeetCode/tree/master/0139-word-break) |
+| [0146-lru-cache](https://github.com/imakshaysoni/LeetCode/tree/master/0146-lru-cache) |
 | [0169-majority-element](https://github.com/imakshaysoni/LeetCode/tree/master/0169-majority-element) |
 | [0208-implement-trie-prefix-tree](https://github.com/imakshaysoni/LeetCode/tree/master/0208-implement-trie-prefix-tree) |
 | [0268-missing-number](https://github.com/imakshaysoni/LeetCode/tree/master/0268-missing-number) |
@@ -363,6 +364,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 | [0002-add-two-numbers](https://github.com/imakshaysoni/LeetCode/tree/master/0002-add-two-numbers) |
 | [0024-swap-nodes-in-pairs](https://github.com/imakshaysoni/LeetCode/tree/master/0024-swap-nodes-in-pairs) |
 | [0114-flatten-binary-tree-to-linked-list](https://github.com/imakshaysoni/LeetCode/tree/master/0114-flatten-binary-tree-to-linked-list) |
+| [0146-lru-cache](https://github.com/imakshaysoni/LeetCode/tree/master/0146-lru-cache) |
 | [0234-palindrome-linked-list](https://github.com/imakshaysoni/LeetCode/tree/master/0234-palindrome-linked-list) |
 ## Recursion
 |  |
@@ -549,6 +551,7 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 ## Design
 |  |
 | ------- |
+| [0146-lru-cache](https://github.com/imakshaysoni/LeetCode/tree/master/0146-lru-cache) |
 | [0173-binary-search-tree-iterator](https://github.com/imakshaysoni/LeetCode/tree/master/0173-binary-search-tree-iterator) |
 | [0208-implement-trie-prefix-tree](https://github.com/imakshaysoni/LeetCode/tree/master/0208-implement-trie-prefix-tree) |
 ## Iterator
@@ -586,4 +589,8 @@ Thank you for visiting my **<span style="color:#2E86C1">Coding Question Solution
 |  |
 | ------- |
 | [3047-find-the-largest-area-of-square-inside-two-rectangles](https://github.com/imakshaysoni/LeetCode/tree/master/3047-find-the-largest-area-of-square-inside-two-rectangles) |
+## Doubly-Linked List
+|  |
+| ------- |
+| [0146-lru-cache](https://github.com/imakshaysoni/LeetCode/tree/master/0146-lru-cache) |
 <!---LeetCode Topics End-->
