@@ -1,53 +1,41 @@
 class LRUCache {
 public:
-    list<int> l;
-    unordered_map<int,list<int>::iterator> address;
-    unordered_map<int,int> m;
-    int cap,siz;
+
+    vector<int> vec;
+    unordered_map<int,int> mapp;
+    int cap=0;
     LRUCache(int capacity) {
-        
-        cap=capacity;
-        siz=0;
-        
+        cap = capacity;
     }
     
     int get(int key) {
-//         if Key is present in cache
-        if(m.find(key)==m.end()) return -1;
-//         Erase first
-        l.erase(address[key]);
-        address.erase(key);
-//         Now Inserting at front
-        l.push_front(key);
-        address[key] = l.begin();
-        return m[key];
+        if(mapp.find(key)==mapp.end()) return -1;
+        // Move key to back (most recently used)
+        vec.erase(remove(vec.begin(), vec.end(), key), vec.end());
+        vec.push_back(key);
+        return mapp[key];
+        
     }
     
     void put(int key, int value) {
-        if(m.find(key)!=m.end()){
-            m[key]=value;
-//         Erase first
-            l.erase(address[key]);
-            address.erase(key);
-//         Now Inserting at front
-            l.push_front(key);
-            
-            address[key]=l.begin();
+        if(mapp.find(key)!=mapp.end()){
+            mapp[key]=value;
+            vec.erase(remove(vec.begin(), vec.end(), key), vec.end());
         }
         else{
-            
-            if(cap==siz){
-                int k = l.back();
-                address.erase(k);
-                l.pop_back();
-                m.erase(k);
-                siz--;
+            if(mapp.size() >= cap){
+                // delete least recently used;
+                int lru_key = vec.front();
+                vec.erase(vec.begin());
+                mapp.erase(lru_key);
+                mapp[key] = value;
             }
-            l.push_front(key);            
-            address[key] = l.begin();
-            m[key]=value;         
-            siz++;
+            else{
+                mapp[key] = value;
+            }
         }
+
+        vec.push_back(key);
     }
 };
 
