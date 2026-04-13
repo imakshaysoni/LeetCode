@@ -19,7 +19,7 @@ public:
         return ans;
     }
 
-    void solve(string &digit, int index, unordered_map<char, string> &mapp, vector<string> &ans, string subset){
+    void solve(string &digit, int index, unordered_map<char, string> &mapp, vector<string> &ans, string &subset){
 
             if(index >= digit.size()) {
                 ans.push_back(subset);
@@ -29,7 +29,10 @@ public:
             string str = mapp[digit[index]];
             for(int i=0;i<str.size();i++){
                 char ch = str[i];
-                solve(digit, index+1, mapp, ans, subset + ch);
+                subset.push_back(ch);
+                solve(digit, index+1, mapp, ans, subset);
+                subset.pop_back();
+
             }
 
             return;
