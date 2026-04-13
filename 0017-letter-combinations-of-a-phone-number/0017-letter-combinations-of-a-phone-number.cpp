@@ -1,43 +1,39 @@
 class Solution {
 public:
+
     vector<string> letterCombinations(string digits) {
-        unordered_map<char, string>m;
+
+        unordered_map<char, string> mapp = {
+                                {'2', "abc"},
+                                {'3', "def"},
+                                {'4', "ghi"},
+                                {'5', "jkl"},
+                                {'6', "mno"},
+                                {'7', "pqrs"},
+                                {'8', "tuv"},
+                                {'9', "wxyz"}
+                            };
         vector<string> ans;
-        
-        m['2'] = "abc";
-        m['3'] = "def";
-        m['4'] = "ghi";
-        m['5'] = "jkl";
-        m['6'] = "mno";
-        m['7'] = "pqrs";
-        m['8'] = "tuv";
-        m['9'] = "wxyz";
-        
-        string subset;
-        helper(digits, m, ans, subset, 0);
-        
+        string subset="";
+        solve(digits, 0, mapp, ans, subset);
         return ans;
-        
-        
     }
-    
-    void helper(string digits, unordered_map<char, string> &m, vector<string> &ans, string subset, int i){
-        
-        
-        if(digits.size()==0) return;
-        
-        if(subset.size()==digits.size()) {
-            ans.push_back(subset);
+
+    void solve(string &digit, int index, unordered_map<char, string> &mapp, vector<string> &ans, string subset){
+
+            if(index >= digit.size()) {
+                ans.push_back(subset);
+                return;
+            }
+
+            string str = mapp[digit[index]];
+            for(int i=0;i<str.size();i++){
+                char ch = str[i];
+                solve(digit, index+1, mapp, ans, subset + ch);
+            }
+
             return;
-        }  
-        // if(i>=s.size()) return;
-        
-        string temp = m[digits[i]];
-        for(int j=0;j<temp.size();j++){
-            subset.push_back(temp[j]);
-            helper(digits,m,ans,subset,i+1);
-            subset.pop_back();
-        }
-        
+
     }
+
 };
